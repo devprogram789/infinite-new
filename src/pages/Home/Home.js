@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import HeroSection from "../components/HeroSection";
-import ContentSection from "../components/ContentSection";
-import { gsap } from "gsap";
+import HeroSection from "../../components/Home/HeroSection";
+import ContentSection from "../../components/Home/ContentSection";
 
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +46,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Infinite Digital Cunsultants - อินฟินิท ดิจิทัล คอนซัลแต้นส์ คือเอเจนซี่มืออาชีพ</title>
+        <title>
+          Infinite Digital Cunsultants - อินฟินิท ดิจิทัล คอนซัลแต้นส์
+          คือเอเจนซี่มืออาชีพ
+        </title>
         <meta
           name="description"
           content="เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
@@ -59,7 +62,6 @@ export default function Home() {
         <HeroSection />
         <ContentSection />
       </main>
-
     </>
   );
 }

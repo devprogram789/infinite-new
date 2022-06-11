@@ -6,11 +6,11 @@ import {
 } from "react-router-dom";
 //import { auth } from "./Config/firebase";
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Navigation from "./components/Navigation";
 import About from "./pages/About";
 import Work from "./pages/Work";
-import Service from "./pages/Service";
+import Service from "./pages/Service/Service";
 import Contact from "./pages/Contact";
 
 function App() {

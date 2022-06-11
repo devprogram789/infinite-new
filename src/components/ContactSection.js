@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
-import { GoogleSpreadsheet } from "google-spreadsheet";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -45,39 +44,7 @@ const formContact = [
 ];
 
 export default function Contact() {
-  // Config variables
-  const SPREADSHEET_ID = "1ZRyhqc-7aCNR4P4FC5govZqMCc8txKAbv0Bhl5jVvag";
-  const SHEET_ID = "0";
-
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
-
-  const [email, setEmailC] = useState("");
-  const [c_Name, setNameC] = useState("");
-
-  const appendSpreadsheet = async (row) => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email:
-          "207493199203-hmginmgeria3stmr944ohtpfunqjrsck.apps.googleusercontent.com",
-        private_key: "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",
-      });
-      // loads document properties and worksheets
-      await doc.loadInfo();
-
-      const sheet = doc.sheetsById[SHEET_ID];
-      const result = await sheet.addRow(row);
-    } catch (e) {
-      console.error("Error: ", e);
-    }
-  };
-
-  useEffect(() => {
-    const newRow = { A: email, B: c_Name };
-    appendSpreadsheet(newRow);
-  }, []);
-
-  // onChange={(e) => setEmailC(e.target.value)}
-  // onChange={(e) => setNameC(e.target.value)}
+ 
   return (
     <>
       <div class="container mx-auto">
@@ -202,7 +169,6 @@ export default function Contact() {
                           maxlength={item.maxlength}
                           className="py-3 px-5 block w-4/6 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg focus:border-infinite2-2  focus:ring-blue-500 mb-2 "
                           placeholder={item.placeholder}
-                          onChange={(e) => setEmailC(e.target.value)}
                         />
                       </div>
                     ))}
