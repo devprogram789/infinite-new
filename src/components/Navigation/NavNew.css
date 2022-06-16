@@ -1,7 +1,8 @@
 .sidebar-block {
   position: fixed;
   height: 100%;
-  width: 100%;
+  width: 40%;
+  justify-items: end;
   background-color: rgba(0, 0, 0, 0.9);
   transition: all .35s ease-in;
 }
@@ -9,15 +10,16 @@
 .sidebar-block .sidebar-text span {
   display: flex;
   align-content: flex-end;
-  justify-content: center;
+  justify-content: start;
   text-decoration: none;
   color: rgba(76, 192, 179, 0.1);
+  padding-left: 5rem;
   padding-top: 5rem;
 }
 
 .sidebar-block .sidebar-text span:hover {
   color: rgba(76, 192, 179, 1);
-  font-size:80px;
+  font-size: 60px;
   transition: all .35s ease-out;
 }
 
@@ -49,7 +51,7 @@
 .button_container span {
   background: #1abc9c;
   border: none;
-  height: 5px;
+  height: 10px;
   width: 100%;
   position: absolute;
   top: 0;

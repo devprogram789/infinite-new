@@ -37,9 +37,16 @@ const formContact = [
   {
     name: "งบประมาณในการลงทุน*",
     id: "in-name005",
-    type: "number",
+    type: "text",
     maxlength: "100em",
     placeholder: "กรุณากรอก งบประมาณในการลงทุน",
+  },
+  {
+    name: "ธุรกิจอยู่ในประเภทใด*",
+    id: "in-name006",
+    type: "text",
+    maxlength: "100em",
+    placeholder: "กรุณากรอก ธุรกิจอยู่ในประเภทใด",
   },
 ];
 
@@ -143,7 +150,7 @@ export default function Contact() {
                   <div className="grid justify-items-start w-full">
                     <h2 className="text-5xl font-normal">
                       ปรึกษาเราได้ในทุกเรื่องธุรกิจ
-                      <span className="font-normal text-in-purple-1">
+                      <span className="font-normal text-infinite2-2">
                         ที่คุณต้องการ...
                       </span>
                     </h2>
@@ -173,19 +180,6 @@ export default function Contact() {
                         />
                       </div>
                     ))}
-                    <label for="in-name006" className="block text-2xl font-light mb-2 text-in-purple-2">
-                      ธุรกิจอยู่ในประเภทใด*
-                    </label>
-                    <select
-                      id="in-name006"
-                      className="py-3 px-5 block w-4/6 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg focus:border-infinite2-2  focus:ring-blue-500 mb-2"
-                    >
-                      <option>สุขภาพและยา</option>
-                      <option>Wedding</option>
-                      <option>Birthday</option>
-                      <option>Other</option>
-                    </select>
-
                     <div className="grid justify-items-start w-full mx-0 mt-10">
                       <button className="in-button">
                         <img

@@ -106,11 +106,19 @@ export default function Navigation() {
   };
 
   useEffect(() => {
-    gsap.from(".sidebar-block", {
-      opacity: 0,
-      x: "100%",
-      duration: 0.1,
-    });
+    gsap.fromTo(
+      ".sidebar-block",
+      {
+        opacity: 0,
+        x: "200%",
+        duration: 0.1,
+      },
+      {
+        opacity: 1,
+        x: "150%",
+        duration: 0.1,
+      }
+    );
   });
 
   const [isOpen, setIsOpen] = useState(false);
@@ -124,7 +132,6 @@ export default function Navigation() {
               <div className="col-start-1 col-span-12 z-30 sidebar-block">
                 <div
                   className="button_container mb-10"
-                  id="toggle"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <span className="top"></span>
@@ -136,7 +143,7 @@ export default function Navigation() {
                       onClick={() => setIsOpen(!isOpen)}
                       className="sidebar-text"
                     >
-                      <span className="text-6xl font-bold text-in-purple-3 font-R-FLEX">
+                      <span className="text-5xl font-bold text-in-purple-3 font-R-FLEX">
                         {item.name}
                       </span>
                     </Link>
