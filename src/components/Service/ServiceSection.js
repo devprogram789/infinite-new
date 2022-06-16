@@ -1,238 +1,205 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CustomEase } from "gsap/CustomEase";
+/* This example requires Tailwind CSS v2.0+ */
+import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
-gsap.registerPlugin(ScrollTrigger, CustomEase);
+const user = {
+  name: 'Tom Cook',
+  email: 'tom@example.com',
+  imageUrl:
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+}
+const navigation = [
+  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Team', href: '#', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Calendar', href: '#', current: false },
+  { name: 'Reports', href: '#', current: false },
+]
+const userNavigation = [
+  { name: 'Your Profile', href: '#' },
+  { name: 'Settings', href: '#' },
+  { name: 'Sign out', href: '#' },
+]
 
-export default function WorkSection() {
-  const reblockRef = useRef([]);
-  reblockRef.current = [];
-  useEffect(() => {
-    reblockRef.current.forEach((el, index) => {
-      gsap.from(el, {
-        opacity: 1,
-        y: 0,
-        scaleY: 0,
-        transformOrigin: "left top",
-        duration: 1,
-        autoAlpha: 1,
-        ease: "none",
-        scrollTrigger: {
-          id: `sectionblock-${index + 1}`,
-          trigger: el,
-          start: "top center",
-          toggleActions: "play none none reverse",
-        },
-      });
-    });
-  }, []);
-  const addblockToRefs = (el) => {
-    if (el && !reblockRef.current.includes(el)) {
-      reblockRef.current.push(el);
-    }
-  };
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
-  const boxRef = useRef(null);
-  useEffect(() => {
-    gsap.from(boxRef.current, {
-      autoAlpha: 0,
-      ease: "none",
-      delay: 0.1,
-      opacity: 0.1,
-      y: 100,
-      duration: 1,
-      scrollTrigger: {
-        id: `sectionblock-${boxRef.current + 1}`,
-        trigger: boxRef.current,
-        start: "top center",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
-  const revealRefs = useRef([]);
-  revealRefs.current = [];
-  useEffect(() => {
-    revealRefs.current.forEach((el, index) => {
-      gsap.from(el, {
-        autoAlpha: 0,
-        ease: "none",
-        delay: 0.1,
-        opacity: 0.1,
-        y: 100,
-        duration: 1,
-        scrollTrigger: {
-          id: `section-${index + 1}`,
-          trigger: el,
-          start: "top center",
-          toggleActions: "play none none reverse",
-        },
-      });
-    });
-  }, []);
-
-  const addToRefs = (el) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el);
-    }
-  };
-
+export default function Example() {
   return (
     <>
-      <div class="container mx-auto">
-        <div className="bg-infinite1-100 h-screen">
-          <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-            <div class="relative">
-              <img
-                className="w-screen h-auto"
-                src="../assets/images/work/pic-work.jpg"
-                alt="Infinite"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="bg-infinite1-100 h-screen mt-10">
-          <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-center">
-            <div class="relative bg-infinite1-100">
-              <div className="grid justify-items-center w-full my-10">
-                <img
-                  className="w-6/6 h-full"
-                  src="../assets/images/work/pic-illustration-1.png"
-                  alt="Work-pic-illustration-1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mx-auto mt-80">
-        <div className="relative">
-          <div>
-            <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-            </div>
-            <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-            </div>
-          </div>
-          <div className="absolute top-10 right-0 w-full text-right">
-            <div className="h-full w-full">
-              <div className="grid grid-cols-12 relative">
-                <div className="col-span-full mx-10 text-center font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <button className="in-button">
+      {/*
+        This example requires updating your template:
+
+        ```
+        <html className="h-full bg-gray-100">
+        <body className="h-full">
+        ```
+      */}
+      <div className="min-h-full">
+        <Disclosure as="nav" className="bg-gray-800">
+          {({ open }) => (
+            <>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-16">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
                       <img
-                        className="object-none object-center"
-                        src="../assets/images/work/ปุ่ม-ผลงานของเรา.png"
-                        alt="ปุ่ม6"
+                        className="h-8 w-8"
+                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                        alt="Workflow"
                       />
+                    </div>
+                    <div className="hidden md:block">
+                      <div className="ml-10 flex items-baseline space-x-4">
+                        {navigation.map((item) => (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hidden md:block">
+                    <div className="ml-4 flex items-center md:ml-6">
+                      <button
+                        type="button"
+                        className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      >
+                        <span className="sr-only">View notifications</span>
+                        <BellIcon className="h-6 w-6" aria-hidden="true" />
+                      </button>
+
+                      {/* Profile dropdown */}
+                      <Menu as="div" className="ml-3 relative">
+                        <div>
+                          <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                            <span className="sr-only">Open user menu</span>
+                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                          </Menu.Button>
+                        </div>
+                        <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100" 
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
+                        >
+                          <Menu.Items className="origin-top-right absolute right-0 bottom-0 mt-2 w-96 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            {userNavigation.map((item) => (
+                              <Menu.Item key={item.name}>
+                                {({ active }) => (
+                                  <a
+                                    href={item.href}
+                                    className={classNames(
+                                      active ? 'bg-gray-100' : '',
+                                      'block px-4 py-2 text-sm text-gray-700'
+                                    )}
+                                  >
+                                    {item.name}
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            ))}
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                    </div>
+                  </div>
+                  <div className="-mr-2 flex md:hidden">
+                    {/* Mobile menu button */}
+                    <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                      <span className="sr-only">Open main menu</span>
+                      {open ? (
+                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                      ) : (
+                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                      )}
+                    </Disclosure.Button>
+                  </div>
+                </div>
+              </div>
+
+              <Disclosure.Panel className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  {navigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'block px-3 py-2 rounded-md text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                </div>
+                <div className="pt-4 pb-3 border-t border-gray-700">
+                  <div className="flex items-center px-5">
+                    <div className="flex-shrink-0">
+                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                    </div>
+                    <div className="ml-3">
+                      <div className="text-base font-medium leading-none text-white">{user.name}</div>
+                      <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                    </div>
+                    <button
+                      type="button"
+                      className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    >
+                      <span className="sr-only">View notifications</span>
+                      <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-12 relative mt-10">
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-1.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
+                  <div className="mt-3 px-2 space-y-1">
+                    {userNavigation.map((item) => (
+                      <Disclosure.Button
+                        key={item.name}
+                        as="a"
+                        href={item.href}
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
+                      >
+                        {item.name}
+                      </Disclosure.Button>
+                    ))}
                   </div>
                 </div>
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-2.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-12 relative mt-10">
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-3.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-4.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+
+        <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
           </div>
-          <div className="h-96 w-full">
-            <div className="grid grid-cols-12 relative">
-              <div className="col-span-4 mx-10 text-left font-bold">
-                <h2 className="text-3xl mt-20">
-                  วัฒนธรรมที่อินฟินิตี้
-                  ถูกสร้างขึ้นจากกลุ่มคนที่มีความทะเยอทะยาน
-                  และหลงใหลในสื่อดิจิทัล
-                </h2>
-                <div className="grid justify-items-start w-full my-10">
-                  <button className="in-button">
-                    <img
-                      className="object-none object-center"
-                      src="../assets/images/home/section6/ปุ่ม6.png"
-                      alt="ปุ่ม6"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div className="col-span-8 mx-10 text-left ">
-                <h2 className="text-2xl mt-20">
-                  เป้าหมายสูงสุดของเราคือการผสมผสานศิลปะและเทคโนโลยีเข้าด้วยกัน
-                  ถึงแม้ว่าจะเป็นเวลาไม่นานนัก
-                  แต่เราได้เห็นว่ามีคนจำนวนมากที่แบ่งปันค่านิยมเดียวกันกับเรา
-                  ภารกิจของเราในทุกๆวันคือการทำให้ทีมเราเองนั้น ดีขึ้น
-                  มีประสิทธิภาพมากขึ้น และมีประโยชน์สำหรับลูกค้าของเรา
-                </h2>
-                <div className="grid justify-items-center w-32 my-10 border bg-gray-dark">
-                  <hr />
-                </div>
-              </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {/* Replace with your content */}
+            <div className="px-4 py-6 sm:px-0">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
             </div>
+            {/* /End replace */}
           </div>
-        </div>
+        </main>
       </div>
     </>
-  );
+  )
 }

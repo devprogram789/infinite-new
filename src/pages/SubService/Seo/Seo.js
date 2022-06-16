@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import ServiceSection from "../../components/Service/ServiceSection";
+import SubSeo from "../../../components/SubService/SubSeo";
 import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Work() {
+export default function Seo() {
   const reLogoRefs = useRef([]);
   reLogoRefs.current = [];
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Work() {
     <>
       <main>
         <Helmet>
-          <title>Work - Infinite Digital Cunsultants</title>
+          <title>Seo Digital Marketing - Infinite Digital Cunsultants</title>
           <meta
             name="description"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -55,7 +55,7 @@ export default function Work() {
         </Helmet>
       </main>
       <main>
-        <ServiceSection />
+        <SubSeo />
       </main>
     </>
   );

@@ -101,9 +101,7 @@ export default function ContentSection() {
           }
         );
 
-        el.addEventListener("click", () => animationWater1.play());
-        el.addEventListener("mouseover", () => animationWater1.play());
-        el.addEventListener("mouseout", () => animationWater1.reverse());
+        el.querySelectorAll(".animationWater1", () => animationWater1.play());
       } else if (items2.length > 0) {
         var animationWater2 = gsap.timeline({
           repeat: 2,
@@ -123,15 +121,15 @@ export default function ContentSection() {
           }
         );
 
-        el.addEventListener("click", () => animationWater2.play());
+/*         el.addEventListener("click", () => animationWater2.play());
         el.addEventListener("mouseover", () => animationWater2.play());
-        el.addEventListener("mouseout", () => animationWater2.reverse());
+        el.addEventListener("mouseout", () => animationWater2.reverse()); */
       }
     });
   });
   return (
     <>
-      <div class="container mx-auto mt-5 z-50" ref={addToRefs}>
+      <div className="container mx-auto mt-5 z-50" ref={addToRefs}>
         <div className="relative">
           <div ref={addblockToRefs}>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-start -mt-10">
@@ -194,7 +192,7 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-      <div class="container mx-auto mt-5 z-40" ref={addToRefs}>
+      <div className="container mx-auto mt-5 z-40" ref={addToRefs}>
         <div className="relative">
           <div ref={addblockToRefs}>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end">
@@ -254,7 +252,7 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-      <div class="container mx-auto mt-5 z-30" ref={addToRefs}>
+      <div className="container mx-auto mt-5 z-30" ref={addToRefs}>
         <div className="relative">
           <div ref={addblockToRefs}>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-start -mt-10">
@@ -319,7 +317,7 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-      <div class="container mx-auto mt-5" ref={addToRefs}>
+      <div className="container mx-auto mt-5" ref={addToRefs}>
         <div className="relative ">
           <div ref={addblockToRefs}>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end">
@@ -380,7 +378,7 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-      <div class="container mx-auto mt-5">
+      <div className="container mx-auto mt-5">
         <div className="relative">
           <div ref={addblockToRefs}>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">

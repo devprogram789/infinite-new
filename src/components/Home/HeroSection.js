@@ -82,17 +82,17 @@ export default function HeroSection() {
 
   return (
     <>
-      <div class="container mx-auto">
+      <div className="container mx-auto">
         <div className="bg-infinite1-100 h-screen">
           <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between z-10">
-            <div class="relative">
+            <div className="relative">
               <img
                 className="w-screen h-auto z-20"
                 src="../assets/images/image-head.jpg"
                 alt="Infinite"
               />
-              <div class="absolute -bottom-36 left-12 z-10">
-                <div class="inline-block w-12/12" ref={boxRef}>
+              <div className="absolute -bottom-36 left-12 z-10">
+                <div className="inline-block w-12/12" ref={boxRef}>
                   <div className="flex flex-row w items-stretch justify-start">
                     <div className="shrink w-40 justify-center self-start">
                       <p className="text-5xl font-bold text-center">We are</p>
@@ -127,7 +127,7 @@ export default function HeroSection() {
         </div>
         <div className="bg-infinite1-100 h-screen mt-80" ref={addToRefs}>
           <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-            <div class="relative bg-infinite1-100">
+            <div className="relative bg-infinite1-100">
               <img
                 className="w-screen h-auto "
                 src="../assets/images/home/section1/bg1.png"

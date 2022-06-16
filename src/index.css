@@ -1,5 +1,6 @@
 
 @import url("./assets/css/font-prompt.css");
+@import url("./assets/css/font-gotham.css");
 @import url("./assets/css/font-r-flfx.css");
 
 @tailwind base;
@@ -14,8 +15,13 @@ body {
 @tailwind utilities;
 
 @layer base {
-  * {
-    font-family: R-FLEX, Prompt, sans-serif;
+  body {
+    font-family: Prompt, sans-serif;
+    color: #0F1840;
+  }
+  footer{
+    font-family: Prompt, sans-serif;
+    color: #0F1840;
   }
   *,
   ::before,

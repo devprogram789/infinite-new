@@ -1,6 +1,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui',],
+      'serif': ['ui-serif', 'Georgia', ],
+      'mono': ['ui-monospace', 'SFMono-Regular', ],
+      'R-FLEX': ['R-FLEX', 'sans-serif' ],
+      'Prompt': ['Prompt', 'sans-serif' ],
+      'Gotham': ['Gotham', 'sans-serif' ],
+    },
     screens: {
       sm: "640px",
       md: "768px",
@@ -32,8 +40,10 @@ module.exports = {
         900: "#313232",
       },
       infinite2: {
-        1: "#DCF2EF",
+        1: "#F5FAFD",
         2: "#5FC6BA",
+        3: "#7EB9C5",
+        4: "#DCF2EF",
       },
       infinite3: "#3F4566",
       "in-purple": {
