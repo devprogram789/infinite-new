@@ -1,11 +1,12 @@
-
+@import url("./assets/css/normalize.css");
 @import url("./assets/css/font-prompt.css");
-@import url("./assets/css/font-gotham.css");
 @import url("./assets/css/font-r-flfx.css");
 
 @tailwind base;
 html {
   scroll-behavior: smooth;
+  font-size: calc(60%+0.8vmin);
+  font-family: R-FLEX, Prompt, sans-serif;
 }
 body {
   background-color: rgba(245, 250, 253, 1);
@@ -15,14 +16,14 @@ body {
 @tailwind utilities;
 
 @layer base {
-  body {
-    font-family: Prompt, sans-serif;
-    color: #0F1840;
+/*   body {
+    font-family: R-FLEX, Prompt, sans-serif;
+    color: #0f1840;
   }
-  footer{
-    font-family: Prompt, sans-serif;
-    color: #0F1840;
-  }
+  footer {
+    font-family: R-FLEX, Prompt, sans-serif;
+    color: #0f1840;
+  } */
   *,
   ::before,
   ::after {

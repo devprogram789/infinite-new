@@ -2,19 +2,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui',],
-      'serif': ['ui-serif', 'Georgia', ],
-      'mono': ['ui-monospace', 'SFMono-Regular', ],
-      'R-FLEX': ['R-FLEX', 'sans-serif' ],
-      'Prompt': ['Prompt', 'sans-serif' ],
-      'Gotham': ['Gotham', 'sans-serif' ],
+      "R-FLEX": ["R-FLEX", "sans-serif"],
+      "Prompt": ["Prompt", "sans-serif"],
     },
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+      tablet: {'min': '1920px'},
+      laptop: {'min': '1536px'},
+      xllaptop: {'min': '1280px'},
+      desktop: {'min': '1024px'},
+      xldesktop: {'min': '768px'},
+      mobile: {'min': '640px'},
     },
     colors: {
       white: "#fff",
@@ -56,6 +53,8 @@ module.exports = {
       spacing: {
         128: "32rem",
         144: "36rem",
+        680: "680px",
+        750: "750px",
       },
       borderRadius: {
         "4xl": "2rem",

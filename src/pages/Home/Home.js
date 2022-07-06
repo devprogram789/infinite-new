@@ -17,7 +17,7 @@ export default function Home() {
         {
           autoAlpha: 0,
           opacity: 0,
-          y: -100,
+          y: -50,
           duration: 1,
           ease: "none",
         },
@@ -30,7 +30,7 @@ export default function Home() {
           scrollTrigger: {
             id: `sectionLogo-${index + 1}`,
             trigger: el,
-            start: "top end+=-100",
+            start: "top start+=-200",
             toggleActions: "play none none reverse",
           },
         }
@@ -55,12 +55,14 @@ export default function Home() {
           content="เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
           ซึ่งเหมาะกับเอกลักษณ์เฉพาะตัวของแบรนด์ของคุณอย่างแท้จริงเพื่อสร้างประสบการณ์ที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร"
         />
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://theinfinitedigital.com/" />
       </Helmet>
 
       <main>
-        <HeroSection />
-        <ContentSection />
+        <div class="max-w-full mx-auto overflow-hidden">
+          <HeroSection />
+          <ContentSection />
+        </div>
       </main>
     </>
   );
