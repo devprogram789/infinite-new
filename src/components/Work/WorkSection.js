@@ -2,10 +2,52 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import { Rerousel } from 'rerousel';
+import Slider from '../../components/Slider/Slider'
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
+const workTeams = [
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-01.jpg",
+    alt: "staff-01",
+  },
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-02.jpg",
+    alt: "staff-02",
+  },
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-03.jpg",
+    alt: "staff-03",
+  },
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-04.jpg",
+    alt: "staff-04",
+  },
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-05.jpg",
+    alt: "staff-05",
+  },
+  {
+    name: "Daniel",
+    position: "Creative Director / Partner",
+    img: "../../assets/images/about/staff-06.jpg",
+    alt: "staff-06",
+  },
+];
+
 export default function WorkSection() {
+  const carouselRef = useRef(null);
   const reblockRef = useRef([]);
   reblockRef.current = [];
   useEffect(() => {
@@ -109,13 +151,8 @@ export default function WorkSection() {
       <div className="container mx-auto mt-80">
         <div className="relative">
           <div>
-            <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-            </div>
-            <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
-              <p className="inline-block h-screen w-full bg-infinite2-1"></p>
+            <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end mt-10">
+              <p className="inline-block h-screen w-full bg-infinite2-4"></p>
             </div>
           </div>
           <div className="absolute top-10 right-0 w-full text-right">
@@ -134,67 +171,8 @@ export default function WorkSection() {
                 </div>
               </div>
               <div className="grid grid-cols-12 relative mt-10">
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-1.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-2.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-12 relative mt-10">
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-3.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
-                </div>
-                <div className="col-span-6 mx-10 text-left font-bold">
-                  <div className="grid justify-items-center w-full my-10">
-                    <img
-                      className="object-none object-center w-5/6 h-full rounded-3xl border"
-                      src="../assets/images/work/ลูกค้า-4.png"
-                      alt="Work-pic-illustration-1"
-                    />
-                  </div>
-                  <div className="grid justify-items-start w-full mx-14">
-                    <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                    <p className="text-2xl font-light text-infinite2-2">
-                      การตลาดออนไลน์
-                    </p>
-                  </div>
+                <div className="col-span-12">
+                  <Slider/>
                 </div>
               </div>
             </div>

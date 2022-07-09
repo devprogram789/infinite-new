@@ -20,6 +20,7 @@
     "react-scripts": "5.0.1",
     "react-water-wave": "^2.0.1",
     "react-waves-effect": "^1.5.1",
+    "rerousel": "^0.1.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -59,7 +59,7 @@ export default function Home() {
       </Helmet>
 
       <main>
-        <div class="max-w-full mx-auto overflow-hidden">
+        <div class="max-w-full md:max-w-full mx-auto overflow-hidden">
           <HeroSection />
           <ContentSection />
         </div>

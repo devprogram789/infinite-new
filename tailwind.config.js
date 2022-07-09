@@ -6,12 +6,12 @@ module.exports = {
       "Prompt": ["Prompt", "sans-serif"],
     },
     screens: {
-      tablet: {'min': '1920px'},
-      laptop: {'min': '1536px'},
-      xllaptop: {'min': '1280px'},
-      desktop: {'min': '1024px'},
-      xldesktop: {'min': '768px'},
-      mobile: {'min': '640px'},
+      sm: {'min': '640px'},
+      md: {'min': '768px'},
+      lg: {'min': '1024px'},
+      xl: {'min': '1280px'},
+      "2xl": {'min': '1536px'},
+      "3xl": {'min': '1920px'},
     },
     colors: {
       white: "#fff",

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import WorkSection from "../components/WorkSection";
+import WorkSection from "../../components/Work/WorkSection";
 import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -51,11 +51,13 @@ export default function Work() {
             name="description"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://theinfinitedigital.com/work" />
         </Helmet>
       </main>
       <main>
-        <WorkSection />
+        <div className="max-w-full mx-auto overflow-hidden">
+          <WorkSection />
+        </div>
       </main>
     </>
   );

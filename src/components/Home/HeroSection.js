@@ -153,34 +153,32 @@ export default function HeroSection() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="hidden tablet:block laptop:block xllaptop:block desktop:block xldesktop:block">
+        <div className="hidden md:block">
           <div className="bg-infinite1-100 max-h-screen">
             <div className="max-w-full mx-auto px-4 flex items-center justify-between z-10">
               <div className="relative">
                 <img
-                  className="object-cover object-bottom w-screen h-144 z-20"
+                  className="object-cover object-bottom w-screen md:h-80 lg:h-96 2xl:h-144 z-20"
                   src="../assets/images/image-หน้าหลัก01.png"
                   alt="Infinite"
                 />
-                <div className="absolute -bottom-36 tablet:-bottom-28 laptop:-bottom-32 xldesktop:-bottom-40 left-2 tablet:left-0 desktop:left-10 xldesktop:left-12 z-10">
+                <div className="absolute md:-bottom-24 lg:-bottom-28 2xl:-bottom-36 2xl:left-5 z-10">
                   <div className="inline-block w-12/12" ref={boxRef}>
                     <div className="flex flex-row items-stretch justify-start">
-                      <div className="shrink w-40 justify-center self-start">
-                        <p className="xldesktop:text-5xl desktop:text-4xl xllaptop:text-4xl laptop:text-3xl tablet:text-3xl font-bold text-center">
+                      <div className="shrink md:w-32 lg:w-32 2xl:w-40 my-2 justify-center self-start">
+                        <p className="font-bold md:text-3xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl text-center">
                           We are
                         </p>
                       </div>
-                      <div className="shrink w-20 laptop:w-12 tablet:w-10 h-100 pr-5 mt-2 justify-center">
-                        <p className="inline-block h-1 w-full bg-infinite1-900"></p>
+                      <div className="shrink md:w-10 lg:w-10 2xl:w-20 h-100 md:px-2 lg:px-4 2xl:px-5 md:my-3 lg:my-3 2xl:my-5 justify-center">
+                        <p className="inline-block md:h-1 lg:h-1 2xl:h-2 w-full bg-infinite1-900"></p>
                       </div>
-                      <div className="shrink w-auto -mt-2 tablet:-mt-1 justify-center items-center">
-                        <h1 className="xldesktop:text-7xl desktop:text-6xl xllaptop:text-6xl laptop:text-5xl tablet:text-4xl font-bold">
-                          Infinite
-                        </h1>
-                        <h1 className="xldesktop:text-7xl desktop:text-6xl xllaptop:text-6xl laptop:text-5xl tablet:text-4xl font-bold tablet:mb-2 mb-5">
+                      <div className="shrink w-auto md:mt-2 md:px-2 lg:mt-2 lg:px-4 2xl:px-0 2xl:-mt-1 justify-center items-center">
+                        <h1 className="font-bold md:text-3xl lg:text-4xl 2xl:text-6xl 3xl:text-7xl 2xl:mb-2">
+                          Infinite <br />
                           Digital Cunsultants
                         </h1>
-                        <p className="text-justify font-extralight xldesktop:text-4xl desktop:text-3xl xllaptop:text-3xl laptop:text-xl tablet:text-lg mb-5">
+                        <p className="text-justify font-extralight md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl md:mb-2 lg:mb-5">
                           อินฟินิท ดิจิทัล คอนซัลแต้นส์ คือเอเจนซี่มืออาชีพ
                           <br />
                           ที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร
@@ -196,28 +194,25 @@ export default function HeroSection() {
               className="max-w-full mx-auto py-0 px-4 flex items-center justify-end z-0"
               ref={addblockToRefs}
             >
-              <p className="inline-block h-60 desktop:h-64 w-1/4 bg-infinite2-4"></p>
-              <p className="inline-block h-60 desktop:h-64 w-1/6 bg-in-purple-3"></p>
+              <p className="inline-block h-60 2xl:h-80 w-1/4 bg-infinite2-4"></p>
+              <p className="inline-block h-60 2xl:h-80 w-1/6 bg-in-purple-3"></p>
             </div>
           </div>
           <div
-            className="bg-infinite1-100 h-screen xldesktop:mt-0 desktop:mt-28 xllaptop:mt-0 laptop:mt-12 tablet:mt-44 mt-24"
+            className="bg-infinite1-100 md:h-full lg:h-full 2xl:h-screen md:mt-0 lg:mt-0 2xl:mt-28 3xl:mt-0"
             ref={addToRefs}
           >
             <div className="max-w-full mx-auto px-4 flex items-center justify-between">
               <div className="relative bg-infinite1-100">
                 <img
-                  className="w-screen h-auto "
+                  className="w-screen h-auto"
                   src="../assets/images/home/section1/bg1.png"
                   alt="bg1"
                 />
 
                 <div className="box-decoration-clone bg-gradient-to-r from-infinite1-100 to-infinite1-200">
-                  <div className="absolute top-25 right-11 z-0">
-                    <div className="inline-block ml-10 left-0 z-0"></div>
-                  </div>
                   <div className="absolute top-0 left-12 z-10">
-                    <div className="inline-block w-12/12 xldesktop:10/12">
+                    <div className="inline-block w-12/12">
                       <div className="relative animationWater0">
                         <img
                           className="w-screen h-auto"
@@ -225,41 +220,53 @@ export default function HeroSection() {
                           alt="ภาพประกอบ1"
                         />
                         <div className="absolute top-0 right-0 w-3/5 z-10">
-                          <div className="inline-block xldesktop:mt-28 mt-20 ml-28 xldesktop:pl-20 xldesktop:pr-5 pl-5">
-                            <h2 className="xldesktop:text-2xl text-xl leading-10">
-                              เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
-                              ซึ่งเหมาะกับเอกลักษณ์เฉพาะตัวของแบรนด์ของคุณอย่างแท้จริงเพื่อสร้างประสบการณ์ที่โดดเด่น
-                            </h2>
-                            <div className="inline-block mt-10 xldesktop:px-20 px-20">
-                              <h2 className="xldesktop:text-5xl text-4xl font-bold text-center xldesktop:leading-normal leading-10">
-                                “ We’re a small team of creatives committed to
-                                design with a purpose ”
-                              </h2>
-                              <div className="inline-block mt-10 px-10">
-                                <p className="xldesktop:text-2xl text-xl text-center xldesktop:leading-normal leading-10">
+                          <div className="grid grid-cols-12 2xl:my-10">
+                            <div className="col-start-3 col-span-12">
+                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-10">
+                                <h2 className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl font-light 2xl:leading-10 3xl:leading-normal">
+                                  เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
+                                  ซึ่งเหมาะกับเอกลักษณ์เฉพาะตัวของแบรนด์ของคุณอย่างแท้จริงเพื่อสร้างประสบการณ์ที่โดดเด่น
+                                </h2>
+                              </blockquote>
+                            </div>
+                            <div className="col-start-4 col-span-12">
+                              <blockquote className="mr-10">
+                                <h2 className="md:text-sm lg:text-2xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl font-bold text-center 2xl:leading-10 3xl:leading-snug">
+                                  “ We’re a small team of creatives committed to
+                                  design with a purpose ”
+                                </h2>
+                              </blockquote>
+                            </div>
+                            <div className="col-start-4 col-span-10">
+                              <blockquote className="md:mx-8 lg:mx-16 xl:mx-20 2xl:mx-24 3xl:mx-28 md:py-5 lg:py-5 xl:py-10 2xl:py-10 3xl:py-12">
+                                <p className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl text-center font-light 2xl:leading-10 3xl:leading-normal">
                                   เพิ่มมูลค่าให้แก่แบรนด์ของคุณ
                                   ให้เป็นที่น่าจดจำและสร้างโอกาสในการขายมากขึ้นด้วยเว็บไซต์ที่ทำหน้าที่และตอบสนองได้อย่างสมบูรณ์ซึ่งออกแบบมาสำหรับผู้ใช้ของคุณ
                                 </p>
-                              </div>
+                              </blockquote>
                             </div>
                           </div>
                         </div>
-                        <div className="absolute bottom-16 right-10 w-1/5">
-                          <div className="inline-block ml-10 left-0 m-30 z-0 h-full">
+                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-0 3xl:bottom-10 right-10 w-1/5 z-0">
+                          <div className="inline-block ml-10 left-0 m-30 h-full">
                             <img
-                              className="fixed top-20 right-20 pointer-events-none animationWater1 h-144 xldesktop:h-680"
+                              className="fixed top-20 right-20 pointer-events-none animationWater1 md:h-60 lg:h-96 2xl:h-144"
                               src="../assets/images/home/section1/น้ำ1.png"
                               alt="น้ำ1"
                             />
                           </div>
-                          <div className="inline-block xldesktop:ml-18 ml-10 xldesktop:left-20 left-0 z-20 ">
-                            <button className="in-button">
-                              <img
-                                className="object-scale-down h-full w-40 xldesktop:w-56"
-                                src="../assets/images/home/section1/ปุ่ม1.png"
-                                alt="ปุ่ม1"
-                              />
-                            </button>
+                        </div>
+                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-0 3xl:bottom-10 right-10 w-1/5 z-20">
+                          <div className="inline-block ml-10 left-0">
+                            <a href="/about">
+                              <button className="in-button">
+                                <img
+                                  className="object-scale-down"
+                                  src="../assets/images/home/section1/ปุ่ม1.png"
+                                  alt="ปุ่ม1"
+                                />
+                              </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -270,7 +277,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="block tablet:hidden laptop:hidden xllaptop:hidden desktop:hidden xldesktop:hidden">
+        <div className="block md:hidden">
           <div className="bg-infinite1-100 max-h-screen">
             <div className="max-w-full mx-auto flex items-center justify-center z-10">
               <div className="relative">

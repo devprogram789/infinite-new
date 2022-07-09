@@ -141,7 +141,6 @@ export default function Navigation() {
 
   return (
     <Disclosure as="nav" className="container-full mx-auto">
-      {({ open }) => (
         <>
           <div className="grid grid-cols-12 gap-0">
             {isOpen ? (
@@ -151,7 +150,7 @@ export default function Navigation() {
               >
                 <div className="fixed right-5 cursor-pointer">
                   <XIcon
-                    className="h-8 w-8 laptop:h-8 laptop:w-8 tablet:h-8 tablet:w-8 border rounded-md my-12"
+                    className="h-8 w-8 border rounded-md my-12"
                     aria-hidden="true"
                     onClick={() => setIsOpen(!isOpen)}
                   />
@@ -163,7 +162,7 @@ export default function Navigation() {
                       onClick={() => setIsOpen(!isOpen)}
                       className="sidebar-text"
                     >
-                      <span className="text-4xl font-bold text-in-purple-3 font-R-FLEX border-b-4 border-infinite2-2 ml-10 leading-normal">
+                      <span className="md:text-xl lg:text-3xl 2xl:text-4xl font-bold text-in-purple-3 font-R-FLEX border-b-4 border-infinite2-2 ml-10 leading-normal">
                         {item.name}
                       </span>
                     </Link>
@@ -177,9 +176,9 @@ export default function Navigation() {
                 className="col-start-1 col-span-12 z-30 sidebar-block"
                 id="navbarMenu"
               >
-                <div className="fixed right-5 ">
+                <div className="fixed right-5">
                   <XIcon
-                    className="h-8 w-8 laptop:h-6 laptop:w-6 tablet:h-5 tablet:w-5 border rounded-md my-10"
+                    className="h-8 w-8 md:h-6 md:w-6 border rounded-md my-10"
                     aria-hidden="true"
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
                   />
@@ -241,7 +240,7 @@ export default function Navigation() {
                 >
                   <a
                     href="/"
-                    className="hidden xldesktop:block desktop:block xllaptop:block laptop:block tablet:block"
+                    className="hidden md:block "
                   >
                     <img
                       className="flex items-center origin-center max-w-full -h-screen -rotate-90 "
@@ -254,15 +253,15 @@ export default function Navigation() {
             </div>
             <div className="col-start-1 col-span-12 bg-infinite2-1 z-20 shadow-md">
               <div className="max-w-full mx-auto overflow-hidden">
-                <div className="hidden xldesktop:block desktop:block xllaptop:block laptop:block tablet:block">
+                <div className="hidden md:block">
                   <div className="grid grid-cols-12">
                     <header className="col-start-1 col-span-11">
                       <div className="max-w-full mx-auto overflow-hidden">
-                        <nav className="flex justify-between items-center xldesktop:h-28 desktop:h-24 xllaptop:h-20 laptop:h-24 tablet:h-16 h-28 mx-3">
+                        <nav className="flex justify-between items-center md:h-16 lg:h-28 mx-3">
                           <div className="grid justify-items-start">
                             <a href="/">
                               <img
-                                className="object-cover xldesktop:h-64 desktop:h-60 xllaptop:h-40 laptop:h-32 tablet:h-28 h-40 w-auto"
+                                className="object-cover md:h-32 lg:h-48 w-auto"
                                 src="../assets/images/AW-Logo-Infinite-1.png"
                                 alt="Infinite"
                               />
@@ -275,27 +274,27 @@ export default function Navigation() {
                                   <a
                                     key={item.name}
                                     href={item.href}
-                                    className="border-t-0 border-t-infinite2-1 rounded-2xl desktop:rounded-2xl xllaptop:rounded-2xl laptop:rounded-xl tablet:rounded-lg text-sm font-medium in-wave001 text-center xldesktop:pt-3 xldesktop:w-32 xldesktop:h-10 desktop:pt-3 desktop:w-32 desktop:h-10 xllaptop:pt-2 xllaptop:w-32 xllaptop:h-10 laptop:pt-1 laptop:w-28 laptop:h-8 tablet:pb-1 tablet:w-20 tablet:h-6 cursor-pointer"
+                                    className="border-t-0 border-t-infinite2-1 md:rounded-xl lg:rounded-2xl text-sm font-medium in-wave001 md:w-16 md:h-7 md:pt-0 lg:w-28 lg:h-10 lg:pt-2 text-center cursor-pointer"
                                     aria-current={
                                       item.current ? "page" : undefined
                                     }
                                   >
-                                    <span className="text-2xl desktop:text-2xl xllaptop:text-2xl laptop:text-xl tablet:text-base font-bold text-in-purple-3 font-R-FLEX leading-none">
+                                    <span className="md:text-base lg:text-2xl font-bold text-in-purple-3 font-R-FLEX leading-none">
                                       {item.name}
                                     </span>
-                                    <div className="in-wave002 xldesktop:w-32 xldesktop:h-32 desktop:w-32 desktop:h-32 xllaptop:w-32 xllaptop:h-32 laptop:w-28 laptop:h-28 tablet:w-24 tablet:h-24"></div>
+                                    <div className="in-wave002 md:w-24 md:h-24 lg:w-32 lg:h-32"></div>
                                   </a>
                                 ) : (
-                                  <div className="border-t-0 border-t-infinite2-1 rounded-2xl desktop:rounded-2xl xllaptop:rounded-2xl laptop:rounded-xl tablet:rounded-lg text-sm font-medium in-wave001 text-center xldesktop:pt-3 xldesktop:w-32 xldesktop:h-10 desktop:pt-3 desktop:w-32 desktop:h-10 xllaptop:pt-2 xllaptop:w-32 xllaptop:h-10 laptop:pt-1 laptop:w-28 laptop:h-8 tablet:pb-1 tablet:w-20 tablet:h-6 cursor-pointer">
+                                  <div className="border-t-0 border-t-infinite2-1 md:rounded-xl lg:rounded-2xl text-sm font-medium in-wave001 md:w-16 md:h-7 md:pt-0 lg:w-28 lg:h-10 lg:pt-2 text-center cursor-pointer">
                                     <span
-                                      className="text-2xl desktop:text-2xl xllaptop:text-2xl laptop:text-xl tablet:text-base font-bold text-in-purple-3 font-R-FLEX leading-none"
+                                      className="md:text-base lg:text-2xl font-bold text-in-purple-3 font-R-FLEX leading-none"
                                       onClick={() =>
                                         setIsOpen((isOpen) => !isOpen)
                                       }
                                     >
                                       {item.name}
                                     </span>
-                                    <div className="in-wave002 xldesktop:w-32 xldesktop:h-32 desktop:w-32 desktop:h-32 xllaptop:w-32 xllaptop:h-32 laptop:w-28 laptop:h-28 tablet:w-24 tablet:h-24"></div>
+                                    <div className="in-wave002 md:w-24 md:h-24 lg:w-32 lg:h-32"></div>
                                   </div>
                                 )
                               )}
@@ -306,15 +305,15 @@ export default function Navigation() {
                     </header>
                   </div>
                 </div>
-                <div className="block xldesktop:hidden desktop:hidden xllaptop:hidden laptop:hidden tablet:hidden">
+                <div className="block md:hidden">
                   <div className="grid grid-cols-12">
                     <header className="col-start-1 col-span-12">
                       <div className="max-w-full mx-auto overflow-hidden">
-                        <nav className="flex justify-between items-center mobile:h-28 h-28 mx-5">
+                        <nav className="flex justify-between items-center h-28 mx-5">
                           <div className="grid justify-items-start">
                             <a href="/">
                               <img
-                                className="object-cover mobile:h-40 h-40 w-auto"
+                                className="object-cover h-40 w-auto"
                                 src="../assets/images/AW-Logo-Infinite-1.png"
                                 alt="Infinite"
                               />
@@ -323,7 +322,7 @@ export default function Navigation() {
                           <div className="grid justify-items-end w-3/4 h-auto">
                             <div className="flex items-end">
                               <MenuIcon
-                                className="h-8 w-8 laptop:h-6 laptop:w-6 tablet:h-5 tablet:w-5 border rounded-md"
+                                className="h-8 w-8 md:h-5 md:w-5 border rounded-md"
                                 aria-hidden="true"
                                 onClick={() => setIsOpenMenu(!isOpenMenu)}
                               />
@@ -336,7 +335,7 @@ export default function Navigation() {
                 </div>
               </div>
             </div>
-            <div className="col-start-1 col-span-12 laptop:col-start-2 laptop:col-span-10 xllaptop:col-start-2 xllaptop:col-span-10 desktop:col-start-2 desktop:col-span-10 xldesktop:col-start-2 xldesktop:col-span-10 z-15">
+            <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-10 z-15">
               <Outlet />
             </div>
             <div className="col-start-1 col-span-12 z-10">
@@ -346,7 +345,6 @@ export default function Navigation() {
             </div>
           </div>
         </>
-      )}
     </Disclosure>
   );
 }

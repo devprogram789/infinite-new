@@ -129,63 +129,67 @@ export default function ContentSection() {
   });
   return (
     <>
-      <div className="hidden xldesktop:block desktop:block xllaptop:block laptop:block tablet:block">
-        <div className="container mx-auto mt-5 z-50" ref={addToRefs}>
+      <div className="hidden md:block">
+        <div
+          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-5 3xl:mt-5 z-50"
+          ref={addToRefs}
+        >
           <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-start -mt-10">
-                <p className="inline-block h-96 w-2/5 bg-infinite2-1"></p>
+                <p className="inline-block md:h-64 lg:h-96 2xl:h-96 w-2/5 bg-infinite2-1"></p>
               </div>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-start -mt-10">
-                <p className="inline-block h-screen w-2/5 bg-infinite2-1"></p>
+                <p className="inline-block md:h-56 lg:h-56 2xl:h-96 w-2/5 bg-infinite2-1"></p>
               </div>
             </div>
-            <div className="absolute top-48 right-32">
-              <div className="h-screen w-full">
-                <div className="grid grid-cols-12 relative animationWater0">
-                  <div className="col-span-5 mx-10">
-                    <div className="top-32">
-                      <img
-                        className="object-none object-top h-full w-full animationWater2"
-                        src="../assets/images/home/section2/น้ำ2.png"
-                        alt="น้ำ2"
-                      />
-                    </div>
-                    <div className="absolute top-48 left-0 w-full">
-                      <div className="grid grid-rows-3 grid-flow-col ">
-                        <div>
-                          <h2 className="text-3xl leading-10 text-in-purple-1">
-                            วางกลยุทธ์การตลาด{" "}
-                            <span className="font-Prompt">SEO</span>
+            <div className="absolute md:top-10 lg:top-16 2xl:top-16 lg:left-0 2xl:left-20 3xl:left-32">
+              <div className="inline-block w-12/12">
+                <div className="relative animationWater0">
+                  <div className="md:mx-20 lg:mx-20 2xl:mx-5 md:my-5 lg:my-5 2xl:my-5 3xl:my-8">
+                    <img
+                      className="object-cover md:h-full lg:h-full 2xl:h-144 3xl:h-full md:w-48 lg:w-64 2xl:w-auto 3xl:w-96 animationWater2"
+                      src="../assets/images/home/section2/น้ำ2.png"
+                      alt="น้ำ2"
+                    />
+                  </div>
+                  <div className="absolute md:top-0 lg:top-0 2xl:top-28 left-0 w-full z-10">
+                    <div className="grid grid-cols-12">
+                      <div className="col-start-1 col-span-12">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
+                            วางกลยุทธ์การตลาด SEO
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
-                            <h2 className="text-6xl font-Prompt">
-                              SEO Digital
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
+                              SEO Digital <br />
+                              Marketing
                             </h2>
-                            <h2 className="text-6xl">Marketing</h2>
                           </span>
+                        </blockquote>
+                        <div className="2xl:w-full md:mx-10 lg:mx-10 2xl:mx-5 md:my-2 lg:my-5 2xl:my-10">
+                          <a href="/services/seo">
+                            <button className="in-button">
+                              <img
+                                className="object-scale-down"
+                                src="../assets/images/home/section2/ปุ่ม2.png"
+                                alt="ปุ่ม2"
+                              />
+                            </button>
+                          </a>
                         </div>
-                        <div className="grid justify-items-start w-full my-10">
-                          <button className="in-button">
-                            <img
-                              className="object-scale-down"
-                              src="../assets/images/home/section2/ปุ่ม2.png"
-                              alt="ปุ่ม2"
-                            />
-                          </button>
-                        </div>
-                        <div className="-mt-18 w-96">
-                          <h2 className="text-2xl font-light">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-3 lg:py-3 2xl:py-4 md:w-56 lg:w-80 2xl:w-96">
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
                             เราสามารถเพิ่มจำนวนคนเข้าเว็บไซต์ของคุณด้วยกลยุทธ์ที่พิสูจน์มาแล้วว่าได้ผลจริง
                           </h2>
-                        </div>
+                        </blockquote>
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-7">
-                    <div className="bg-indigo-300 absolute top-0 left-20">
+                  <div className="absolute md:bottom-0 lg:bottom-0 2xl:bottom-0 right-10 w-3/5 z-0">
+                    <div className="inline-block ml-10 left-0 m-30 z-0 h-full">
                       <img
-                        className="object-none object-right h-full w-full"
+                        className="fixed top-0 right-0 md:h-auto lg:h-auto 2xl:h-auto 3xl:h-auto"
                         src="../assets/images/home/section2/ภาพประกอบ2.png"
                         alt="ภาพประกอบ2"
                       />
@@ -196,58 +200,70 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-5 z-40" ref={addToRefs}>
+        <div
+          className="container mx-auto md:mt-0 lg:mt-0 2xl:mt-16 3xl:mt-20 z-40"
+          ref={addToRefs}
+        >
           <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end">
-                <p className="inline-block h-60 w-2/5 bg-in-purple-3"></p>
+                <p className="inline-block md:h-28 lg:h-40 xl:h-60 2xl:h-48 3xl:h-60 w-2/5 bg-in-purple-3"></p>
               </div>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">
-                <p className="inline-block h-screen w-2/5 bg-infinite1-250"></p>
+                <p className="inline-block md:h-56 lg:h-80 xl:h-96 2xl:h-96 3xl:h-96 w-2/5 bg-infinite1-250"></p>
+              </div>
+              <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">
+                <p className="inline-block md:h-32 lg:h-44 xl:h-96 2xl:h-80 3xl:h-96 w-2/5 bg-infinite1-250"></p>
               </div>
             </div>
-            <div className="absolute top-56 left-0">
-              <div className="h-screen w-full">
-                <div className="grid grid-cols-12 relative animationWater0">
-                  <div className="col-span-7 mx-10">
-                    <img
-                      className="object-none object-left-top h-full w-full"
-                      src="../assets/images/home/section3/ภาพประกอบ3.png"
-                      alt="ภาพประกอบ3"
-                    />
-                  </div>
-                  <div className="col-span-5">
-                    <div className="">
+            <div className="absolute md:top-0 lg:top-0 2xl:top-20 left-10">
+              <div className="inline-block w-12/12">
+                <div className="relative animationWater0">
+                  <div className="grid grid-cols-12 relative">
+                    <div className="col-span-7 md:mx-2 lg:mx-5 2xl:mx-10">
                       <img
-                        className="object-none object-top h-full w-full  animationWater1"
-                        src="../assets/images/home/section3/น้ำ3.png"
-                        alt="น้ำ3"
+                        className="md:object-cover md:object-left-top lg:object-cover lg:object-left-top 2xl:object-cover 2xl:object-left-top md:h-96 lg:h-144 2xl:h-full 3xl:h-full w-auto"
+                        src="../assets/images/home/section3/ภาพประกอบ3.png"
+                        alt="ภาพประกอบ3"
                       />
                     </div>
-                    <div className="absolute top-10 right-32 w-3/5 text-right">
-                      <div className="inline-block mt-36 ml-28 pl-10">
-                        <h2 className="text-3xl leading-10 text-in-purple-1">
-                          รับออกแบบเว็บไซต์
-                        </h2>
-                        <span className="box-decoration-clone text-in-purple-3 font-bold">
-                          <h2 className="text-6xl font-Prompt">Web design</h2>
-                        </span>
-                        <div className="grid justify-items-end w-full my-10">
-                          <button className="in-button">
-                            <img
-                              className="object-scale-down"
-                              src="../assets/images/home/section3/ปุ่ม3.png"
-                              alt="ปุ่ม3"
-                            />
-                          </button>
+                    <div className="col-span-5">
+                      <div className="md:mt-20 lg:mt-36 2xl:mt-28 3xl:mt-44">
+                        <img
+                          className="object-cover md:h-64 lg:h-96 2xl:h-128 2xl:ml-14 3xl:h-144 3xl:ml-20 w-auto animationWater1"
+                          src="../assets/images/home/section3/น้ำ3.png"
+                          alt="น้ำ3"
+                        />
+                      </div>
+                      <div className="absolute top-0 right-0 w-3/5 text-right">
+                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-20 md:mt-24 lg:mt-40 2xl:mt-56">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
+                            รับออกแบบเว็บไซต์
+                          </h2>
+                          <span className="box-decoration-clone text-in-purple-3 font-bold">
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
+                              Web design
+                            </h2>
+                          </span>
+                          <div className="grid justify-items-end w-full my-10 3xl:my-14">
+                            <a href="/services/design">
+                              <button className="in-button">
+                                <img
+                                  className="object-scale-down"
+                                  src="../assets/images/home/section3/ปุ่ม3.png"
+                                  alt="ปุ่ม3"
+                                />
+                              </button>
+                            </a>
+                          </div>
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
+                            พัฒนาเว็บไซต์ครบวงจร
+                            <br />
+                            เรามีทีมโปรแกรมเมอร์ ที่พร้อม
+                            <br />
+                            จะพัฒนาเว็บไซต์แบบครบวงจร
+                          </h2>
                         </div>
-                        <h2 className="text-2xl font-light">
-                          พัฒนาเว็บไซต์ครบวงจร
-                          <br />
-                          เรามีทีมโปรแกรมเมอร์ ที่พร้อม
-                          <br />
-                          จะพัฒนาเว็บไซต์แบบครบวงจร
-                        </h2>
                       </div>
                     </div>
                   </div>
@@ -256,63 +272,68 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-5 z-30" ref={addToRefs}>
+        <div
+          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-16 3xl:mt-20 z-30"
+          ref={addToRefs}
+        >
           <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-start -mt-10">
-                <p className="inline-block h-screen w-2/5 bg-infinite2-1"></p>
+                <p className="inline-block md:h-64 lg:h-96 2xl:h-96 w-2/5 bg-infinite2-1"></p>
               </div>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-start -mt-10">
-                <p className="inline-block h-48 w-2/5 bg-infinite2-1"></p>
+                <p className="inline-block md:h-56 lg:h-56 2xl:h-96 w-2/5 bg-infinite2-1"></p>
               </div>
             </div>
-            <div className="absolute top-48 right-20">
-              <div className="h-screen w-full ">
-                <div className="grid grid-cols-12 relative animationWater0">
-                  <div className="col-span-5 mx-10">
-                    <div className="top-32">
-                      <img
-                        className="object-none object-top h-full w-full animationWater2 "
-                        src="../assets/images/home/section4/น้ำ4.png"
-                        alt="น้ำ4"
-                      />
-                    </div>
-                    <div className="absolute top-48 left-0 w-full">
-                      <div className="grid grid-rows-3 grid-flow-col ">
-                        <div>
-                          <h2 className="text-3xl leading-10 text-in-purple-1">
+            <div className="absolute md:top-10 lg:top-16 2xl:top-16 lg:left-0 2xl:left-20 3xl:left-32">
+              <div className="inline-block w-12/12">
+                <div className="relative animationWater0">
+                  <div className="md:mx-20 lg:mx-20 2xl:mx-5 3xl:mx-20 md:my-5 lg:my-5 2xl:my-5 3xl:my-8">
+                    <img
+                      className="object-cover md:h-full lg:h-full 2xl:h-144 3xl:h-full md:w-48 lg:w-64 2xl:w-auto 3xl:w-96 animationWater2"
+                      src="../assets/images/home/section4/น้ำ4.png"
+                      alt="น้ำ4"
+                    />
+                  </div>
+                  <div className="absolute md:top-0 lg:top-0 2xl:top-28 left-0 w-full z-10">
+                    <div className="grid grid-cols-12">
+                      <div className="col-start-1 col-span-12">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5 ">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
                             สร้างคอนเทนท์บนโซเชียล
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
-                            <h2 className="text-6xl font-Prompt">
-                              Social media
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
+                              Social media <br />
+                              experience
                             </h2>
-                            <h2 className="text-6xl font-Prompt">experience</h2>
                           </span>
+                        </blockquote>
+                        <div className="2xl:w-full md:mx-10 lg:mx-10 2xl:mx-5 md:my-2 lg:my-5 2xl:my-10">
+                          <a href="/services/code">
+                            <button className="in-button">
+                              <img
+                                className="object-scale-down"
+                                src="../assets/images/home/section4/ปุ่ม4.png"
+                                alt="ปุ่ม4"
+                              />
+                            </button>
+                          </a>
                         </div>
-                        <div className="grid justify-items-start w-full my-10">
-                          <button className="in-button">
-                            <img
-                              className="object-scale-down"
-                              src="../assets/images/home/section4/ปุ่ม4.png"
-                              alt="ปุ่ม4"
-                            />
-                          </button>
-                        </div>
-                        <div className="-mt-18 w-96">
-                          <h2 className="text-2xl font-light">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-3 lg:py-3 2xl:py-4 md:w-56 lg:w-80 2xl:w-96 3xl:w-128">
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
                             เราให้บริการการสร้างคอนเทนท์ต่างๆ <br />
                             เพื่อให้เว็บไซต์ของคุณสมบูรณ์แบบ <br />
                             โดยถูกต้องตามหลัก
                           </h2>
-                        </div>
+                        </blockquote>
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-7">
-                    <div className="bg-indigo-300 absolute top-0 left-20">
+                  <div className="absolute md:bottom-0 lg:bottom-0 2xl:bottom-0 right-10 w-3/5 z-0">
+                    <div className="inline-block ml-10 left-0 m-30 z-0 h-full">
                       <img
-                        className="object-none object-right h-full w-full"
+                        className="fixed top-0 right-0 md:h-auto lg:h-auto 2xl:h-auto 3xl:h-auto"
                         src="../assets/images/home/section4/ภาพประกอบ4.png"
                         alt="ภาพประกอบ4"
                       />
@@ -323,59 +344,69 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-5" ref={addToRefs}>
-          <div className="relative ">
+        <div
+          className="container mx-auto md:mt-20 lg:mt-40 2xl:mt-20 3xl:mt-32 z-20"
+          ref={addToRefs}
+        >
+          <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end">
-                <p className="inline-block h-60 w-2/5 bg-in-purple-3"></p>
+                <p className="inline-block md:h-28 lg:h-40 xl:h-60 2xl:h-48 3xl:h-60 w-2/5 bg-in-purple-3"></p>
               </div>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">
-                <p className="inline-block h-screen w-2/5 bg-infinite1-250"></p>
+                <p className="inline-block md:h-56 lg:h-80 xl:h-96 2xl:h-96 3xl:h-96 w-2/5 bg-infinite1-250"></p>
+              </div>
+              <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">
+                <p className="inline-block md:h-32 lg:h-44 xl:h-96 2xl:h-80 3xl:h-96 w-2/5 bg-infinite1-250"></p>
               </div>
             </div>
-            <div className="absolute top-56 left-0 ">
-              <div className="h-screen w-full">
-                <div className="grid grid-cols-12 relative animationWater0">
-                  <div className="col-span-7 mx-10">
-                    <img
-                      className="object-none object-left-top h-full w-full"
-                      src="../assets/images/home/section5/ภาพประกอบ5.png"
-                      alt="ภาพประกอบ5"
-                    />
-                  </div>
-                  <div className="col-span-5">
-                    <div className="">
+            <div className="absolute md:top-0 lg:top-0 2xl:top-20 left-10">
+              <div className="inline-block w-12/12">
+                <div className="relative animationWater0">
+                  <div className="grid grid-cols-12 relative">
+                    <div className="col-span-7 md:mx-2 lg:mx-5 2xl:mx-10">
                       <img
-                        className="object-none object-top h-full w-full animationWater1"
-                        src="../assets/images/home/section5/น้ำ5.png"
-                        alt="น้ำ5"
+                        className="md:object-cover md:object-left-top lg:object-cover lg:object-left-top 2xl:object-cover 2xl:object-left-top md:h-96 lg:h-144 2xl:h-full 3xl:h-full w-auto"
+                        src="../assets/images/home/section5/ภาพประกอบ5.png"
+                        alt="ภาพประกอบ5"
                       />
                     </div>
-                    <div className="absolute top-10 right-32 w-3/5 text-right">
-                      <div className="inline-block mt-36 ml-28 pl-10">
-                        <h2 className="text-3xl leading-10 text-in-purple-1">
-                          รับเขียนโปรแกรมทุกประเภท
-                        </h2>
-                        <span className="box-decoration-clone text-in-purple-3 font-bold">
-                          <h2 className="text-6xl font-Prompt">Expert</h2>
-                          <h2 className="text-6xl font-Prompt">Programming</h2>
-                        </span>
-                        <div className="grid justify-items-end w-full my-10">
-                          <button className="in-button">
-                            <img
-                              className="object-scale-down"
-                              src="../assets/images/home/section5/ปุ่ม5.png"
-                              alt="ปุ่ม5"
-                            />
-                          </button>
+                    <div className="col-span-5">
+                      <div className="md:mt-20 lg:mt-36 2xl:mt-28 3xl:mt-44">
+                        <img
+                          className="object-cover md:h-56 lg:h-80 2xl:h-128 2xl:ml-6 3xl:h-144 3xl:ml-10 w-auto animationWater1"
+                          src="../assets/images/home/section5/น้ำ5.png"
+                          alt="น้ำ5"
+                        />
+                      </div>
+                      <div className="absolute top-0 right-0 w-3/5 text-right">
+                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-20 md:mt-24 lg:mt-40 2xl:mt-56">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
+                            รับเขียนโปรแกรมทุกประเภท
+                          </h2>
+                          <span className="box-decoration-clone text-in-purple-3 font-bold">
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
+                              Expert <br /> Programming
+                            </h2>
+                          </span>
+                          <div className="grid justify-items-end w-full my-10 3xl:my-14">
+                            <a href="/services/digital">
+                              <button className="in-button">
+                                <img
+                                  className="object-scale-down"
+                                  src="../assets/images/home/section5/ปุ่ม5.png"
+                                  alt="ปุ่ม5"
+                                />
+                              </button>
+                            </a>
+                          </div>
+                          <div className="md:ml-28 lg:ml-44 2xl:ml-56 3xl:ml-72">
+                            <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
+                              ทีมงานเขียนโปรแกรมและพัฒนาระบบตามความต้องการของลูกค้า
+                              อย่างมืออาชีพรองรับทุกการใช้งานกับทุกธุรกิจ
+                            </h2>
+                          </div>
                         </div>
-                        <h2 className="text-2xl font-light">
-                          ทีมงานเขียนโปรแกรมและพัฒนาระบบ
-                          <br />
-                          ตามความต้องการของลูกค้าอย่าง
-                          <br />
-                          มืออาชีพรองรับทุกการใช้งานกับทุกธุรกิจ
-                        </h2>
                       </div>
                     </div>
                   </div>
@@ -384,28 +415,30 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-5">
+        <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-5 z-10">
           <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">
-                <p className="inline-block h-60 w-full bg-infinite1-100"></p>
-                <p className="inline-block h-60 w-96 bg-in-purple-3"></p>
+                <p className="inline-block md:h-32 lg:h-44 2xl:h-60 md:w-full lg:w-full 2xl:w-full bg-infinite1-100"></p>
+                <p className="inline-block md:h-32 lg:h-44 2xl:h-60 md:w-56 lg:w-56 2xl:w-96 bg-in-purple-3"></p>
               </div>
             </div>
             <div className="h-96 w-full">
               <div className="grid grid-cols-12 relative">
                 <div className="col-span-full mx-10 text-center font-bold">
-                  <h2 className="text-6xl mt-20 font-Prompt">
+                  <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl mt-20">
                     Have a project? Let's chat.
                   </h2>
-                  <div className="grid justify-items-center w-full my-10">
-                    <button className="in-button">
-                      <img
-                        className="object-none object-center"
-                        src="../assets/images/home/section6/ปุ่ม6.png"
-                        alt="ปุ่ม6"
-                      />
-                    </button>
+                  <div className="grid justify-items-center w-full md:my-5 lg:my-5 2xl:my-10">
+                    <a href="/contact">
+                      <button className="in-button">
+                        <img
+                          className="object-none object-center"
+                          src="../assets/images/home/section6/ปุ่ม6.png"
+                          alt="ปุ่ม6"
+                        />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -413,7 +446,7 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-      <div className="block xldesktop:hidden desktop:hidden xllaptop:hidden laptop:hidden tablet:hidden"></div>
+      <div className="block md:hidden"></div>
     </>
   );
 }
