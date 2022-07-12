@@ -16,6 +16,9 @@ body {
 @tailwind utilities;
 
 @layer base {
+  body {
+    color: #0f1840;
+  }
 /*   body {
     font-family: R-FLEX, Prompt, sans-serif;
     color: #0f1840;

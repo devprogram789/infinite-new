@@ -170,54 +170,62 @@ export default function HeroSection() {
           >
             <div className="relative">
               <div ref={addblockToRefs}>
-                <div className="max-w-full mx-auto px-4 flex items-center justify-end mt-0">
-                  <p className="inline-block h-60 2xl:h-96 3xl:h-128 w-1/4 bg-infinite2-4"></p>
-                  <p className="inline-block h-60 2xl:h-96 3xl:h-128 w-1/6 bg-in-purple-3"></p>
+                <div className="max-w-full mx-auto px-4 flex items-center justify-start mt-0">
+                  <p className="inline-block h-60 2xl:h-128 3xl:h-144 w-10 3xl:w-20 bg-in-purple-3"></p>
+                  <p className="inline-block h-60 2xl:h-128 3xl:h-144 w-128 3xl:w-144 bg-infinite2-4"></p>
                 </div>
               </div>
-              <div className="absolute md:top-10 lg:top-16 2xl:top-2 lg:left-0 2xl:left-20 3xl:left-20">
+              <div className="absolute md:top-10 lg:top-16 2xl:top-5 lg:left-0 2xl:left-32 3xl:left-32">
                 <div className="inline-block w-12/12" ref={boxRef}>
                   <div className="flex flex-col items-stretch justify-start">
-                    <div class="grid grid-rows-3 grid-flow-col-dense w-full">
-                      <div className="2xl:col-span-6 self-center uppercase">
-                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-left">
-                          We
-                        </h1>
+                    <div class="grid grid-cols-5 w-full">
+                      <div class="col-span-2 2xl:mt-10 3xl:mt-16">
+                        <div className="flex items-center">
+                          <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-[12rem] 3xl:text-[16rem] text-left">
+                            We
+                          </h1>
+                          <div class="shrink-0 ml-5">
+                            <img
+                              class="h-10 w-10 object-cover rounded-full"
+                              src="../assets/images/home/วงกลม.png"
+                              alt="วงกลม"
+                            />
+                          </div>
+                        </div>
                       </div>
-                      <div className="2xl:col-span-6 self-start uppercase">
-                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-right top-0">
-                          Are
-                        </h1>
-                      </div>
-                      <div className="2xl:col-span-6 self-start uppercase">
-                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-right top-0"></h1>
-                      </div>
-                      <div className="2xl:col-span-6 self-center uppercase ml-5">
-                        <h1 className="font-bold md:text-3xl lg:text-4xl 2xl:text-4xl 3xl:text-5xl text-left">
+                      <div class="col-span-3 ml-20 self-center">
+                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-7xl 3xl:text-8xl text-left">
                           Infinite Digital
                           <br />
                           Cunsultants
                         </h1>
                       </div>
-                      <div className="col-span-6 self-start 3xl:self-center uppercase ml-5">
-                        <p className="text-left font-extralight md:text-sm lg:text-xl 2xl:text-lg 3xl:text-xl ">
+
+                      <div class="col-span-2 mt-16 3xl:mt-20">
+                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-[12rem] 3xl:text-[14rem] text-right top-0">
+                          Are
+                        </h1>
+                      </div>
+                      <div class="col-span-3 ml-20 mt-9 self-center">
+                        <p className="text-left uppercase font-extralight md:text-sm lg:text-xl 2xl:text-3xl 3xl:text-4xl ">
                           อินฟินิท ดิจิทัล คอนซัลแต้นส์ รับปรึกษา <br />
                           ดูแลด้านเว็บไซต์และระบบโปรแกรม รวมถึง
                           <br />
                           สื่อดิจิทัลออนไลน์ ครบทุกด้านในที่เดียว
                         </p>
                       </div>
-                      <div className="col-span-6 self-start uppercase ml-5">
-                        <p className="text-left font-bold md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl py-2">
+                      <div class="col-span-2"></div>
+                      <div class="col-span-3 ml-20 mt-10 ">
+                        <p className=" text-right font-bold md:text-sm lg:text-xl 2xl:text-4xl 3xl:text-5xl py-2">
                           “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
                         </p>
-                        <div className="inline-block">
-                          <a href="contact">
+                        <div className="grid justify-items-end">
+                          <a href="/contact">
                             <button className="in-button">
                               <img
-                                className="object-scale-down w-40"
+                                className="object-scale-down w-48"
                                 src="../assets/images/home/ปุ่ม-contact-us.png"
-                                alt="ปุ่ม1"
+                                alt="ปุ่ม-contact-us"
                               />
                             </button>
                           </a>
@@ -253,8 +261,8 @@ export default function HeroSection() {
                         <div className="absolute top-0 right-0 w-3/5 z-10">
                           <div className="grid grid-cols-12 2xl:my-5">
                             <div className="col-start-3 col-span-12">
-                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-8 3xl:py-10">
-                                <h2 className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl font-light 2xl:leading-10 3xl:leading-normal">
+                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-8 3xl:py-20">
+                                <h2 className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-xl 3xl:text-2xl font-light 2xl:leading-10 3xl:leading-normal">
                                   เราเป็นทีมออกแบบเว็บไซต์ที่สร้างสรรค์ผลงานคุณภาพ
                                   ไม่เหมือนใคร
                                   และตอบโจทย์ตามความต้องการของลูกค้า
@@ -272,8 +280,8 @@ export default function HeroSection() {
                               </blockquote>
                             </div>
                             <div className="col-start-4 col-span-10">
-                              <blockquote className="md:mx-8 lg:mx-16 xl:mx-20 2xl:mx-24 3xl:mx-28 md:py-5 lg:py-5 xl:py-10 2xl:py-10 3xl:py-12">
-                                <p className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl text-center font-light 2xl:leading-10 3xl:leading-normal">
+                              <blockquote className="md:mx-8 lg:mx-16 xl:mx-20 2xl:mx-24 3xl:mx-28 md:py-5 lg:py-5 xl:py-10 2xl:py-10 3xl:py-16">
+                                <p className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-xl 3xl:text-2xl text-center font-light 2xl:leading-10 3xl:leading-normal">
                                   ทีมของเรามุ่งมั่นผลิตผลงานเพื่อมอบสิ่งที่ดีที่สุดให้ลูกค้า
                                 </p>
                               </blockquote>
@@ -294,7 +302,7 @@ export default function HeroSection() {
                             <a href="/about">
                               <button className="in-button">
                                 <img
-                                  className="object-scale-down"
+                                  className="object-scale-down w-60"
                                   src="../assets/images/home/section1/ปุ่ม1.png"
                                   alt="ปุ่ม1"
                                 />

@@ -57,14 +57,15 @@ export default function SubWebDesign() {
                 </div>
                 <div className="col-span-6 mx-16 text-left">
                   <h3 className="2xl:text-2xl 3xl:text-3xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
-                    Infinity Digital Agency ให้บริการออกแบบและพัฒนาเว็บไซต์ เว็บแอปพลิเคชันและ
+                    Infinity Digital Agency ให้บริการออกแบบและพัฒนาเว็บไซต์
+                    เว็บแอปพลิเคชันและ
                   </h3>
                   <p className="2xl:text-2xl 3xl:text-3xl font-light leading-normal whitespace-pre-wrap">
                     <span className="font-normal text-in-purple-2">
                       แอปพลิเคชันมือถือครบวงจร
                     </span>{" "}
-                    เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ UX UI การออกแบบเว็บไซต์
-                    การพัฒนาเว็บไซต์ การ deploy ขึ้น server
+                    เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ UX UI
+                    การออกแบบเว็บไซต์ การพัฒนาเว็บไซต์ การ deploy ขึ้น server
                     และบริการดูแลหลังการขาย
                   </p>
                   <p className="2xl:text-2xl 3xl:text-3xl font-light mt-12 leading-normal whitespace-pre-wrap">
@@ -100,13 +101,9 @@ export default function SubWebDesign() {
                 </div>
                 <p className="2xl:text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
                   <ul className="list-inside list-disc">
-                    <li>
-                      การออกแบบ UX & UI
-                    </li>
+                    <li>การออกแบบ UX & UI</li>
                     <li>การออกแบบกราฟฟิก / ระบบสีและภาพ</li>
-                    <li>
-                      การออกแบบ Transitions และ Animations
-                    </li>
+                    <li>การออกแบบ Transitions และ Animations</li>
                   </ul>
                 </p>
                 <div className="grid justify-items-start w-full mt-10">
@@ -168,13 +165,104 @@ export default function SubWebDesign() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end">
-            <p className="inline-block h-10 w-full bg-infinite2-4"></p>
+        
+      </div>
+      <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-10 bg-infinite2-4">
+        <div className="columns-1 px-4">
+          <div className="grid grid-cols-12 my-5 justify-items-center">
+            <div className="col-span-12">
+              <blockquote className="mr-10 my-10 text-center">
+                <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
+                  กระบวนการออกแบบเว็บไซต์
+                </h2>
+                <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                  Website Design Process
+                </p>
+                <div className="grid grid-cols-12 gap-0">
+                  <div className="col-span-6">
+                    <div class="flex flex-row items-center">
+                      <div className="m-10">
+                        <img
+                          src="../assets/images/home/icon-web-design1.png"
+                          className="object-cover w-20 h-20"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                          เก็บข้อมูลครบทุกรายละเอียด <br />
+                          เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                      <div className="m-10">
+                        <img
+                          src="../assets/images/home/icon-web-design2.png"
+                          className="object-cover w-20 h-20"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                          เก็บข้อมูลครบทุกรายละเอียด <br />
+                          เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-span-6">
+                    <div class="flex flex-row items-center">
+                      <div className="m-10">
+                        <img
+                          src="../assets/images/home/icon-web-design3.png"
+                          className="object-cover w-20 h-20"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                          เก็บข้อมูลครบทุกรายละเอียด <br />
+                          เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                      <div className="m-10">
+                        <img
+                          src="../assets/images/home/icon-web-design4.png"
+                          className="object-cover w-20 h-20"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                          เก็บข้อมูลครบทุกรายละเอียด <br />
+                          เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-start-3 col-span-8">
+                    <p className="text-center 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                      เรามีทีมโปรแกรมเมอร์และทีมพัฒนาที่พร้อมรับช่วงต่อ <br />
+                      เพื่อนำแบบเว็บไซต์ที่สวยงามให้เป็นเว็บไซต์ที่ใช้งานได้จริง
+                    </p>
+                    <div className="inline-block mt-5">
+                      <a href="contact">
+                        <button className="in-button">
+                          <img
+                            className="object-scale-down w-40"
+                            src="../assets/images/home/ปุ่ม-contact-us.png"
+                            alt="ปุ่ม1"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-20">
+      <div className="container mx-auto mt-18">
         <div className="relative mb-28">
           <div className="h-full w-full">
             <div className="grid grid-cols-12 relative">

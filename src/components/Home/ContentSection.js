@@ -147,7 +147,10 @@ export default function ContentSection() {
                   <div className="flex items-stretch mx-5">
                     <div className="self-center m-10">
                       <div className="p-5">
-                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                        <img
+                          src="../../assets/images/home/icon-หน้าหลัก-design1.png"
+                          className="object-cover w-36 h-36 mb-5"
+                        />
                       </div>
                       <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
                         มีครบทุกบริการ
@@ -159,7 +162,10 @@ export default function ContentSection() {
                     </div>
                     <div className="self-center m-10">
                       <div className="p-5">
-                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      <img
+                          src="../../assets/images/home/icon-หน้าหลัก-design2.png"
+                          className="object-cover w-36 h-36 mb-5"
+                        />
                       </div>
                       <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
                         สามารถทำได้ <br />
@@ -169,7 +175,10 @@ export default function ContentSection() {
                     </div>
                     <div className="self-center m-10">
                       <div className="p-5">
-                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      <img
+                          src="../../assets/images/home/icon-หน้าหลัก-design3.png"
+                          className="object-cover w-36 h-36 mb-5"
+                        />
                       </div>
                       <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
                         มีทีมงานครบวงจร <br />
@@ -179,11 +188,14 @@ export default function ContentSection() {
                     </div>
                     <div className="self-center m-10">
                       <div className="p-5">
-                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      <img
+                          src="../../assets/images/home/icon-หน้าหลัก-design4.png"
+                          className="object-cover w-36 h-36 mb-5"
+                        />
                       </div>
                       <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
                         ยินดีให้คำปรึกษา <br />
-                        ฟรี ไม่มีค่าใช้จ่าย <br />
+                        บริการเป็นกันเอง <br />
                         ฟรี ไม่มีค่าใช้จ่าย
                       </p>
                     </div>
@@ -311,10 +323,7 @@ export default function ContentSection() {
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
                             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
-                              Web design{" "}
-                              <span className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
-                                (UX/UI)
-                              </span>
+                              Web design
                             </h2>
                           </span>
                           <div className="grid justify-items-end w-full my-10 3xl:my-14">
@@ -351,104 +360,7 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div
-          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-10 z-60"
-          ref={addToRefs}
-        >
-          <div className="columns-1 px-4">
-            <div className="grid grid-cols-12 my-5 justify-items-center">
-              <div className="col-span-12">
-                <blockquote className="mr-10 my-10 text-center">
-                  <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
-                    กระบวนการออกแบบเว็บไซต์
-                  </h2>
-                  <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                    Website Design Process
-                  </p>
-                  <div className="grid grid-cols-12 gap-0">
-                    <div className="col-span-6">
-                      <div class="flex flex-row items-center">
-                        <div className="m-10">
-                          <img
-                            src="../assets/images/home/icon-web-design1.png"
-                            className="object-cover w-20 h-20"
-                          />
-                        </div>
-                        <div>
-                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                            เก็บข้อมูลครบทุกรายละเอียด <br />
-                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
-                          </p>
-                        </div>
-                      </div>
-                      <div class="flex flex-row items-center">
-                        <div className="m-10">
-                          <img
-                            src="../assets/images/home/icon-web-design2.png"
-                            className="object-cover w-20 h-20"
-                          />
-                        </div>
-                        <div>
-                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                            เก็บข้อมูลครบทุกรายละเอียด <br />
-                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-span-6">
-                      <div class="flex flex-row items-center">
-                        <div className="m-10">
-                          <img
-                            src="../assets/images/home/icon-web-design3.png"
-                            className="object-cover w-20 h-20"
-                          />
-                        </div>
-                        <div>
-                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                            เก็บข้อมูลครบทุกรายละเอียด <br />
-                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
-                          </p>
-                        </div>
-                      </div>
-                      <div class="flex flex-row items-center">
-                        <div className="m-10">
-                          <img
-                            src="../assets/images/home/icon-web-design4.png"
-                            className="object-cover w-20 h-20"
-                          />
-                        </div>
-                        <div>
-                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                            เก็บข้อมูลครบทุกรายละเอียด <br />
-                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-start-3 col-span-8">
-                      <p className="text-center 2xl:text-xl 3xl:text-2xl font-light leading-normal">
-                        เรามีทีมโปรแกรมเมอร์และทีมพัฒนาที่พร้อมรับช่วงต่อ <br />
-                        เพื่อนำแบบเว็บไซต์ที่สวยงามให้เป็นเว็บไซต์ที่ใช้งานได้จริง
-                      </p>
-                      <div className="inline-block mt-5">
-                        <a href="contact">
-                          <button className="in-button">
-                            <img
-                              className="object-scale-down w-40"
-                              src="../assets/images/home/ปุ่ม-contact-us.png"
-                              alt="ปุ่ม1"
-                            />
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <div
           className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-12 3xl:mt-20 z-30"
           ref={addToRefs}
@@ -561,7 +473,7 @@ export default function ContentSection() {
                       <div className="absolute top-0 right-0 w-3/5 text-right">
                         <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 md:mt-24 lg:mt-40 2xl:mt-40">
                           <h2 className="md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl leading-10 text-in-purple-1">
-                            รับเขียนโปรแกรมและระบบทุกประเภท
+                            รับเขียนโปรแกรม และระบบทุกประเภท
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
                             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
