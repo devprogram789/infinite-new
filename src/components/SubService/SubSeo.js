@@ -36,10 +36,10 @@ export default function SubSeo() {
               <div className="grid grid-cols-12 relative">
                 <div className="col-span-6 mx-16 text-left font-bold">
                   <div className="grid justify-items-start w-full">
-                    <h2 className="text-9xl mt-5 text-in-purple-1 font-R-FLEX">
+                    <h2 className="text-8xl 3xl:text-9xl mt-5 text-in-purple-1 font-R-FLEX">
                       Seo Digital Marketing
                     </h2>
-                    <h3 className="text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
+                    <h3 className="text-4xl 3xl:text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
                       สร้างคอนเทนท์ SEO <br />
                       ให้เว็บไซต์ติดหน้าแรก <br />
                       บน Google
@@ -56,16 +56,16 @@ export default function SubSeo() {
                   </div>
                 </div>
                 <div className="col-span-6 mx-16 text-left">
-                  <h3 className="text-4xl mt-10 font-normal text-in-purple-2">
+                  <h3 className="text-3xl 3xl:text-4xl mt-10 font-normal text-in-purple-2">
                     การทำ SEO คือการทำให้ชื่อแบรนด์
                   </h3>
-                  <p className="text-4xl font-light mt-2 leading-normal">
+                  <p className="text-3xl 3xl:text-4xl font-light mt-2 leading-normal">
                     ชื่อผลิตภัณฑ์/บริการ ของคุณ ติดอันดับการค้นหา
                     ผลลัพธ์ที่ตามมาคือความน่าเชื่อถือ และจำนวนผู้คนวิ่งเข้าเว็บ
                     ยิ่งคนวิ่งเข้าเยอะมากขึ้นเท่าไหร่
                     ผลิตภัณฑ์ของคุณก็จะมีโอกาสเพิ่มยอดขายได้มากเท่านั้น
                   </p>
-                  <p className="text-4xl font-light mt-12 leading-normal whitespace-pre-wrap">
+                  <p className="text-3xl 3xl:text-4xl font-light mt-12 leading-normal whitespace-pre-wrap">
                     อีกข้อสำคัญของการทำ SEO คือการใช้
                     <br />
                     <span className="font-normal text-in-purple-2">
@@ -97,16 +97,16 @@ export default function SubSeo() {
                 </div>
               </div>
               <div className="col-span-7 mx-20 text-left">
-                <h3 className="text-6xl mt-10 font-normal font-Prompt text-in-purple-1">
+                <h3 className="text-5xl 3xl:text-6xl mt-10 font-normal font-Prompt text-in-purple-1">
                   เพิ่มอันดับเว็บไซต์ด้วย SEO
                 </h3>
-                <p className="text-4xl font-light mt-2 leading-normal font-Prompt text-in-purple-1">
+                <p className="text-3xl 3xl:text-4xl font-light mt-2 leading-normal font-Prompt text-in-purple-1">
                   Search Engine Optimization
                 </p>
                 <div className="grid justify-items-center w-full my-10 border bg-gray-dark">
                   <hr />
                 </div>
-                <p className="text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
+                <p className="text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
                   <ul className="list-inside list-disc">
                     <li className="font-Prompt">
                       เพิ่มจํานวนการเข้าชมเว็บไซต์แบบออแกนิค
@@ -125,16 +125,16 @@ export default function SubSeo() {
           <div className="absolute top-10 right-0 w-full text-right"></div>
         </div>
       </div>
-      <div className="container mx-auto mt-28">
-        <div className="relative">
+      <div className="container mx-auto mt-10 3xl:mt-28">
+        <div className="relative mb-28">
           <div className="h-full w-full">
             <div className="grid grid-cols-12 relative">
               <div className="col-span-6 mx-16 text-left z-10">
-                <h3 className="text-6xl mt-10 font-normal font-Prompt text-in-purple-1 leading-snug">
+                <h3 className="text-5xl 3xl:text-6xl mt-10 font-normal font-Prompt text-in-purple-1 leading-snug">
                   เพิ่มยอดผู้เข้าชมเว็บไซต์ <br />
                   ด้วยการทำ SEO
                 </h3>
-                <p className="text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap ">
+                <p className="text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap ">
                   Seo หรือ Search Engine Optimization คือ
                   การเพิ่มประสิทธิภาพให้คอนเทนต์ และเว็บไซต์เป็นไปตามมาตรฐานของ
                   Search Engine เพื่อให้ติดอันดับต้น ๆ ในหน้าการค้นหาโดยใช้
@@ -150,14 +150,14 @@ export default function SubSeo() {
               </div>
               <div className="col-span-6 -ml-16 text-left font-bold z-10 w-full">
                 <img
-                  className="origin-cover w-full h-auto mt-44"
+                  className="origin-cover w-full h-auto mt-28 3xl:mt-44"
                   src="../../assets/images/service/Seo/pic-illustration-2.png"
                   alt="Infinite"
                 />
               </div>
 
               <div className="col-span-12 z-0">
-                <div className="relative">
+                <div className="relative ">
                   <div>
                     <div className="max-w-full mx-auto -py-2 px-4 lg:flex lg:items-center lg:justify-end -mt-20">
                       <p className="inline-block h-96 w-full bg-white"></p>
@@ -182,10 +182,10 @@ export default function SubSeo() {
                           </div>
                         </div>
                         <div className="col-span-7 -ml-18 text-left">
-                          <h3 className="text-5xl mt-10 font-normal text-in-purple-1">
+                          <h3 className="text-4xl 3xl:text-5xl mt-10 font-normal text-in-purple-1">
                             เพิ่มอันดับเว็บไซต์ด้วย SEO ดีอย่างไร?
                           </h3>
-                          <p className="text-2xl font-normal mt-12 leading-normal whitespace-pre-wrap">
+                          <p className="text-xl 3xl:text-2xl font-normal mt-12 leading-normal whitespace-pre-wrap">
                             <ul className="list-inside list-disc">
                               <li>
                                 ธุรกิจเข้าถึงผู้ใช้งานได้ง่าย
@@ -209,7 +209,7 @@ export default function SubSeo() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-12 relative mt-5">
+            {/* <div className="grid grid-cols-12 relative mt-5">
               <div className="col-span-full mx-20 text-center font-bold">
                 <div className="grid justify-items-start w-full my-10">
                   <button className="in-button">
@@ -253,7 +253,7 @@ export default function SubSeo() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

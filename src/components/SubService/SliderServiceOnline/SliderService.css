@@ -1,0 +1,93 @@
+.container-sliderservice {
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.slideservice {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slideservice img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.active-animservice {
+  opacity: 1;
+}
+
+.btn-slideservice {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-slideservice img {
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
+}
+.prevservice {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+.nextservice {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+
+
+.container-dotsservice {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dotservice {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: 3px solid rgb(241, 241, 241,0.5);
+  margin: 0 5px;
+  background: rgb(241, 241, 241,0.5);
+}
+
+.dotservice.activeservice {
+  background: rgb(32, 32, 32);
+}
+
+.activeservice {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeservice {
+  animation-name: fadeservice;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeservice {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

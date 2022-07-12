@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import SliderServicePrinting from "./SliderServicePrinting/SliderServicePrinting";
+import SliderServiceOnline from "./SliderServiceOnline/SliderService";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -36,12 +38,12 @@ export default function SubSocialMedia() {
               <div className="grid grid-cols-12 relative">
                 <div className="col-span-6 mx-16 text-left font-bold">
                   <div className="grid justify-items-start w-full">
-                    <h2 className="text-8xl mt-5 text-in-purple-1 font-R-FLEX">
-                      Social media
+                    <h2 className="text-7xl 3xl:text-8xl mt-5 text-in-purple-1 font-R-FLEX">
+                      Creative online
                       <br />
-                      experience
+                      and printing
                     </h2>
-                    <h3 className="text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
+                    <h3 className="text-4xl 3xl:text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
                       เอเจนซี่การตลาด
                       <br />
                       และโฆษณาออนไลน์
@@ -58,29 +60,29 @@ export default function SubSocialMedia() {
                   </div>
                 </div>
                 <div className="col-span-6 ml-7 mr-16 text-left">
-                  <h3 className="text-4xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
+                  <h3 className="text-3xl 3xl:text-4xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
                     ให้บริการด้านการตลาดและโฆษณาดิจิตอลแบบครบวงจร ที่{" "}
-                    <span className="font-R-FLEX text-infinite3">
+                    <span className="text-infinite3">
                       Infinity Digital Agency
                     </span>{" "}
                   </h3>
-                  <p className="text-4xl font-light leading-normal whitespace-pre-wrap">
+                  <p className="text-3xl 3xl:text-4xl font-light leading-normal whitespace-pre-wrap">
                     เราให้บริการด้านการตลาดและโฆษณาออนไลน์แบบครบวงจร
                     เราเริ่มต้นด้วยการทำวิจัย ที่ครอบคลุม
                     นั่นรวมถึงการวิจัยตลาดการวิจัยทางธุรกิจการวิจัยผลิตภัณฑ์และบริการ
                     การวิจัยคู่แข่ง และการวิจัย{" "}
-                    <span className="font-R-FLEX text-infinite3">Trend</span>{" "}
+                    <span className="text-infinite3">Trend</span>{" "}
                     ของตลาด
                   </p>
-                  <p className="text-4xl font-light mt-10 leading-normal whitespace-pre-wrap">
+                  <p className="text-3xl 3xl:text-4xl font-light mt-10 leading-normal whitespace-pre-wrap">
                     <span className="font-normal text-in-purple-2">
                       ทีมการตลาดออนไลน์ของเรา
                     </span>
                     พัฒนากลยุทธ์ทางการตลาดและการวางแผนแคมเปญที่เต็ม รูปแบบ
                     แผนการตลาดดิจิทัลและการทำงาน จะรวมถึงการพัฒนา{" "}
-                    <span className="font-R-FLEX text-infinite3">Concept</span>{" "}
+                    <span className="text-infinite3">Concept</span>{" "}
                     และ{" "}
-                    <span className="font-R-FLEX text-infinite3">Creative</span>{" "}
+                    <span className="text-infinite3">Creative</span>{" "}
                     วางทิศทางของแคมเปญ วางแผนการใช้และ ซื้อสื่อ
                     การสร้างตอนเท้นท์ต่างๆ เช่นกราฟิก และวิดีโอ การซื้อสื่อ
                     และการเพิ่มประสิทธิภาพหลังจากแคมเปญการตลาดออนไลน์ของ
@@ -106,12 +108,12 @@ export default function SubSocialMedia() {
                 </div>
               </div>
               <div className="col-span-7 mr-4 ml-10 text-left">
-                <h3 className="text-6xl font-normal leading-snug text-in-purple-1">
+                <h3 className="text-5xl 3xl:text-6xl font-normal leading-snug text-in-purple-1">
                   วิจัยและวางแผน
                   <br />
                   การตลาดออนไลน์
                 </h3>
-                <p className="text-4xl font-normal mt-5 leading-normal whitespace-pre-wrap">
+                <p className="text-3xl 3xl:text-4xl font-normal mt-5 leading-normal whitespace-pre-wrap">
                   เราพัฒนาแผนการตลาดดิจิตอลจากวัตถุประสงค์ ของบริษัทคุณ
                   ไม่ว่าจะเป็นการเปิดตัวผลิตภัณฑ์และบริการ
                   เพิ่มการรับรู้ถึงแบรนด์ และเพิ่มยอดขาย
@@ -121,19 +123,18 @@ export default function SubSocialMedia() {
                 </div>
                 <div className="grid grid-cols-12 relative">
                   <div className="col-span-6 mx-4 text-left font-bold">
-                    <p className="text-3xl font-normal leading-normal whitespace-pre-wrap">
+                    <p className="text-2xl 3xl:text-3xl font-normal leading-normal whitespace-pre-wrap">
                       <ul className="list-inside list-disc">
                         <li>การวิจัยและการวางแผน</li>
                         <li>
-                          สร้าง{" "}
-                          <span className="font-R-FLEX">Concept Creative</span>
+                          สร้าง Concept Creative
                         </li>
                         <li>การสร้างคอนเทนท์ต่างๆ</li>
                       </ul>
                     </p>
                   </div>
                   <div className="col-span-6 mx-4 text-left font-bold">
-                    <p className="text-3xl font-normal leading-normal whitespace-pre-wrap">
+                    <p className="text-2xl 3xl:text-3xl font-normal leading-normal whitespace-pre-wrap">
                       <ul className="list-inside list-disc">
                         <li>วางทิศทางของแผนงาน</li>
                         <li>การวางแผนสื่อ</li>
@@ -150,12 +151,12 @@ export default function SubSocialMedia() {
             </div>
             <div className="grid grid-cols-12 relative mt-28">
               <div className="col-span-7 mr-4 ml-10 text-left">
-                <h3 className="text-6xl font-normal leading-snug text-in-purple-1">
+                <h3 className="text-5xl 3xl:text-6xl font-normal leading-snug text-in-purple-1">
                   โฆษณาดิจิตอล
                   <br />
                   และการซื้อสื่อดิจิตอล
                 </h3>
-                <p className="text-4xl font-normal mt-5 leading-normal whitespace-pre-wrap">
+                <p className="text-3xl 3xl:text-4xl font-normal mt-5 leading-normal whitespace-pre-wrap">
                   เราโฆษณาแคมเปญการตลาดของคุณบนโซเชียล
                   มีเดียเครื่องมือค้นหาและแพลตฟอร์มดิจิทัลอื่นๆ
                   ไปยังกลุ่มเป้าหมายของคุณ
@@ -165,7 +166,7 @@ export default function SubSocialMedia() {
                 </div>
                 <div className="grid grid-cols-12 relative">
                   <div className="col-span-6 mx-4 text-left font-bold">
-                    <p className="text-3xl font-normal leading-normal whitespace-pre-wrap">
+                    <p className="text-2xl 3xl:text-3xl font-normal leading-normal whitespace-pre-wrap">
                       <ul className="list-inside list-disc">
                         <li>โฆษณากูเกิล</li>
                         <li>โฆษณาเฟซบุ๊ก</li>
@@ -174,7 +175,7 @@ export default function SubSocialMedia() {
                     </p>
                   </div>
                   <div className="col-span-6 mx-4 text-left font-bold">
-                    <p className="text-3xl font-normal leading-normal whitespace-pre-wrap">
+                    <p className="text-2xl 3xl:text-3xl font-normal leading-normal whitespace-pre-wrap">
                       <ul className="list-inside list-disc">
                         <li>โฆษณายูทูบ</li>
                         <li>โฆษณาทวิตเตอร์</li>
@@ -219,80 +220,37 @@ export default function SubSocialMedia() {
             </div>
             <div className="grid grid-cols-12 relative mt-5">
               <div className="col-span-full mx-20 text-center font-bold">
-                <div className="grid justify-items-start w-full my-10">
-                  <button className="in-button">
+                <div className="grid justify-items-start w-full my-20">
+                  <a href="/services/digital"><button className="in-button">
                     <img
                       className="object-none object-center"
                       src="../../assets/images/service/Seo/ปุ่ม-ผลงานของเรา.png"
                       alt="ปุ่ม6"
                     />
-                  </button>
+                  </button></a>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-12 relative">
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-01.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
+            <div className="col-span-6 ml-32 text-left font-bold">
+                <SliderServiceOnline />
+                <div className="grid justify-items-start w-full m-5">
+                  <h2 className="text-2xl 3xl:text-3xl">Creative</h2>
+                  <p className="text-xl 3xl:text-2xl font-light text-infinite2-2">
+                  Online
                   </p>
                 </div>
               </div>
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-02.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
+              <div className="col-span-6 ml-32 text-left font-bold">
+                <SliderServicePrinting />
+                <div className="grid justify-items-start w-full m-5">
+                  <h2 className="text-2xl 3xl:text-3xl">Creative</h2>
+                  <p className="text-xl 3xl:text-2xl font-light text-infinite2-2">
+                  Printing
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-12 relative">
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-03.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-04.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

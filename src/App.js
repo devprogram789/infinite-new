@@ -7,7 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import About from "./pages/About/About";
 import Work from "./pages/Work/Work";
 import Services from "./pages/Service/Service";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import SocialMedia from "./pages/SubService/SocialMedia/SocialMedia";
 import Seo from "./pages/SubService/Seo/Seo";
 import ProGramming from "./pages/SubService/ProGramming/ProGramming";

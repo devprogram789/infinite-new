@@ -42,11 +42,11 @@ export default function Footer() {
           className="text-left text-white bg-cover bg-no-repeat h-auto"
           style={{ backgroundImage: `url(${bgFooter})` }}
         >
-          <div className="grid grid-rows-3 grid-flow-col tracking-widest font-light lining-nums md:h-40 lg:h-56 2xl:h-72 3xl:h-80">
+          <div className="grid grid-rows-3 grid-flow-col tracking-widest font-light lining-nums md:h-40 lg:h-56 2xl:h-60 3xl:h-64">
             <div className="row-span-6">
-              <div className="md:mx-4 lg:mx-10 2xl:mx-16 md:my-16 lg:my-20 2xl:my-28">
+              <div className="md:mx-4 lg:mx-10 2xl:mx-16 md:my-16 lg:my-20 2xl:my-24">
                 <img
-                  className="object-cover w-auto md:h-9 lg:h-14 2xl:h-24 3xl:h-28"
+                  className="object-cover w-auto md:h-9 lg:h-14 2xl:h-24 3xl:h-24"
                   src="../assets/images/logo-footer.png"
                   alt="logo-footer"
                 ></img>
@@ -56,7 +56,9 @@ export default function Footer() {
               <div className="flex uppercase">
                 <div className="basis-1/6">
                   <div className="grid justify-items-center items-center h-full w-full">
-                    <h1 className="md:text-base lg:text-xl 2xl:text-4xl 3xl:text-5xl">contact</h1>
+                    <h1 className="md:text-base lg:text-xl 2xl:text-4xl 3xl:text-5xl">
+                      contact
+                    </h1>
                   </div>
                 </div>
                 <div className="basis-auto md:ml-0 md:my-5 lg:ml-2 lg:my-5 m-4">
@@ -83,7 +85,7 @@ export default function Footer() {
                 </div>
                 <div className="basis-5/6">
                   <div className="grid justify-items-center items-center h-full w-full">
-                    <div className="md:text-xs lg:text-sm 2xl:text-xl 3xl:text-3xl">
+                    <div className="md:text-xs lg:text-sm 2xl:text-xl 3xl:text-2xl">
                       <p>
                         เลขประจำตัวผู้เสียภาษี :{" "}
                         <span className="font-Prompt">0105559190160</span>{" "}
@@ -98,19 +100,60 @@ export default function Footer() {
             <div className="row-span-4 col-span-5">
               <div className="flex flex-row md:my-2 lg:my-3 2xl:my-1 3xl:my-0 m-4">
                 <div className="basis-1/2 p-2">
-                  <blockquote className="md:text-xs lg:text-base 2xl:text-2xl 3xl:text-3xl">
+                  <blockquote className="md:text-xs lg:text-base 2xl:text-xl 3xl:text-2xl">
                     <ul class="list-none leading-relaxed text-left">
-                      <li>Email : Infinite.Digital.C@gmail.com</li>
                       <li>
-                        Tel : <span className="font-Prompt">02-013-3399</span>
+                        <div class="flex items-center">
+                          <img
+                            class="object-cover rounded w-6 h-6 mr-5"
+                            src="../assets/images/footer/icon-footer-new-1.png"
+                          />
+                          <div>
+                            <p>Email : Infinite.Digital.C@gmail.com</p>
+                          </div>
+                        </div>
                       </li>
-                      <li>Website : TheInfiniteDigital.com</li>
-                      <li>Line : @infinitedigital</li>
+                      <li>
+                        <div class="flex items-center">
+                          <img
+                            class="object-cover rounded w-6 h-6 mr-5"
+                            src="../assets/images/footer/icon-footer-new-2.png"
+                          />
+                          <div>
+                            <p>
+                              Tel :{" "}
+                              <span className="font-Prompt">02-013-3399</span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="flex items-center">
+                          <img
+                            class="object-cover rounded w-6 h-6 mr-5"
+                            src="../assets/images/footer/icon-footer-new-3.png"
+                          />
+                          <div>
+                            <p>Website : TheInfiniteDigital.com</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="flex items-center">
+                          <img
+                            class="object-cover rounded w-6 h-6 mr-5"
+                            src="../assets/images/footer/icon-footer-new-4.png"
+                          />
+                          <div>
+                            <p>Line : @infinitedigital</p>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </blockquote>
                 </div>
                 <div className="basis-1/2 p-2">
-                  <blockquote className="md:text-xs lg:text-base 2xl:text-2xl 3xl:text-3xl">
+                  <blockquote className="md:text-xs lg:text-base 2xl:text-xl 3xl:text-2xl">
                     <ul class="list-none leading-relaxed text-left">
                       <li>
                         Address : <span className="font-Prompt">33/52</span>{" "}

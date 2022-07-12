@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import Slider from "../../components/Slider/Slider";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -28,7 +29,7 @@ export default function SubWebDesign() {
               <p className="inline-block h-screen w-full bg-white"></p>
             </div>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-48 w-full bg-white"></p>
+              <p className="inline-block h-4 w-full bg-white"></p>
             </div>
           </div>
           <div className="absolute top-10 right-0 w-full text-right">
@@ -36,10 +37,10 @@ export default function SubWebDesign() {
               <div className="grid grid-cols-12 relative">
                 <div className="col-span-6 ml-20 mr-5 text-left font-bold">
                   <div className="grid justify-items-start w-full">
-                    <h2 className="text-9xl mt-5 text-in-purple-1 font-R-FLEX">
+                    <h2 className="2xl:text-8xl 3xl:text-9xl mt-5 text-in-purple-1">
                       Web Design
                     </h2>
-                    <h3 className="text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
+                    <h3 className="2xl:text-4xl 3xl:text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
                       ออกแบบพัฒนาเว็บไซต์ <br />
                       ครบวงจร
                     </h3>
@@ -55,22 +56,18 @@ export default function SubWebDesign() {
                   </div>
                 </div>
                 <div className="col-span-6 mx-16 text-left">
-                  <h3 className="text-3xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
-                    <span className="font-R-FLEX">Infinity Digital Agency</span>{" "}
-                    ให้บริการออกแบบและพัฒนาเว็บไซต์ เว็บแอปพลิเคชันและ
+                  <h3 className="2xl:text-2xl 3xl:text-3xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
+                    Infinity Digital Agency ให้บริการออกแบบและพัฒนาเว็บไซต์ เว็บแอปพลิเคชันและ
                   </h3>
-                  <p className="text-3xl font-light leading-normal whitespace-pre-wrap">
+                  <p className="2xl:text-2xl 3xl:text-3xl font-light leading-normal whitespace-pre-wrap">
                     <span className="font-normal text-in-purple-2">
                       แอปพลิเคชันมือถือครบวงจร
                     </span>{" "}
-                    เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ{" "}
-                    <span className="font-R-FLEX">UX UI</span> การออกแบบเว็บไซต์
-                    การพัฒนาเว็บไซต์ การ{" "}
-                    <span className="font-R-FLEX">deploy</span> ขึ้น{" "}
-                    <span className="font-R-FLEX">server</span>{" "}
+                    เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ UX UI การออกแบบเว็บไซต์
+                    การพัฒนาเว็บไซต์ การ deploy ขึ้น server
                     และบริการดูแลหลังการขาย
                   </p>
-                  <p className="text-3xl font-light mt-12 leading-normal whitespace-pre-wrap">
+                  <p className="2xl:text-2xl 3xl:text-3xl font-light mt-12 leading-normal whitespace-pre-wrap">
                     <span className="font-normal text-in-purple-2">
                       เราออกแบบเว็บไซต์และแอปพลิเคชันมือถือเฉพาะเจาะจงเพื่อธุรกิจของคุณเท่านั่น
                     </span>{" "}
@@ -90,30 +87,25 @@ export default function SubWebDesign() {
           <div className="h-full w-full">
             <div className="grid grid-cols-12 relative">
               <div className="col-span-6 mx-20 text-left">
-                <h3 className="text-6xl mt-10 font-medium text-in-purple-1">
-                  ออกแบบ <span className="font-R-FLEX">UX UI</span>
+                <h3 className="2xl:text-5xl 3xl:text-6xl mt-10 font-medium text-in-purple-1">
+                  ออกแบบ UX UI
                 </h3>
-                <p className="text-3xl font-light mt-2 leading-normal text-in-purple-1">
-                  เราคือผู้เชี่ยวชาญด้านการออกแบบ{" "}
-                  <span className="font-R-FLEX">UX </span> &{" "}
-                  <span className="font-R-FLEX">UI</span>
+                <p className="2xl:text-2xl 3xl:text-3xl font-light mt-2 leading-normal text-in-purple-1">
+                  เราคือผู้เชี่ยวชาญด้านการออกแบบ UX & UI
                   <br />
                   สำหรับเว็บไซต์และแอปมือถือ
                 </p>
                 <div className="grid justify-items-center w-full my-10 border bg-gray-dark">
                   <hr />
                 </div>
-                <p className="text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
+                <p className="2xl:text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
                   <ul className="list-inside list-disc">
                     <li>
-                      การออกแบบ <span className="font-R-FLEX">UX </span> &{" "}
-                      <span className="font-R-FLEX">UI</span>
+                      การออกแบบ UX & UI
                     </li>
                     <li>การออกแบบกราฟฟิก / ระบบสีและภาพ</li>
                     <li>
-                      การออกแบบ{" "}
-                      <span className="font-R-FLEX">Transitions </span> และ{" "}
-                      <span className="font-R-FLEX">Animations</span>
+                      การออกแบบ Transitions และ Animations
                     </li>
                   </ul>
                 </p>
@@ -146,11 +138,11 @@ export default function SubWebDesign() {
                 </div>
               </div>
               <div className="col-span-6 mx-5 text-left">
-                <h3 className="text-6xl mt-10 font-medium leading-tight text-in-purple-1">
+                <h3 className="2xl:text-5xl 3xl:text-6xl mt-10 font-medium leading-tight text-in-purple-1">
                   ออกแบบเว็บไซต์อย่างไร
                   <br /> ให้เหมาะกับธุรกิจของคุณ ?
                 </h3>
-                <p className="text-3xl font-light mt-8 leading-normal">
+                <p className="2xl:text-2xl 3xl:text-3xl font-light mt-8 leading-normal">
                   รูปแบบการทำเว็บไซต์หรือออกแบบเว็บไซต์นั้น
                   จะขึ้นอยู่กับเป้าหมายของคุณเป็นหลัก
                   ถ้าหากคุณต้องการให้ลูกค้าสามารถเข้ามาเลือกซื้อสินค้า
@@ -199,66 +191,9 @@ export default function SubWebDesign() {
               </div>
             </div>
             <div className="grid grid-cols-12 relative">
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-01.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-02.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-12 relative">
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-03.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-6 mx-10 text-left font-bold">
-                <div className="grid justify-items-center w-full my-10">
-                  <img
-                    className="object-none object-center w-5/6 h-full rounded-3xl border"
-                    src="../../assets/images/service/WebDesign/pic-ลูกค้า-04.png"
-                    alt="Work-pic-illustration-1"
-                  />
-                </div>
-                <div className="grid justify-items-start w-full mx-14">
-                  <h2 className="text-3xl">ยูนิโคล่ (ประเทศไทย)</h2>
-                  <p className="text-2xl font-light text-infinite2-2">
-                    การตลาดออนไลน์
-                  </p>
+              <div className="col-span-12">
+                <div>
+                  <Slider />
                 </div>
               </div>
             </div>

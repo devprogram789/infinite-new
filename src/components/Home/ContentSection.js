@@ -131,6 +131,69 @@ export default function ContentSection() {
     <>
       <div className="hidden md:block">
         <div
+          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-0 z-60"
+          ref={addToRefs}
+        >
+          <div className="columns-1">
+            <div className="grid grid-cols-12 my-10 justify-items-center">
+              <div className="col-span-12">
+                <blockquote className="mr-10 my-10 text-center">
+                  <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
+                    ทำไมต้องเลือกเรา
+                  </h2>
+                  <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                    Why do you choose Infinite Digital
+                  </p>
+                  <div className="flex items-stretch mx-5">
+                    <div className="self-center m-10">
+                      <div className="p-5">
+                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      </div>
+                      <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                        มีครบทุกบริการ
+                        <br />
+                        ทั้งบริการหลักและ
+                        <br />
+                        บริการเสริม
+                      </p>
+                    </div>
+                    <div className="self-center m-10">
+                      <div className="p-5">
+                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      </div>
+                      <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                        สามารถทำได้ <br />
+                        Requirement ที่คุณ <br />
+                        ต้องการ
+                      </p>
+                    </div>
+                    <div className="self-center m-10">
+                      <div className="p-5">
+                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      </div>
+                      <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                        มีทีมงานครบวงจร <br />
+                        ทั้งด้านเว็บไซต์และ <br />
+                        การตลาดดิจิทัล
+                      </p>
+                    </div>
+                    <div className="self-center m-10">
+                      <div className="p-5">
+                        <p className="h-32 w-32 rounded-full shadow bg-white mb-5"></p>
+                      </div>
+                      <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                        ยินดีให้คำปรึกษา <br />
+                        ฟรี ไม่มีค่าใช้จ่าย <br />
+                        ฟรี ไม่มีค่าใช้จ่าย
+                      </p>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
           className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-5 3xl:mt-5 z-50"
           ref={addToRefs}
         >
@@ -153,10 +216,10 @@ export default function ContentSection() {
                       alt="น้ำ2"
                     />
                   </div>
-                  <div className="absolute md:top-0 lg:top-0 2xl:top-28 left-0 w-full z-10">
+                  <div className="absolute md:top-0 lg:top-0 2xl:top-20 left-0 w-full z-10">
                     <div className="grid grid-cols-12">
                       <div className="col-start-1 col-span-12">
-                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5 3xl:py-0">
                           <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
                             วางกลยุทธ์การตลาด SEO
                           </h2>
@@ -179,8 +242,14 @@ export default function ContentSection() {
                           </a>
                         </div>
                         <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-3 lg:py-3 2xl:py-4 md:w-56 lg:w-80 2xl:w-96">
-                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
-                            เราสามารถเพิ่มจำนวนคนเข้าเว็บไซต์ของคุณด้วยกลยุทธ์ที่พิสูจน์มาแล้วว่าได้ผลจริง
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-2">
+                            สร้างฐานลูกค้าที่ตรงกลุ่มเป้าหมายสำหรับบริการของคุณ
+                            เพิ่มการเข้าถึงหน้าเว็บไซต์ วิเคราะห์คู่แข่งและค้นหา
+                            Keyword ที่เหมาะสม
+                          </h2>
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
+                            เพื่อให้ธุรกิจของคุณอยู่บนหน้าแรกของ Google
+                            ด้วยกลยุทธ์ที่พิสูจน์มาแล้วว่าได้ผลจริง
                           </h2>
                         </blockquote>
                       </div>
@@ -236,13 +305,16 @@ export default function ContentSection() {
                         />
                       </div>
                       <div className="absolute top-0 right-0 w-3/5 text-right">
-                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-20 md:mt-24 lg:mt-40 2xl:mt-56">
+                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 md:mt-24 lg:mt-40 2xl:mt-40">
                           <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
                             รับออกแบบเว็บไซต์
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
                             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
-                              Web design
+                              Web design{" "}
+                              <span className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
+                                (UX/UI)
+                              </span>
                             </h2>
                           </span>
                           <div className="grid justify-items-end w-full my-10 3xl:my-14">
@@ -256,12 +328,19 @@ export default function ContentSection() {
                               </button>
                             </a>
                           </div>
-                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
-                            พัฒนาเว็บไซต์ครบวงจร
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-5">
+                            รับออกแบบเว็บไซต์ให้สวยงามและ <br />
+                            มีสไตล์ชัดเจน ตอบโจทย์ความต้องการของคุณ
                             <br />
-                            เรามีทีมโปรแกรมเมอร์ ที่พร้อม
-                            <br />
-                            จะพัฒนาเว็บไซต์แบบครบวงจร
+                            เพื่อสร้างความน่าเชื่อถือ และเพิ่มผลลัพธ์
+                          </h2>
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
+                            ไม่ว่าจะเป็นการเพิ่มยอดขาย <br />
+                            การเยี่ยมชมเว็บไซต์ และสร้างโดยยึดหลักสำคัญ <br />
+                            ของการออกแบบเว็บไซต์ คือ <br />
+                            <span className="font-semibold">
+                              “สวยงาม ทันสมัย ใช้งานง่าย ไม่ซับซ้อน”
+                            </span>
                           </h2>
                         </div>
                       </div>
@@ -273,7 +352,105 @@ export default function ContentSection() {
           </div>
         </div>
         <div
-          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-16 3xl:mt-20 z-30"
+          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-10 z-60"
+          ref={addToRefs}
+        >
+          <div className="columns-1 px-4">
+            <div className="grid grid-cols-12 my-5 justify-items-center">
+              <div className="col-span-12">
+                <blockquote className="mr-10 my-10 text-center">
+                  <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
+                    กระบวนการออกแบบเว็บไซต์
+                  </h2>
+                  <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                    Website Design Process
+                  </p>
+                  <div className="grid grid-cols-12 gap-0">
+                    <div className="col-span-6">
+                      <div class="flex flex-row items-center">
+                        <div className="m-10">
+                          <img
+                            src="../assets/images/home/icon-web-design1.png"
+                            className="object-cover w-20 h-20"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                            เก็บข้อมูลครบทุกรายละเอียด <br />
+                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex flex-row items-center">
+                        <div className="m-10">
+                          <img
+                            src="../assets/images/home/icon-web-design2.png"
+                            className="object-cover w-20 h-20"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                            เก็บข้อมูลครบทุกรายละเอียด <br />
+                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-6">
+                      <div class="flex flex-row items-center">
+                        <div className="m-10">
+                          <img
+                            src="../assets/images/home/icon-web-design3.png"
+                            className="object-cover w-20 h-20"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                            เก็บข้อมูลครบทุกรายละเอียด <br />
+                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex flex-row items-center">
+                        <div className="m-10">
+                          <img
+                            src="../assets/images/home/icon-web-design4.png"
+                            className="object-cover w-20 h-20"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-left 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                            เก็บข้อมูลครบทุกรายละเอียด <br />
+                            เพื่อนำมาวิเคราะห์ ก่อนออกแบบเว็บไซต์
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-start-3 col-span-8">
+                      <p className="text-center 2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                        เรามีทีมโปรแกรมเมอร์และทีมพัฒนาที่พร้อมรับช่วงต่อ <br />
+                        เพื่อนำแบบเว็บไซต์ที่สวยงามให้เป็นเว็บไซต์ที่ใช้งานได้จริง
+                      </p>
+                      <div className="inline-block mt-5">
+                        <a href="contact">
+                          <button className="in-button">
+                            <img
+                              className="object-scale-down w-40"
+                              src="../assets/images/home/ปุ่ม-contact-us.png"
+                              alt="ปุ่ม1"
+                            />
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-12 3xl:mt-20 z-30"
           ref={addToRefs}
         >
           <div className="relative">
@@ -295,7 +472,7 @@ export default function ContentSection() {
                       alt="น้ำ4"
                     />
                   </div>
-                  <div className="absolute md:top-0 lg:top-0 2xl:top-28 left-0 w-full z-10">
+                  <div className="absolute md:top-0 lg:top-0 2xl:top-28 3xl:top-20 left-0 w-full z-10">
                     <div className="grid grid-cols-12">
                       <div className="col-start-1 col-span-12">
                         <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5 ">
@@ -303,14 +480,14 @@ export default function ContentSection() {
                             สร้างคอนเทนท์บนโซเชียล
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
-                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
-                              Social media <br />
-                              experience
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-5xl 3xl:text-6xl">
+                              Creative Online <br />
+                              and Printing
                             </h2>
                           </span>
                         </blockquote>
                         <div className="2xl:w-full md:mx-10 lg:mx-10 2xl:mx-5 md:my-2 lg:my-5 2xl:my-10">
-                          <a href="/services/code">
+                          <a href="/services/digital">
                             <button className="in-button">
                               <img
                                 className="object-scale-down"
@@ -321,10 +498,12 @@ export default function ContentSection() {
                           </a>
                         </div>
                         <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-3 lg:py-3 2xl:py-4 md:w-56 lg:w-80 2xl:w-96 3xl:w-128">
-                          <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
-                            เราให้บริการการสร้างคอนเทนท์ต่างๆ <br />
-                            เพื่อให้เว็บไซต์ของคุณสมบูรณ์แบบ <br />
-                            โดยถูกต้องตามหลัก
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
+                            สร้างสรรค์เนื้อหาคอนเทนต์ จากการวิเคราห์
+                            <br />
+                            ข้อมูล Insight ทุกแพลตฟอร์มเพื่อเพิ่มการ
+                            <br />
+                            เข้าถึงกลุ่มเป้าหมายแต่ละพื้นที่บนโซเชียลได้ตอบโจทย์มากที่สุด
                           </h2>
                         </blockquote>
                       </div>
@@ -380,9 +559,9 @@ export default function ContentSection() {
                         />
                       </div>
                       <div className="absolute top-0 right-0 w-3/5 text-right">
-                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-20 md:mt-24 lg:mt-40 2xl:mt-56">
-                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
-                            รับเขียนโปรแกรมทุกประเภท
+                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 md:mt-24 lg:mt-40 2xl:mt-40">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl leading-10 text-in-purple-1">
+                            รับเขียนโปรแกรมและระบบทุกประเภท
                           </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
                             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl">
@@ -394,18 +573,23 @@ export default function ContentSection() {
                               <button className="in-button">
                                 <img
                                   className="object-scale-down"
-                                  src="../assets/images/home/section5/ปุ่ม5.png"
-                                  alt="ปุ่ม5"
+                                  src="../assets/images/home/section3/ปุ่ม3.png"
+                                  alt="ปุ่ม3"
                                 />
                               </button>
                             </a>
                           </div>
-                          <div className="md:ml-28 lg:ml-44 2xl:ml-56 3xl:ml-72">
-                            <h2 className="md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light">
-                              ทีมงานเขียนโปรแกรมและพัฒนาระบบตามความต้องการของลูกค้า
-                              อย่างมืออาชีพรองรับทุกการใช้งานกับทุกธุรกิจ
-                            </h2>
-                          </div>
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-5">
+                            ทีมงานเขียนโปรแกรมและพัฒนาระบบ <br />
+                            ตามความต้องการของลูกค้าอย่างมืออาชีพ
+                            <br />
+                            รองรับทุกการใช้งานกับทุกธุรกิจ
+                          </h2>
+                          <h2 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
+                            ลูกค้าจะมั่นใจได้ว่า จะได้รับโปรแกรม <br />
+                            และระบบเว็บไซต์ที่เหมาะสมใช้งานได้จริง <br />
+                            ตรงกับความต้องการ ภายในเวลาที่รวดเร็ว <br />
+                          </h2>
                         </div>
                       </div>
                     </div>
@@ -415,7 +599,7 @@ export default function ContentSection() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-5 z-10">
+        <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 z-10">
           <div className="relative">
             <div ref={addblockToRefs}>
               <div className="max-w-full mx-auto -py-4 px-4 flex items-center justify-end -mt-10">

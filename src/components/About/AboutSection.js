@@ -113,7 +113,9 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="columns-1 hidden"> {/* ซ่อนรายชื่อก่อน */}
+            <div className="columns-1 hidden">
+              {" "}
+              {/* ซ่อนรายชื่อก่อน */}
               <div className="relative">
                 <div>
                   <div className="max-w-full flex items-center justify-end">
@@ -159,16 +161,20 @@ export default function AboutSection() {
                 <div className="col-span-5">
                   <blockquote className="mr-10 my-10">
                     <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
-                      วัฒนธรรมที่อินฟินิตี้
-                      ถูกสร้างขึ้นจากกลุ่มคนที่มีความทะเยอทะยาน
+                      Infinite Digital
+                      ถูกสร้างขึ้นมาจากกลุ่มคนที่มีความทะเยอทะยาน
                       และหลงใหลในสื่อดิจิทัล
                     </h2>
                     <div className="mt-10">
-                      <img
-                        className="object-cover object-center w-38 h-auto"
-                        src="../../assets/images/about/ปุ่มservice.png"
-                        alt="ปุ่มservice"
-                      />
+                      <a href="/services/design">
+                        <button className="in-button">
+                          <img
+                            className="object-cover object-center w-38 h-auto"
+                            src="../../assets/images/about/ปุ่มservice.png"
+                            alt="ปุ่มservice"
+                          />
+                        </button>
+                      </a>
                     </div>
                   </blockquote>
                 </div>
@@ -176,10 +182,9 @@ export default function AboutSection() {
                   <blockquote className="mr-10 my-11">
                     <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
                       เป้าหมายสูงสุดของเราคือการผสมผสานศิลปะและเทคโนโลยีเข้าด้วยกัน
-                      ถึงแม้ว่าจะเป็นเวลาไม่นานนัก
-                      แต่เราได้เห็นว่ามีคนจำนวนมากที่แบ่งปันค่านิยมเดียวกันกับเรา
-                      ภารกิจของเราในทุกๆวันคือการทำให้ทีมเราเองนั้น ดีขึ้น
-                      มีประสิทธิภาพมากขึ้น และมีประโยชน์สำหรับลูกค้าของเรา
+                      ภารกิจของเราในทุกๆ
+                      วันคือการทำให้ทีมเรามีประสิทธิภาพมากขึ้น
+                      เพื่อสร้างสรรค์ผลงานที่มีคุณภาพสำหรับลูกค้าของเรา
                     </p>
                     <div className="mt-5">
                       <p className="inline-block h-1 w-4/12 bg-in-purple-3"></p>

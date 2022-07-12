@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import SliderHome from "./SliderHome/SliderHome";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -154,52 +155,82 @@ export default function HeroSection() {
     <>
       <div className="container mx-auto">
         <div className="hidden md:block">
-          <div className="bg-infinite1-100 max-h-screen">
-            <div className="max-w-full mx-auto px-4 flex items-center justify-between z-10">
-              <div className="relative">
-                <img
-                  className="object-cover object-bottom w-screen md:h-80 lg:h-96 2xl:h-144 z-20"
-                  src="../assets/images/image-หน้าหลัก01.png"
-                  alt="Infinite"
-                />
-                <div className="absolute md:-bottom-24 lg:-bottom-28 2xl:-bottom-36 2xl:left-5 z-10">
-                  <div className="inline-block w-12/12" ref={boxRef}>
-                    <div className="flex flex-row items-stretch justify-start">
-                      <div className="shrink md:w-32 lg:w-32 2xl:w-40 my-2 justify-center self-start">
-                        <p className="font-bold md:text-3xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl text-center">
-                          We are
-                        </p>
-                      </div>
-                      <div className="shrink md:w-10 lg:w-10 2xl:w-20 h-100 md:px-2 lg:px-4 2xl:px-5 md:my-3 lg:my-3 2xl:my-5 justify-center">
-                        <p className="inline-block md:h-1 lg:h-1 2xl:h-2 w-full bg-infinite1-900"></p>
-                      </div>
-                      <div className="shrink w-auto md:mt-2 md:px-2 lg:mt-2 lg:px-4 2xl:px-0 2xl:-mt-1 justify-center items-center">
-                        <h1 className="font-bold md:text-3xl lg:text-4xl 2xl:text-6xl 3xl:text-7xl 2xl:mb-2">
-                          Infinite <br />
-                          Digital Cunsultants
+          <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-0 z-10">
+            <div className="columns-1">
+              <div className="grid grid-cols-12 my-0 justify-items-center">
+                <div className="col-span-12">
+                  <SliderHome />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-0 z-20"
+            ref={addToRefs}
+          >
+            <div className="relative">
+              <div ref={addblockToRefs}>
+                <div className="max-w-full mx-auto px-4 flex items-center justify-end mt-0">
+                  <p className="inline-block h-60 2xl:h-96 3xl:h-128 w-1/4 bg-infinite2-4"></p>
+                  <p className="inline-block h-60 2xl:h-96 3xl:h-128 w-1/6 bg-in-purple-3"></p>
+                </div>
+              </div>
+              <div className="absolute md:top-10 lg:top-16 2xl:top-2 lg:left-0 2xl:left-20 3xl:left-20">
+                <div className="inline-block w-12/12" ref={boxRef}>
+                  <div className="flex flex-col items-stretch justify-start">
+                    <div class="grid grid-rows-3 grid-flow-col-dense w-full">
+                      <div className="2xl:col-span-6 self-center uppercase">
+                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-left">
+                          We
                         </h1>
-                        <p className="text-justify font-extralight md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl md:mb-2 lg:mb-5">
-                          อินฟินิท ดิจิทัล คอนซัลแต้นส์ คือเอเจนซี่มืออาชีพ
+                      </div>
+                      <div className="2xl:col-span-6 self-start uppercase">
+                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-right top-0">
+                          Are
+                        </h1>
+                      </div>
+                      <div className="2xl:col-span-6 self-start uppercase">
+                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-8xl 3xl:text-9xl text-right top-0"></h1>
+                      </div>
+                      <div className="2xl:col-span-6 self-center uppercase ml-5">
+                        <h1 className="font-bold md:text-3xl lg:text-4xl 2xl:text-4xl 3xl:text-5xl text-left">
+                          Infinite Digital
                           <br />
-                          ที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร
+                          Cunsultants
+                        </h1>
+                      </div>
+                      <div className="col-span-6 self-start 3xl:self-center uppercase ml-5">
+                        <p className="text-left font-extralight md:text-sm lg:text-xl 2xl:text-lg 3xl:text-xl ">
+                          อินฟินิท ดิจิทัล คอนซัลแต้นส์ รับปรึกษา <br />
+                          ดูแลด้านเว็บไซต์และระบบโปรแกรม รวมถึง
+                          <br />
+                          สื่อดิจิทัลออนไลน์ ครบทุกด้านในที่เดียว
                         </p>
-                        <p className="inline-block h-2 w-20 bg-infinite1-900"></p>
+                      </div>
+                      <div className="col-span-6 self-start uppercase ml-5">
+                        <p className="text-left font-bold md:text-sm lg:text-xl 2xl:text-2xl 3xl:text-3xl py-2">
+                          “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
+                        </p>
+                        <div className="inline-block">
+                          <a href="contact">
+                            <button className="in-button">
+                              <img
+                                className="object-scale-down w-40"
+                                src="../assets/images/home/ปุ่ม-contact-us.png"
+                                alt="ปุ่ม1"
+                              />
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              className="max-w-full mx-auto py-0 px-4 flex items-center justify-end z-0"
-              ref={addblockToRefs}
-            >
-              <p className="inline-block h-60 2xl:h-80 w-1/4 bg-infinite2-4"></p>
-              <p className="inline-block h-60 2xl:h-80 w-1/6 bg-in-purple-3"></p>
-            </div>
           </div>
           <div
-            className="bg-infinite1-100 md:h-full lg:h-full 2xl:h-screen md:mt-0 lg:mt-0 2xl:mt-28 3xl:mt-0"
+            className="bg-infinite1-100 md:h-full lg:h-full 2xl:h-screen md:mt-0 lg:mt-0 2xl:mt-0 3xl:mt-0"
             ref={addToRefs}
           >
             <div className="max-w-full mx-auto px-4 flex items-center justify-between">
@@ -220,28 +251,30 @@ export default function HeroSection() {
                           alt="ภาพประกอบ1"
                         />
                         <div className="absolute top-0 right-0 w-3/5 z-10">
-                          <div className="grid grid-cols-12 2xl:my-10">
+                          <div className="grid grid-cols-12 2xl:my-5">
                             <div className="col-start-3 col-span-12">
-                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-10">
+                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-8 3xl:py-10">
                                 <h2 className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl font-light 2xl:leading-10 3xl:leading-normal">
-                                  เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
-                                  ซึ่งเหมาะกับเอกลักษณ์เฉพาะตัวของแบรนด์ของคุณอย่างแท้จริงเพื่อสร้างประสบการณ์ที่โดดเด่น
+                                  เราเป็นทีมออกแบบเว็บไซต์ที่สร้างสรรค์ผลงานคุณภาพ
+                                  ไม่เหมือนใคร
+                                  และตอบโจทย์ตามความต้องการของลูกค้า
+                                  เพื่อสร้างเอกลักษณ์เฉพาะตัวของแบรนด์
+                                  รวมถึงการสร้างประสบการณ์ที่ดีต่อผู้ใช้งานเว็บไซต์
                                 </h2>
                               </blockquote>
                             </div>
                             <div className="col-start-4 col-span-12">
                               <blockquote className="mr-10">
-                                <h2 className="md:text-sm lg:text-2xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl font-bold text-center 2xl:leading-10 3xl:leading-snug">
-                                  “ We’re a small team of creatives committed to
-                                  design with a purpose ”
+                                <h2 className="md:text-sm lg:text-2xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl font-bold text-center 2xl:leading-normal 3xl:leading-snug">
+                                  “Our team is committed to producing the best
+                                  work for our customers”
                                 </h2>
                               </blockquote>
                             </div>
                             <div className="col-start-4 col-span-10">
                               <blockquote className="md:mx-8 lg:mx-16 xl:mx-20 2xl:mx-24 3xl:mx-28 md:py-5 lg:py-5 xl:py-10 2xl:py-10 3xl:py-12">
                                 <p className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-2xl 3xl:text-3xl text-center font-light 2xl:leading-10 3xl:leading-normal">
-                                  เพิ่มมูลค่าให้แก่แบรนด์ของคุณ
-                                  ให้เป็นที่น่าจดจำและสร้างโอกาสในการขายมากขึ้นด้วยเว็บไซต์ที่ทำหน้าที่และตอบสนองได้อย่างสมบูรณ์ซึ่งออกแบบมาสำหรับผู้ใช้ของคุณ
+                                  ทีมของเรามุ่งมั่นผลิตผลงานเพื่อมอบสิ่งที่ดีที่สุดให้ลูกค้า
                                 </p>
                               </blockquote>
                             </div>
@@ -256,7 +289,7 @@ export default function HeroSection() {
                             />
                           </div>
                         </div>
-                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-0 3xl:bottom-10 right-10 w-1/5 z-20">
+                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-10 3xl:bottom-20 right-10 w-1/5 z-20">
                           <div className="inline-block ml-10 left-0">
                             <a href="/about">
                               <button className="in-button">
