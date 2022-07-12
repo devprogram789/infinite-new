@@ -1,0 +1,27 @@
+[debug] [2022-07-12T01:25:25.502Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T01:25:25.504Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DEV\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-12T01:25:25.504Z] CLI Version:   11.0.1
+[debug] [2022-07-12T01:25:25.504Z] Platform:      win32
+[debug] [2022-07-12T01:25:25.504Z] Node Version:  v16.13.2
+[debug] [2022-07-12T01:25:25.505Z] Time:          Tue Jul 12 2022 08:25:25 GMT+0700 (เวลาอินโดจีน)
+[debug] [2022-07-12T01:25:25.505Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T01:25:25.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T01:25:25.553Z] > authorizing via signed-in user (devprogram789@gmail.com)
+[debug] [2022-07-12T01:25:25.553Z] [iam] checking project proinfinite-af9e3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-12T01:25:25.555Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/proinfinite-af9e3:testIamPermissions [none]
+[debug] [2022-07-12T01:25:25.555Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proinfinite-af9e3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T01:25:26.725Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/proinfinite-af9e3:testIamPermissions 200
+[debug] [2022-07-12T01:25:26.726Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proinfinite-af9e3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T01:25:26.726Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 [none]
+[debug] [2022-07-12T01:25:27.314Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 200
+[debug] [2022-07-12T01:25:27.314Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 {"projectId":"proinfinite-af9e3","projectNumber":"1016068138795","displayName":"proinfinite","name":"projects/proinfinite-af9e3","resources":{"hostingSite":"proinfinite-af9e3","realtimeDatabaseInstance":"proinfinite-af9e3-default-rtdb","storageBucket":"proinfinite-af9e3.appspot.com","locationId":"asia-northeast2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'proinfinite-af9e3'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-12T01:25:27.316Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 [none]
+[debug] [2022-07-12T01:25:27.908Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 200
+[debug] [2022-07-12T01:25:27.908Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proinfinite-af9e3 {"projectId":"proinfinite-af9e3","projectNumber":"1016068138795","displayName":"proinfinite","name":"projects/proinfinite-af9e3","resources":{"hostingSite":"proinfinite-af9e3","realtimeDatabaseInstance":"proinfinite-af9e3-default-rtdb","storageBucket":"proinfinite-af9e3.appspot.com","locationId":"asia-northeast2"},"state":"ACTIVE"}
+[debug] [2022-07-12T01:25:27.910Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1016068138795/sites/proinfinite-af9e3/versions [none]
+[debug] [2022-07-12T01:25:27.910Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1016068138795/sites/proinfinite-af9e3/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
