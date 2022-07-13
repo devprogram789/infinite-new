@@ -113,15 +113,13 @@ export default function ContactSection() {
     <>
       <div className="hidden md:block">
         <div className="container mx-auto">
-          <div className="bg-infinite1-100 h-screen">
-            <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-              <div className="relative">
-                <img
-                  className="object-cover w-screen h-full"
-                  src="../assets/images/contact/pic-contact.jpg"
-                  alt="Infinite"
-                />
-              </div>
+          <div className="bg-infinite1-100 h-screen px-4">
+            <div className="columns-1 mb-10">
+              <img
+                className="object-cover object-center w-screen h-[650px] 2xl:h-[650px]"
+                src="../assets/images/contact/pic-contact.jpg"
+                alt="pic-contact"
+              />
             </div>
           </div>
           <div className="bg-infinite1-100 h-screen">

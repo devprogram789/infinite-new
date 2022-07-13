@@ -10,18 +10,18 @@ export default function SubProGramming() {
     <>
       <div className="container mx-auto">
         <div className="bg-infinite1-100 h-screen">
-          <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-            <div className="relative">
+          <div className="columns-1 mb-10">
+            <div className="grid justify-items-center">
               <img
-                className="w-screen h-auto"
+                className="object-cover object-center w-auto h-[650px] 2xl:h-[650px]"
                 src="../../assets/images/service/ProGramming/pic-illustration-head-1.png"
-                alt="Infinite"
+                alt="pic-illustration-head-1"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-40">
+      <div className="container mx-auto mt-0">
         <div className="relative">
           <div>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">

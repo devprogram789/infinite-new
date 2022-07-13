@@ -12,25 +12,25 @@ export default function SubSocialMedia() {
     <>
       <div className="container mx-auto">
         <div className="bg-infinite1-100 h-screen">
-          <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-            <div className="relative">
+          <div className="columns-1 mb-10">
+            <div className="grid justify-items-center">
               <img
-                className="w-screen h-auto"
+                className="object-cover object-center w-auto h-[650px] 2xl:h-[650px]"
                 src="../../assets/images/service/SocialMedia/pic-illustration-head-1.png"
-                alt="Infinite"
+                alt="pic-illustration-head-1"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-40">
+      <div className="container mx-auto mt-0">
         <div className="relative">
           <div>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
               <p className="inline-block h-screen w-full bg-white"></p>
             </div>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-              <p className="inline-block h-72 w-full bg-white"></p>
+              <p className="inline-block h-72 3xl:h-32 w-full bg-white"></p>
             </div>
           </div>
           <div className="absolute top-10 right-0 w-full text-right">
@@ -71,8 +71,7 @@ export default function SubSocialMedia() {
                     เราเริ่มต้นด้วยการทำวิจัย ที่ครอบคลุม
                     นั่นรวมถึงการวิจัยตลาดการวิจัยทางธุรกิจการวิจัยผลิตภัณฑ์และบริการ
                     การวิจัยคู่แข่ง และการวิจัย{" "}
-                    <span className="text-infinite3">Trend</span>{" "}
-                    ของตลาด
+                    <span className="text-infinite3">Trend</span> ของตลาด
                   </p>
                   <p className="text-3xl 3xl:text-4xl font-light mt-10 leading-normal whitespace-pre-wrap">
                     <span className="font-normal text-in-purple-2">
@@ -80,8 +79,7 @@ export default function SubSocialMedia() {
                     </span>
                     พัฒนากลยุทธ์ทางการตลาดและการวางแผนแคมเปญที่เต็ม รูปแบบ
                     แผนการตลาดดิจิทัลและการทำงาน จะรวมถึงการพัฒนา{" "}
-                    <span className="text-infinite3">Concept</span>{" "}
-                    และ{" "}
+                    <span className="text-infinite3">Concept</span> และ{" "}
                     <span className="text-infinite3">Creative</span>{" "}
                     วางทิศทางของแคมเปญ วางแผนการใช้และ ซื้อสื่อ
                     การสร้างตอนเท้นท์ต่างๆ เช่นกราฟิก และวิดีโอ การซื้อสื่อ
@@ -126,9 +124,7 @@ export default function SubSocialMedia() {
                     <p className="text-2xl 3xl:text-3xl font-normal leading-normal whitespace-pre-wrap">
                       <ul className="list-inside list-disc">
                         <li>การวิจัยและการวางแผน</li>
-                        <li>
-                          สร้าง Concept Creative
-                        </li>
+                        <li>สร้าง Concept Creative</li>
                         <li>การสร้างคอนเทนท์ต่างๆ</li>
                       </ul>
                     </p>
@@ -221,23 +217,25 @@ export default function SubSocialMedia() {
             <div className="grid grid-cols-12 relative mt-5">
               <div className="col-span-full mx-20 text-center font-bold">
                 <div className="grid justify-items-start w-full my-20">
-                  <a href="/services/digital"><button className="in-button">
-                    <img
-                      className="object-none object-center"
-                      src="../../assets/images/service/Seo/ปุ่ม-ผลงานของเรา.png"
-                      alt="ปุ่ม6"
-                    />
-                  </button></a>
+                  <a href="/services/digital">
+                    <button className="in-button">
+                      <img
+                        className="object-none object-center"
+                        src="../../assets/images/service/Seo/ปุ่ม-ผลงานของเรา.png"
+                        alt="ปุ่ม6"
+                      />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-12 relative">
-            <div className="col-span-6 ml-32 text-left font-bold">
+              <div className="col-span-6 ml-32 text-left font-bold">
                 <SliderServiceOnline />
                 <div className="grid justify-items-start w-full m-5">
                   <h2 className="text-2xl 3xl:text-3xl">Creative</h2>
                   <p className="text-xl 3xl:text-2xl font-light text-infinite2-2">
-                  Online
+                    Online
                   </p>
                 </div>
               </div>
@@ -246,11 +244,10 @@ export default function SubSocialMedia() {
                 <div className="grid justify-items-start w-full m-5">
                   <h2 className="text-2xl 3xl:text-3xl">Creative</h2>
                   <p className="text-xl 3xl:text-2xl font-light text-infinite2-2">
-                  Printing
+                    Printing
                   </p>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>

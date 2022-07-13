@@ -155,7 +155,7 @@ export default function HeroSection() {
     <>
       <div className="container mx-auto">
         <div className="hidden md:block">
-          <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-0 z-10">
+          <div className="container mx-auto mt-0 md:mt-0 z-10">
             <div className="columns-1">
               <div className="grid grid-cols-12 my-0 justify-items-center">
                 <div className="col-span-12">
@@ -165,65 +165,49 @@ export default function HeroSection() {
             </div>
           </div>
           <div
-            className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-0 z-20"
+            className="container mx-auto mt-0 md:mt-0 z-20"
             ref={addToRefs}
           >
             <div className="relative">
               <div ref={addblockToRefs}>
-                <div className="max-w-full mx-auto px-4 flex items-center justify-start mt-0">
-                  <p className="inline-block h-60 2xl:h-128 3xl:h-144 w-10 3xl:w-20 bg-in-purple-3"></p>
-                  <p className="inline-block h-60 2xl:h-128 3xl:h-144 w-128 3xl:w-144 bg-infinite2-4"></p>
+                <div className="max-w-full mx-auto px-0 lg:px-0 flex items-center justify-start mt-0">
+                  <p className="inline-block h-[16rem] lg:h-80 xl:h-[26rem] 2xl:h-128 3xl:h-144 w-6 lg:w-10 3xl:w-20 bg-in-purple-3"></p>
+                  <p className="inline-block h-[16rem] lg:h-80 xl:h-[26rem] 2xl:h-128 3xl:h-144 w-72 lg:w-96 xl:w-128 3xl:w-144 bg-infinite2-4"></p>
                 </div>
               </div>
-              <div className="absolute md:top-10 lg:top-16 2xl:top-5 lg:left-0 2xl:left-32 3xl:left-32">
+              <div className="absolute top-0 md:top-0 2xl:top-5 left-0 lg:left-5 xl:left-0">
                 <div className="inline-block w-12/12" ref={boxRef}>
                   <div className="flex flex-col items-stretch justify-start">
-                    <div class="grid grid-cols-5 w-full">
-                      <div class="col-span-2 2xl:mt-10 3xl:mt-16">
-                        <div className="flex items-center">
-                          <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-[12rem] 3xl:text-[16rem] text-left">
-                            We
-                          </h1>
-                          <div class="shrink-0 ml-5">
-                            <img
-                              class="h-10 w-10 object-cover rounded-full"
-                              src="../assets/images/home/วงกลม.png"
-                              alt="วงกลม"
-                            />
-                          </div>
-                        </div>
+                    <div class="grid grid-cols-6 w-full">
+                      <div class="row-span-4 col-span-3">
+                        <img
+                          class="h-auto w-144 2xl:w-144 3xl:w-[45rem] object-cover"
+                          src="../assets/images/home/we-are.png"
+                          alt="we-are"
+                        />
                       </div>
-                      <div class="col-span-3 ml-20 self-center">
-                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-7xl 3xl:text-8xl text-left">
+                      <div class="col-span-3 ml-5 3xl:ml-2 mt-3 lg:mt-5 xl:mt-6 2xl:mt-5 self-center">
+                        <h1 className="font-bold uppercase md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl text-left">
                           Infinite Digital
                           <br />
-                          Cunsultants
+                          Consultants
                         </h1>
-                      </div>
-
-                      <div class="col-span-2 mt-16 3xl:mt-20">
-                        <h1 className="font-bold uppercase md:text-3xl lg:text-4xl 2xl:text-[12rem] 3xl:text-[14rem] text-right top-0">
-                          Are
-                        </h1>
-                      </div>
-                      <div class="col-span-3 ml-20 mt-9 self-center">
-                        <p className="text-left uppercase font-extralight md:text-sm lg:text-xl 2xl:text-3xl 3xl:text-4xl ">
+                        <p className="text-left uppercase font-extralight md:text-sm lg:text-xl xl:text-3xl 3xl:text-4xl mt-0 lg:mt-2 xl:mt-5 2xl:mt-2">
                           อินฟินิท ดิจิทัล คอนซัลแต้นส์ รับปรึกษา <br />
                           ดูแลด้านเว็บไซต์และระบบโปรแกรม รวมถึง
                           <br />
                           สื่อดิจิทัลออนไลน์ ครบทุกด้านในที่เดียว
                         </p>
                       </div>
-                      <div class="col-span-2"></div>
-                      <div class="col-span-3 ml-20 mt-10 ">
-                        <p className=" text-right font-bold md:text-sm lg:text-xl 2xl:text-4xl 3xl:text-5xl py-2">
+                      <div class="col-span-3 mr-10 mt-1 xl:mr-10 xl:mt-2 2xl:mr-5 2xl:mt-10">
+                        <p className="text-right font-bold md:text-lg lg:text-xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl py-2">
                           “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
                         </p>
                         <div className="grid justify-items-end">
                           <a href="/contact">
                             <button className="in-button">
                               <img
-                                className="object-scale-down w-48"
+                                className="object-scale-down w-24 lg:w-32 xl:w-40 2xl:w-48"
                                 src="../assets/images/home/ปุ่ม-contact-us.png"
                                 alt="ปุ่ม-contact-us"
                               />
@@ -238,71 +222,65 @@ export default function HeroSection() {
             </div>
           </div>
           <div
-            className="bg-infinite1-100 md:h-full lg:h-full 2xl:h-screen md:mt-0 lg:mt-0 2xl:mt-0 3xl:mt-0"
+            className="container mx-auto mt-0 md:mt-0 z-20"
             ref={addToRefs}
           >
-            <div className="max-w-full mx-auto px-4 flex items-center justify-between">
-              <div className="relative bg-infinite1-100">
-                <img
-                  className="w-screen h-auto"
-                  src="../assets/images/home/section1/bg1.png"
-                  alt="bg1"
-                />
-
+            <div className="max-w-full mx-auto px-0 lg:px-4 flex items-center justify-between bg-infinite1-200">
+              <div className="relative ">
+                <p className="inline-block h-96 lg:h-128 xl:h-[40rem] 2xl:h-[45rem] 3xl:h-[54rem] w-screen"></p>
                 <div className="box-decoration-clone bg-gradient-to-r from-infinite1-100 to-infinite1-200">
-                  <div className="absolute top-0 left-12 z-10">
+                  <div className="absolute top-0 left-0 z-10">
                     <div className="inline-block w-12/12">
                       <div className="relative animationWater0">
                         <img
-                          className="w-screen h-auto"
+                          className="object-cover object-left-top md:h-96 lg:h-128 xl:h-[40rem] 2xl:h-[45rem] 3xl:h-[54rem] w-auto"
                           src="../assets/images/home/section1/ภาพประกอบ1.png"
                           alt="ภาพประกอบ1"
                         />
-                        <div className="absolute top-0 right-0 w-3/5 z-10">
-                          <div className="grid grid-cols-12 2xl:my-5">
-                            <div className="col-start-3 col-span-12">
-                              <blockquote className="mr-10 md:py-5 lg:py-8 2xl:py-8 3xl:py-20">
-                                <h2 className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-xl 3xl:text-2xl font-light 2xl:leading-10 3xl:leading-normal">
+                        <div className="absolute top-0 -right-5 xl:-right-20 w-6/6 mx-5 xl:mx-0 z-10">
+                          <div className="grid grid-cols-12">
+                            <div className="col-start-7 col-end-12">
+                              <blockquote className="pt-14 lg:pt-20 2xl:pt-20 3xl:pt-24">
+                                <h2 className="md:text-xs lg:text-sm xl:text-xl 2xl:text-xl 3xl:text-2xl font-light 2xl:leading-10 3xl:leading-normal">
                                   เราเป็นทีมออกแบบเว็บไซต์ที่สร้างสรรค์ผลงานคุณภาพ
-                                  ไม่เหมือนใคร
-                                  และตอบโจทย์ตามความต้องการของลูกค้า
+                                  ไม่เหมือนใคร และตอบโจทย์ตามความต้องการของลูกค้า
                                   เพื่อสร้างเอกลักษณ์เฉพาะตัวของแบรนด์
                                   รวมถึงการสร้างประสบการณ์ที่ดีต่อผู้ใช้งานเว็บไซต์
                                 </h2>
                               </blockquote>
                             </div>
-                            <div className="col-start-4 col-span-12">
-                              <blockquote className="mr-10">
-                                <h2 className="md:text-sm lg:text-2xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl font-bold text-center 2xl:leading-normal 3xl:leading-snug">
+                            <div className="col-start-8 col-end-12">
+                              <blockquote className="pt-10 xl:pt-14 2xl:pt-10 3xl:pt-10">
+                                <h2 className="md:text-sm lg:text-2xl xl:text-3xl 2xl:text-3xl 3xl:text-4xl font-bold text-center 2xl:leading-normal 3xl:leading-snug">
                                   “Our team is committed to producing the best
                                   work for our customers”
                                 </h2>
                               </blockquote>
                             </div>
-                            <div className="col-start-4 col-span-10">
-                              <blockquote className="md:mx-8 lg:mx-16 xl:mx-20 2xl:mx-24 3xl:mx-28 md:py-5 lg:py-5 xl:py-10 2xl:py-10 3xl:py-16">
-                                <p className="md:text-xs lg:text-sm xl:text-2xl 2xl:text-xl 3xl:text-2xl text-center font-light 2xl:leading-10 3xl:leading-normal">
+                            <div className="col-start-8 col-end-12">
+                              <blockquote className="md:mx-8 lg:mx-10 xl:mx-10 2xl:mx-5 3xl:mx-10 md:py-5 lg:py-10 xl:py-14 2xl:py-10 3xl:py-16">
+                                <p className="md:text-xs lg:text-sm xl:text-xl 2xl:text-xl 3xl:text-2xl text-center font-light 2xl:leading-10 3xl:leading-normal">
                                   ทีมของเรามุ่งมั่นผลิตผลงานเพื่อมอบสิ่งที่ดีที่สุดให้ลูกค้า
                                 </p>
                               </blockquote>
                             </div>
                           </div>
                         </div>
-                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-0 3xl:bottom-10 right-10 w-1/5 z-0">
-                          <div className="inline-block ml-10 left-0 m-30 h-full">
+                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-0 3xl:bottom-10 right-10 3xl:right-10 w-1/5 z-0">
+                          <div className="inline-block ml-10 2xl:ml-5 3xl:ml-10 left-0 m-30 h-full">
                             <img
-                              className="fixed top-20 right-20 pointer-events-none animationWater1 md:h-60 lg:h-96 2xl:h-144"
-                              src="../assets/images/home/section1/น้ำ1.png"
+                              className="fixed top-20 right-20 xl:right-24 2xl:right-24 3xl:right-52 pointer-events-none animationWater1 md:h-[17rem] lg:h-[22rem] xl:h-[30rem] 2xl:h-[35rem] 3xl:h-[41rem]"
+                              src="../assets/images/home/น้ำ1.png"
                               alt="น้ำ1"
                             />
                           </div>
                         </div>
-                        <div className="absolute md:bottom-0 lg:bottom-0 xl:bottom-0 2xl:bottom-10 3xl:bottom-20 right-10 w-1/5 z-20">
-                          <div className="inline-block ml-10 left-0">
+                        <div className="absolute md:bottom-7 lg:bottom-10 xl:bottom-12 2xl:bottom-14 3xl:bottom-32 right-5 lg:right-10 xl:right-0 w-1/5 z-20">
+                          <div className="inline-block left-0 mr-0 lg:mr-10 xl:mr-0">
                             <a href="/about">
                               <button className="in-button">
                                 <img
-                                  className="object-scale-down w-60"
+                                  className="object-scale-down w-24 lg:w-32 xl:w-48 2xl:w-60 3xl:w-72"
                                   src="../assets/images/home/section1/ปุ่ม1.png"
                                   alt="ปุ่ม1"
                                 />

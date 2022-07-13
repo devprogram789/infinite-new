@@ -51,7 +51,7 @@ export default function AboutSection() {
           <div className="bg-infinite1-100 px-4">
             <div className="columns-1 mb-10">
               <img
-                className="object-cover object-bottom w-screen h-full"
+                className="object-cover object-center w-screen h-[650px] 2xl:h-[650px]"
                 src="../../assets/images/about/image-หน้า-about-us-01.png"
                 alt="หน้า-about-us"
               />
@@ -76,7 +76,7 @@ export default function AboutSection() {
                         <h1 className="2xl:text-4xl 3xl:text-5xl font-semibold leading-loose mb-5">
                           เราช่วยธุรกิจให้เติบโตในยุคดิจิทัล
                         </h1>
-                        <p className="2xl:text-3xl 3xl:text-4xl font-light 2xl:leading-normal 3xl:leading-relaxed">
+                        <p className="2xl:text-2xl 3xl:text-3xl font-light 2xl:leading-normal 3xl:leading-relaxed">
                           Infinity Digital Agency ก่อตั้งขึ้นในปี 2565
                           โดยผู้ร่วมก่อตั้ง 2
                           คนที่มีจุดมุ่งหมายที่จะเปลี่ยนแปลงความเป็นไปของ

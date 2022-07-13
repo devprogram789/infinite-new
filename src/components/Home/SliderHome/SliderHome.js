@@ -37,7 +37,7 @@ export default function SliderHome() {
                     key={obj.id}
                     className={slideIndex === index + 1 ? "slidhome active-animhome fadehome" : "slidehome fadehome"}
                     >
-                        <img 
+                        <img className='3xl:w-[1584px]'
                         src={process.env.PUBLIC_URL + `/assets/images/home/sliderhome/${index + 1}-2.jpg`} 
                         />
                     </div>

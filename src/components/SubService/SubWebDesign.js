@@ -11,18 +11,18 @@ export default function SubWebDesign() {
     <>
       <div className="container mx-auto">
         <div className="bg-infinite1-100 h-screen">
-          <div className="max-w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between">
-            <div className="relative">
+          <div className="columns-1 mb-10">
+            <div className="grid justify-items-center">
               <img
-                className="w-screen h-auto"
+                className="object-cover object-center w-auto h-[650px] 2xl:h-[650px]"
                 src="../../assets/images/service/WebDesign/pic-illustration-head-1.png"
-                alt="Infinite"
+                alt="pic-illustration-head-1"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-28">
+      <div className="container mx-auto mt-0">
         <div className="relative">
           <div>
             <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
@@ -165,17 +165,16 @@ export default function SubWebDesign() {
             </div>
           </div>
         </div>
-        
       </div>
       <div className="container mx-auto md:mt-10 lg:mt-10 2xl:mt-0 3xl:mt-10 bg-infinite2-4">
         <div className="columns-1 px-4">
           <div className="grid grid-cols-12 my-5 justify-items-center">
             <div className="col-span-12">
               <blockquote className="mr-10 my-10 text-center">
-                <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
+                <h2 className="2xl:text-3xl 3xl:text-4xl font-semibold leading-normal text-in-purple-3">
                   กระบวนการออกแบบเว็บไซต์
                 </h2>
-                <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal">
+                <p className="2xl:text-xl 3xl:text-2xl font-light leading-normal  text-in-purple-3">
                   Website Design Process
                 </p>
                 <div className="grid grid-cols-12 gap-0">
