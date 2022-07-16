@@ -137,12 +137,12 @@ export default function ContentSectionCopy() {
                   <p className="text-xl 2xl:text-xl 3xl:text-2xl font-light leading-normal">
                     Why do you choose Infinite Digital
                   </p>
-                  <div className="flex items-stretch mx-6 2xl:mx-5">
+                  <div className="flex items-stretch mx-5">
                     <div className="self-center m-2 lg:m-6 xl:m-10">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                      <div className="p-0 xl:p-5">
                         <img
                           src="../../assets/images/home/icon-หน้าหลัก-design1.png"
-                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-28 xl:h-28 2xl:w-36 2xl:h-36 mb-5"
+                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 mb-5"
                         />
                       </div>
                       <p className="text-xs lg:text-base 2xl:text-xl 3xl:text-2xl font-light leading-normal">
@@ -154,10 +154,10 @@ export default function ContentSectionCopy() {
                       </p>
                     </div>
                     <div className="self-center m-2 lg:m-6 xl:m-10">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                      <div className="p-0 xl:p-5">
                         <img
                           src="../../assets/images/home/icon-หน้าหลัก-design2.png"
-                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-28 xl:h-28 2xl:w-36 2xl:h-36 mb-5"
+                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 mb-5"
                         />
                       </div>
                       <p className="text-xs lg:text-base 2xl:text-xl 3xl:text-2xl font-light leading-normal">
@@ -167,10 +167,10 @@ export default function ContentSectionCopy() {
                       </p>
                     </div>
                     <div className="self-center m-2 lg:m-6 xl:m-10">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                      <div className="p-0 xl:p-5">
                         <img
                           src="../../assets/images/home/icon-หน้าหลัก-design3.png"
-                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-28 xl:h-28 2xl:w-36 2xl:h-36 mb-5"
+                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 mb-5"
                         />
                       </div>
                       <p className="text-xs lg:text-base 2xl:text-xl 3xl:text-2xl font-light leading-normal">
@@ -180,10 +180,10 @@ export default function ContentSectionCopy() {
                       </p>
                     </div>
                     <div className="self-center m-2 lg:m-6 xl:m-10">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                      <div className="p-0 xl:p-5">
                         <img
                           src="../../assets/images/home/icon-หน้าหลัก-design4.png"
-                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-28 xl:h-28 2xl:w-36 2xl:h-36 mb-5"
+                          className="object-cover w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 mb-5"
                         />
                       </div>
                       <p className="text-xs lg:text-base 2xl:text-xl 3xl:text-2xl font-light leading-normal">
@@ -213,7 +213,7 @@ export default function ContentSectionCopy() {
                 <div className="relative animationWater0">
                   <div className="md:mx-20 lg:mx-24 xl:mx-20 2xl:mx-5 3xl:px-5 md:my-5 lg:my-5 2xl:my-5 3xl:py-0">
                     <img
-                      className="object-cover h-full md:h-full w-[14rem] md:w-[14rem] lg:w-[19rem] xl:w-[20rem] 2xl:w-[26rem] 3xl:w-[30rem] animationWater2"
+                      className="object-cover h-full md:h-full w-[14rem] md:w-[14rem] lg:w-[19rem] xl:w-[23rem] 2xl:w-[26rem] 3xl:w-[30rem] animationWater2"
                       src="../assets/images/home/น้ำ2.png"
                       alt="น้ำ2"
                     />
@@ -221,14 +221,14 @@ export default function ContentSectionCopy() {
                   <div className="absolute md:top-0 lg:top-0 3xl:top-20 left-0 w-full z-10">
                     <div className="grid grid-cols-12">
                       <div className="col-start-1 col-span-12">
-                        <blockquote className="mx-10 md:mx-10 lg:mx-10 xl:mx-10 2xl:mx-5 md:py-3 lg:py-4 xl:py-0 2xl:py-0 3xl:py-0">
+                        <blockquote className="mx-10 md:mx-10 lg:mx-10 xl:mx-10 2xl:mx-5 md:py-3 lg:py-4 xl:py-6 2xl:py-5 3xl:py-0">
                           <img
-                            className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28 mb-2 3xl:mb-2"
+                            className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28"
                             src="../../assets/images/home/icon1.png"
                             alt="icon1"
                           />
                           <p className="text-base md:text-base lg:text-lg xl:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
-                            วางกลยุทธ์การตลาด SEO
+                          วางกลยุทธ์การตลาด SEO
                           </p>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
                             <p className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl">
@@ -237,7 +237,7 @@ export default function ContentSectionCopy() {
                             </p>
                           </span>
                         </blockquote>
-                        <div className="2xl:w-full mx-10 md:mx-10 lg:mx-10 xl:mx-10 2xl:mx-5 my-0 md:my-0 lg:my-0 xl:my-2 2xl:my-6 3xl:my-8">
+                        <div className="2xl:w-full mx-10 md:mx-10 lg:mx-10 xl:mx-10 2xl:mx-5 my-0 md:my-0 lg:my-0 xl:my-5 2xl:my-10 3xl:my-8">
                           <a href="/services/seo">
                             <button className="in-button">
                               <img
@@ -252,7 +252,7 @@ export default function ContentSectionCopy() {
                           <h2 className="md:text-xs lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-bold mb-2 lg:mb-2">
                             รับทำ seo บริษัทธุรกิจทุกประเภท
                           </h2>
-                          <p className="indent-8 md:text-xs lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-light mb-2 lg:mb-5 break-normal">
+                          <p className="md:text-xs lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-light mb-2 lg:mb-5">
                             สร้างฐานลูกค้าที่ตรงกลุ่มเป้าหมายสำหรับบริการของคุณ
                             รับทำ seo เพิ่มการเข้าถึงหน้าเว็บไซต์
                             วิเคราะห์คู่แข่งและค้นหา Keyword ที่เหมาะสม
@@ -278,7 +278,7 @@ export default function ContentSectionCopy() {
           </div>
         </div>
         <div
-          className="container mx-auto md:mt-0 lg:mt-0 2xl:mt-5 3xl:mt-0 z-40"
+          className="container mx-auto md:mt-0 lg:mt-0 2xl:mt-0 3xl:mt-0 z-40"
           ref={addToRefs}
         >
           <div className="relative">
@@ -316,7 +316,7 @@ export default function ContentSectionCopy() {
                         <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 3xl:mr-20 md:mt-24 lg:mt-40 2xl:mt-28 3xl:mt-28">
                           <div className="grid justify-items-end w-full">
                             <img
-                              className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28 mb-2 3xl:mb-2"
+                              className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28"
                               src="../../assets/images/home/icon2.png"
                               alt="icon2"
                             />
@@ -329,7 +329,7 @@ export default function ContentSectionCopy() {
                               Web design
                             </p>
                           </span>
-                          <div className="grid justify-items-end w-full my-2 xl:my-2 2xl:my-10 3xl:my-10">
+                          <div className="grid justify-items-end w-full my-10 3xl:my-10">
                             <a href="/services/design">
                               <button className="in-button">
                                 <img
@@ -343,18 +343,18 @@ export default function ContentSectionCopy() {
                           <h3 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-bold mb-2">
                             ออกแบบเว็บไซต์ พร้อมรองรับ ux/ui
                           </h3>
-                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-5 break-normal">
+                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-5">
                             รับออกแบบเว็บไซต์ให้สวยงามและ <br />
                             มีสไตล์ชัดเจน ตอบโจทย์ความต้องการของคุณ <br />
                             เพื่อสร้างความน่าเชื่อถือ และเพิ่มผลลัพธ์ <br />
                           </p>
-                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light mb-5 break-normal">
+                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
                             ไม่ว่าจะเป็นการเพิ่มยอดขายทางการตลาด <br />
                             การเยี่ยมชมเว็บไซต์ และสร้างโดยยึดหลักสำคัญ <br />
                             ของการออกแบบเว็บไซต์ คือ <br />
-                          </p>
-                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-semibold break-normal">
-                            “สวยงาม ทันสมัย ใช้งานง่าย ไม่ซับซ้อน”
+                            <span className="font-semibold">
+                              “สวยงาม ทันสมัย ใช้งานง่าย ไม่ซับซ้อน”
+                            </span>
                           </p>
                         </div>
                       </div>
@@ -388,26 +388,26 @@ export default function ContentSectionCopy() {
                       alt="น้ำ4"
                     />
                   </div>
-                  <div className="absolute md:top-0 lg:top-0 xl:top-20 2xl:top-0 3xl:top-20 left-0 w-full z-10">
+                  <div className="absolute md:top-0 lg:top-0 xl:top-20 2xl:top-14 3xl:top-20 left-0 w-full z-10">
                     <div className="grid grid-cols-12">
                       <div className="col-start-1 col-span-12">
-                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-3 3xl:py-5">
+                        <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-5 lg:py-8 2xl:py-5">
                           <img
-                            className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28 mb-2 3xl:mb-2"
+                            className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28"
                             src="../../assets/images/home/icon3.png"
                             alt="icon3"
                           />
-                          <p className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
+                          <h2 className="md:text-xl lg:text-xl 2xl:text-3xl 3xl:text-4xl leading-10 text-in-purple-1">
                             สร้างคอนเทนท์บนโซเชียล
-                          </p>
+                          </h2>
                           <span className="box-decoration-clone text-in-purple-3 font-bold">
-                            <p className="md:text-4xl lg:text-5xl 2xl:text-5xl 3xl:text-6xl">
+                            <h2 className="md:text-4xl lg:text-5xl 2xl:text-5xl 3xl:text-6xl">
                               Creative Online <br />
                               and Printing
-                            </p>
+                            </h2>
                           </span>
                         </blockquote>
-                        <div className="2xl:w-full md:mx-10 lg:mx-10 2xl:mx-5 md:my-2 lg:my-5 2xl:my-5 3xl:my-5">
+                        <div className="2xl:w-full md:mx-10 lg:mx-10 2xl:mx-5 md:my-2 lg:my-5 2xl:my-10 3xl:my-5">
                           <a href="/services/digital">
                             <button className="in-button">
                               <img
@@ -419,13 +419,17 @@ export default function ContentSectionCopy() {
                           </a>
                         </div>
                         <blockquote className="md:mx-10 lg:mx-10 2xl:mx-5 md:py-3 lg:py-3 2xl:py-4 md:w-56 lg:w-80 2xl:w-96 3xl:w-128">
-                          <h4 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-bold mb-2">
+                          <h4 className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-bold">
                             สร้างคอนเทนท์บนโซเชียล รับเขียนคอนเทนท์
                           </h4>
-                          <p className="indent-8 md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light break-normal">
-                            สร้างสรรค์เนื้อหาคอนเทนต์ จากการวิเคราะห์ข้อมูล
-                            Insight ทุกแพลตฟอร์ม รับเขียนคอนเทนท์ เพื่อเพิ่มการ
-                            เข้าถึงกลุ่มเป้าหมายแต่ละพื้นที่บนโซเชียลได้ตอบโจทย์มากที่สุด
+                          <p className="md:text-sm lg:text-xl 2xl:text-xl 3xl:text-2xl font-light">
+                            สร้างสรรค์เนื้อหาคอนเทนต์ จากการวิเคราห์
+                            <br />
+                            ข้อมูล Insight ทุกแพลตฟอร์ม รับเขียนคอนเทนท์
+                            <br />
+                            เพื่อเพิ่มการ เข้าถึงกลุ่มเป้าหมายแต่ละพื้นที่
+                            <br />
+                            บนโซเชียลได้ตอบโจทย์มากที่สุด
                           </p>
                         </blockquote>
                       </div>
@@ -481,10 +485,10 @@ export default function ContentSectionCopy() {
                         />
                       </div>
                       <div className="absolute top-0 right-0 w-3/5 text-right">
-                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 md:mt-24 lg:mt-40 2xl:mt-10 3xl:mt-20">
+                        <div className="inline-block md:mr-10 lg:mr-10 2xl:mr-16 md:mt-24 lg:mt-40 2xl:mt-14 3xl:mt-20">
                           <div className="grid justify-items-end w-full">
                             <img
-                              className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28 mb-2 3xl:mb-2"
+                              className="object-scale-down w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 3xl:w-28 3xl:h-28"
                               src="../../assets/images/home/icon4.png"
                               alt="icon4"
                             />
@@ -497,7 +501,7 @@ export default function ContentSectionCopy() {
                               Expert <br /> Programming
                             </p>
                           </span>
-                          <div className="grid justify-items-end w-full my-10 2xl:my-8 3xl:my-8">
+                          <div className="grid justify-items-end w-full my-10 3xl:my-8">
                             <a href="/services/digital">
                               <button className="in-button">
                                 <img

@@ -52,7 +52,7 @@ export default function Seo() {
             name="description"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://mysite.com/example" />
         </Helmet>
       </main>
       <main className="color-mainweb">

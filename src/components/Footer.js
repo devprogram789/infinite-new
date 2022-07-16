@@ -101,11 +101,11 @@ export default function Footer() {
               <div className="flex flex-row md:my-2 lg:my-3 2xl:my-1 3xl:my-0 m-4">
                 <div className="basis-1/2 p-2">
                   <blockquote className="md:text-xs lg:text-base 2xl:text-xl 3xl:text-2xl">
-                    <ul class="list-none leading-relaxed text-left">
+                    <ul className="list-none leading-relaxed text-left">
                       <li>
-                        <div class="flex items-center">
+                        <div className="flex items-center">
                           <img
-                            class="object-cover rounded w-6 h-6 mr-5"
+                            className="object-cover rounded w-6 h-6 mr-5"
                             src="../assets/images/footer/icon-footer-new-1.png"
                           />
                           <div>
@@ -114,9 +114,9 @@ export default function Footer() {
                         </div>
                       </li>
                       <li>
-                        <div class="flex items-center">
+                        <div className="flex items-center">
                           <img
-                            class="object-cover rounded w-6 h-6 mr-5"
+                            className="object-cover rounded w-6 h-6 mr-5"
                             src="../assets/images/footer/icon-footer-new-2.png"
                           />
                           <div>
@@ -128,9 +128,9 @@ export default function Footer() {
                         </div>
                       </li>
                       <li>
-                        <div class="flex items-center">
+                        <div className="flex items-center">
                           <img
-                            class="object-cover rounded w-6 h-6 mr-5"
+                            className="object-cover rounded w-6 h-6 mr-5"
                             src="../assets/images/footer/icon-footer-new-3.png"
                           />
                           <div>
@@ -139,9 +139,9 @@ export default function Footer() {
                         </div>
                       </li>
                       <li>
-                        <div class="flex items-center">
+                        <div className="flex items-center">
                           <img
-                            class="object-cover rounded w-6 h-6 mr-5"
+                            className="object-cover rounded w-6 h-6 mr-5"
                             src="../assets/images/footer/icon-footer-new-4.png"
                           />
                           <div>
@@ -154,7 +154,7 @@ export default function Footer() {
                 </div>
                 <div className="basis-1/2 p-2">
                   <blockquote className="md:text-xs lg:text-base 2xl:text-xl 3xl:text-2xl">
-                    <ul class="list-none leading-relaxed text-left">
+                    <ul className="list-none leading-relaxed text-left">
                       <li>
                         Address : <span className="font-Prompt">33/52</span>{" "}
                         วิลล่า อัลแบโร่
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </footer>
       </div>
-      <div className=" block md:hidden">
+      <div className=" block md:hidden bg-in-purple-3">
         <footer
           className="text-left text-white bg-cover bg-no-repeat h-auto"
           style={{ backgroundImage: `url(${bgFooterMo})` }}
@@ -206,7 +206,7 @@ export default function Footer() {
                 alt="logo-footer"
               />
             </a>
-            <div className="text-sm font-extralight pb-3">
+            <div className="text-sm font-extralight pb-[0.6rem]">
               <p>
                 เลขประจำตัวผู้เสียภาษี :{" "}
                 <span className="font-Prompt">0105559190160</span>
@@ -215,22 +215,62 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="grid grid-rows-1 grid-flow-col justify-between mx-7 my-3 mb-28">
+          <div className="grid grid-rows-1 grid-flow-col justify-between mx-7 pb-28">
             <div>
               <blockquote className="text-xs font-extralight">
-                <ul class="list-none leading-relaxed text-left">
-                  <li>Email : Infinite.Digital.C@gmail.com</li>
+                <ul className="list-none leading-relaxed text-left">
                   <li>
-                    Tel : <span className="font-Prompt">02-013-3399</span>
+                    <div className="flex items-center">
+                      <img
+                        className="object-cover rounded w-3 h-3 mr-2"
+                        src="../assets/images/footer/icon-footer-new-1.png"
+                      />
+                      <div>
+                        <p>Email : Infinite.Digital.C@gmail.com</p>
+                      </div>
+                    </div>
                   </li>
-                  <li>Website : TheInfiniteDigital.com</li>
-                  <li>Line : @infinitedigital</li>
+                  <li>
+                    <div className="flex items-center">
+                      <img
+                        className="object-cover rounded w-3 h-3 mr-2"
+                        src="../assets/images/footer/icon-footer-new-2.png"
+                      />
+                      <div>
+                        <p>
+                          Tel : <span className="font-Prompt">02-013-3399</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <img
+                        className="object-cover rounded w-3 h-3 mr-2"
+                        src="../assets/images/footer/icon-footer-new-3.png"
+                      />
+                      <div>
+                        <p>Website : TheInfiniteDigital.com</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <img
+                        className="object-cover rounded w-3 h-3 mr-2"
+                        src="../assets/images/footer/icon-footer-new-4.png"
+                      />
+                      <div>
+                        <p>Line : @infinitedigital</p>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </blockquote>
             </div>
             <div>
               <blockquote className="text-xs font-extralight">
-                <ul class="list-none leading-relaxed text-left">
+                <ul className="list-none leading-relaxed text-left">
                   <li>
                     Address : <span className="font-Prompt">33/52</span> วิลล่า
                     อัลแบโร่

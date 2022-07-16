@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import HeroSection from "../../components/Home/HeroSection";
-import ContentSection from "../../components/Home/ContentSection";
+import HeroSectionCopy from "../../components/Home/HeroSection-copy";
+import ContentSectionCopy from "../../components/Home/ContentSection-copy";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -59,8 +59,8 @@ export default function Home() {
 
       <main>
         <div class="max-w-full md:max-w-full mx-auto overflow-hidden">
-          <HeroSection />
-          <ContentSection />
+          <HeroSectionCopy />
+          <ContentSectionCopy />
         </div>
       </main>
     </>

@@ -162,7 +162,7 @@ export default function Navigation() {
                       onClick={() => setIsOpen(!isOpen)}
                       className="sidebar-text"
                     >
-                      <span className="md:text-xl lg:text-3xl 2xl:text-4xl font-bold text-in-purple-3 font-R-FLEX border-b-4 border-infinite2-2 ml-10 leading-normal">
+                      <span className="text-xl md:text-xl lg:text-3xl 2xl:text-4xl font-bold text-in-purple-3 font-R-FLEX border-b-4 border-infinite2-2 ml-10 leading-normal">
                         {item.name}
                       </span>
                     </Link>
@@ -191,7 +191,7 @@ export default function Navigation() {
                         onClick={() => setIsOpenMenu(!isOpenMenu)}
                         className="sidebar-text"
                       >
-                        <span className="text-5xl font-bold text-in-purple-3 font-R-FLEX border-b-2 border-infinite2-2 ml-5 leading-relaxed">
+                        <span className="text-3xl md:text-5xl font-bold text-in-purple-3 border-b-2 border-infinite2-2 ml-5 leading-relaxed">
                           {item.name}
                         </span>
                       </Link>
@@ -199,7 +199,7 @@ export default function Navigation() {
                       <>
                         <Link to={item.href} className="sidebar-text">
                           <span
-                            className="text-5xl font-bold text-in-purple-3 font-R-FLEX border-b-2 border-infinite2-2 ml-5 leading-relaxed"
+                            className="text-3xl md:text-5xl font-bold text-in-purple-3 border-b-2 border-infinite2-2 ml-5 leading-relaxed"
                             onClick={() => setIsSubOpen(!isOpenSub)}
                           >
                             {item.name}

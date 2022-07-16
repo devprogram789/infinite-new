@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //import { auth } from "./Config/firebase";
 import "./App.css";
 import Home from "./pages/Home/Home";
+import HomeCopy from "./pages/Home/Home-copy";
 import Navigation from "./components/Navigation/Navigation";
 import About from "./pages/About/About";
 import Work from "./pages/Work/Work";
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route path="/" element={<Home />} />
+          <Route path="homecopy" element={<HomeCopy />} />
           <Route path="about" element={<About />} />
           <Route path="work" element={<Work />} />
           <Route path="contact" element={<Contact />} />

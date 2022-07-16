@@ -13,7 +13,7 @@ export default function SubProGramming() {
           <div className="columns-1 mb-10">
             <div className="grid justify-items-center">
               <img
-                className="object-cover object-center w-auto h-[650px] 2xl:h-[650px]"
+                className="object-cover object-center w-auto h-[650px] 2xl:h-[650px] 3xl:h-[750px]"
                 src="../../assets/images/service/ProGramming/pic-illustration-head-1.png"
                 alt="pic-illustration-head-1"
               />
