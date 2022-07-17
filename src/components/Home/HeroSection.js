@@ -314,12 +314,12 @@ export default function HeroSectionCopy() {
                         <p className="text-5xl my-2 font-bold leading-tight">
                           We are <br />
                           Infinite Digital <br />
-                          Cunsultants
+                          Consultants
                         </p>
-                        <h1 className="text-lg my-2">
-                          รับทำเว็บไชต์ wordpress
-                          และ รับทำ seo ออกแบบเว็บไชต์ให้รองรับระบบของ Google
-                        </h1>
+                        <p className="text-lg my-2">
+                          อินฟินิท ดิจิทัล คอนซัลแต้นส์
+                          คือเอเจนซี่มืออาชีพที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร
+                        </p>
                         <p className="font-bold text-2xl my-2">
                           “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
                         </p>
