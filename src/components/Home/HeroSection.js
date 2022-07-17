@@ -303,39 +303,40 @@ export default function HeroSectionCopy() {
             <div className="max-w-full mx-auto flex items-center justify-center z-10">
               <div className="relative">
                 <img
-                  className="object-cover object-bottom w-screen h-auto z-20"
+                  className="object-cover object-bottom w-screen h-full"
                   src="../../assets/images/mobile/home/bg2.png"
-                  alt="Infinite"
+                  alt="Infinite-bg2"
                 />
-                <div className="absolute top-14 mx-5 z-10">
-                  <div className="inline-block w-12/12" ref={boxRefMo}>
-                    <div className="flex items-center text-center">
-                      <div>
-                        <h1 className="text-6xl font-bold leading-tight">
+                <div className="absolute top-0 mx-5 z-10">
+                  <div className="grid grid-cols-12 items-center text-center">
+                    <div className="col-span-12">
+                      <blockquote className="my-16" ref={boxRefMo}>
+                        <p className="text-5xl my-2 font-bold leading-tight">
                           We are <br />
                           Infinite Digital <br />
                           Cunsultants
-                        </h1>
-                        <p className="text-md mt-5">
-                          อินฟินิท ดิจิทัล คอนซัลแต้นส์ รับปรึกษา
-                          ดูแลด้านเว็บไซต์และระบบโปรแกรม รวมถึง
-                          สื่อดิจิทัลออนไลน์ ครบทุกด้านในที่เดียว
                         </p>
-                        <p className="font-bold text-md mt-1">
+                        <h1 className="text-lg my-2">
+                          รับทำเว็บไชต์ wordpress
+                          และ รับทำ seo ออกแบบเว็บไชต์ให้รองรับระบบของ Google
+                        </h1>
+                        <p className="font-bold text-2xl my-2">
                           “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
                         </p>
                         <div className="grid items-center text-center my-1">
                           <div>
                             <p className="leading-3">
-                              <span className="inline-block h-1 w-16 rounded bg-infinite1-900"></span>
-                              <br />
-                              <span className="inline-block h-1 w-16 rounded bg-infinite1-900"></span>
-                              <br />
-                              <span className="inline-block h-1 w-16 rounded bg-infinite1-900"></span>
+                              <span className="inline-block h-1 w-14 rounded bg-infinite1-900"></span>
+                            </p>
+                            <p className="leading-3">
+                              <span className="inline-block h-1 w-14 rounded bg-infinite1-900"></span>
+                            </p>
+                            <p className="leading-3">
+                              <span className="inline-block h-1 w-14 rounded bg-infinite1-900"></span>
                             </p>
                           </div>
                         </div>
-                      </div>
+                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -470,7 +471,9 @@ export default function HeroSectionCopy() {
                     </span>
                   </div>
                   <div className="col-start-1 col-end-7">
-                    <h2 className="text-sm mt-2">รับทำ seo บริษัทธุรกิจทุกประเภท</h2>
+                    <h2 className="text-sm mt-2">
+                      รับทำ seo บริษัทธุรกิจทุกประเภท
+                    </h2>
                     <button className="in-button mt-2">
                       <img
                         className="object-scale-down h-full w-32"
