@@ -268,20 +268,17 @@ export default function Footer() {
                 </ul>
               </blockquote>
             </div>
-            <div>
+            <div className="pl- pr-4">
               <blockquote className="text-[0.60rem] font-extralight">
                 <ul className="list-none leading-relaxed text-left">
                   <li>
                     Address : <span className="font-Prompt">33/52</span> วิลล่า
-                    อัลแบโร่
+                    อัลแบโร่ พระราม <span className="font-Prompt">9</span>
                   </li>
+                  <li>ถนนกรุงเทพกรีฑา แขวงสะพานสูง</li>
                   <li>
-                    พระราม <span className="font-Prompt">9</span> ถนน
-                    กรุงเทพกรีฑา
-                  </li>
-                  <li>แขวงสะพานสูง เขตสะพานสูง</li>
-                  <li>
-                    กรุงเทพมหานคร <span className="font-Prompt">11240</span>
+                    เขตสะพานสูง กรุงเทพมหานคร{" "}
+                    <span className="font-Prompt">11240</span>
                   </li>
                 </ul>
               </blockquote>
