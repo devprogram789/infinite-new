@@ -6,14 +6,48 @@
   <link rel="icon" href="%PUBLIC_URL%/AW-Logo-Infinite-4.png" sizes="16x16 32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#DCF2EF" />
-  <title>Infinite Digital Cunsultants - อินฟินิท ดิจิทัล คอนซัลแต้นส์ คือเอเจนซี่มืออาชีพ</title>
+  <title>รับทำเว็บไซต์ | รับทำ wordpress ออกแบบเว็บไซต์ รองรับ seo
+    รับเขียนโปรแกรม ทุกประเภทของธุรกิจ - รับรองคุณภาพ จากทางบริษัท</title>
   <meta name="description"
-    content="เราเป็นทีมออกแบบเว็บไซต์ที่ไม่เหมือนใคร
-          ซึ่งเหมาะกับเอกลักษณ์เฉพาะตัวของแบรนด์ของคุณอย่างแท้จริงเพื่อสร้างประสบการณ์ที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร" />
+    content="บริษัท รับทำเว็บไชต์ ด้วยทีมงานดูโครสร้างครอบคลุมถึง ux/ui และรองรับ seo สามารถออกแบบเว็บไซต์ ด้วย wordpress รวมถึงการ รับทำการตลาดออนไลน์ ทางด้านสื่อดิจิทัลทุกรูปแบบ รับทำ seo ติดหน้า 1 ของ Google สำหรับบริษัทธุรกิจ ทางเรา รับเขียนโปรแกรม ออกแบบโครงสร้าง ฐานข้อมูล ในรูปแบบขององค์กร" />
   <link rel="canonical" href="http://mysite.com/example" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/AW-Logo-Infinite-4.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>React App</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+
+    // ฟังก์ชันของ Consent Mode ของ gtag สำหรับการปิดการใช้งาน Cookie ในตอนเริ่มต้น
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      wait_for_update: 2000,
+    });
+
+    // การตั้งค่าสำหรับการแสดงผล Cookies Popup
+    window.easycookies = {
+      code: 'EBA5V1GRZPRS',
+      callback: (cookies) => {
+        /*
+        Callback ฟังก์ชันจะถูกเรียกใช้เมื่อผู้ใช้งานยอมรับหรือปรับเปลี่ยนความยินยอม โดยจะรับ parameter ที่เป็น object ซึ่งประกอบไปด้วยคีย์ต่างๆดังนี้
+        - performance (boolean) -> บ่งบอกว่าผู้ใช้งานได้ยอมรับหรือไม่ยอมรับคุ้กกี้ประเภท Analytics
+        - functionality (boolean) -> บ่งบอกว่าผู้ใช้งานได้ยอมรับหรือไม่ยอมรับคุ้กกี้ประเภท Preference
+        - advertising (boolean) -> บ่งบอกว่าผู้ใช้งานได้ยอมรับหรือไม่ยอมรับคุ้กกี้ประเภท Advertising
+        */
+        // เรียกใช้งานฟังก์ชัน gtag เมื่อผู้ใช้งานยอมรับหรือปรับเปลี่ยนความยินยอม
+        gtag('consent', 'update', { 'analytics_storage': cookies.performance ? 'granted' : 'denied' });
+      },
+    }
+  </script>
+  <!-- ดาวน์โหลดและตั้งค่า Google Tag Manager สำหรับ Google Analytic -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=X29KZ357LG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'X29KZ357LG');
+  </script>
+  <!-- ดาวน์โหลดสคริปต์ EasyCookies -->
+  <script async src="https://easypdpa.com/api/v2/scripts/easycookies/EBA5V1GRZPRS/easycookies.js"></script>
 </head>
 
 <body>

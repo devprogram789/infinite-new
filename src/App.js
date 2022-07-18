@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import HomeCopy from "./pages/Home/Home-copy";
+import CookiesPolicy from "./pages/CookiesPolicy/CookiesPolicy";
+
 import Navigation from "./components/Navigation/Navigation";
 import About from "./pages/About/About";
 import Work from "./pages/Work/Work";
@@ -26,6 +28,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="work" element={<Work />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="cookies-policy" element={<CookiesPolicy />} />
           <Route path="services/">
             <Route path="digital" element={<SocialMedia />} />
             <Route path="seo" element={<Seo />} />
