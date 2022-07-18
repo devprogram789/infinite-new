@@ -46,14 +46,14 @@ export default function CookiesPolicy() {
     <>
       <Helmet>
         <title>
-          รับทำเว็บไซต์ | รับทำ wordpress ออกแบบเว็บไซต์ รองรับ seo
-          รับเขียนโปรแกรม ทุกประเภทของธุรกิจ - รับรองคุณภาพ จากทางบริษัท
+        นโยบายข้อมูลส่วนบุคคลการใช้คุกกี้ - อินฟินิท ดิจิทัล คอนซัลแต้นส์
         </title>
         <meta
           name="description"
-          content="บริษัท รับทำเว็บไชต์ ด้วยทีมงานดูโครสร้างครอบคลุมถึง ux/ui และรองรับ seo สามารถออกแบบเว็บไซต์ ด้วย wordpress รวมถึงการ รับทำการตลาดออนไลน์ ทางด้านสื่อดิจิทัลทุกรูปแบบ รับทำ seo ติดหน้า 1 ของ Google สำหรับบริษัทธุรกิจ ทางเรา รับเขียนโปรแกรม ออกแบบโครงสร้าง ฐานข้อมูล ในรูปแบบขององค์กร"
+          content="บริษัท อินฟินิท ดิจิทัล คอนซัลแต้นส์ จำกัด (“บริษัท”)
+          แจ้งให้ท่านผู้ใช้บริการเว็บไซต์ https://theinfinitedigital.com/ (“เว็บไซต์”) ทราบว่า  บริษัทมีความจำเป็นต้องใช้ Cookies"
         />
-        <link rel="canonical" href="https://theinfinitedigital.com/" />
+        <link rel="canonical" href="https://theinfinitedigital.com/cookies-policy/" />
       </Helmet>
 
       <main>
