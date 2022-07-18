@@ -204,7 +204,7 @@ export default function AboutSection() {
                 alt="Infinite"
               />
             </div>
-            <div className="max-w-full mx-auto flex items-center justify-center">
+            <div className="columns-1">
               <div className="relative">
                 <div>
                   <div className="max-w-full flex items-center justify-center">
@@ -236,7 +236,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="columns-1 grid items-center text-center justify-center">
-              <blockquote className="m-5">
+              <blockquote className="mx-5">
                 <p className="text-base mb-5">
                   Infinity Digital Agency ก่อตั้งขึ้นในปี 2565 โดยผู้ร่วมก่อตั้ง
                   2 คนที่มีจุดมุ่งหมายที่จะเปลี่ยนแปลงความเป็นไปของ Digital
@@ -252,7 +252,7 @@ export default function AboutSection() {
               </blockquote>
             </div>
           </div>
-          <div className="columns-1 mx-5">
+          <div className="columns-1 mx-5 mt-5">
             <img
               className="object-cover object-top w-screen h-72"
               src="../../assets/images/mobile/about/pic-1.png"
@@ -267,17 +267,53 @@ export default function AboutSection() {
             />
           </div>
           <div className="columns-1 mx-5">
-            <div className="grid grid-cols-12">
+            <div className="grid grid-cols-12 ">
               <div className="col-span-12 my-8">
-                <blockquote >
-                  <h1 className="2xl:text-4xl 3xl:text-5xl font-semibold leading-loose mb-10 text-center">
-                    นโยบายข้อมูลส่วนบุคคลการใช้คุกกี้
-                  </h1>
-                  <p className="text-base font-light mb-5 text-center">
+                <div className="grid items-center text-center my-5">
+                  <div>
+                    <p className="leading-3">
+                      <span className="inline-block h-1 w-14 rounded bg-infinite1-900"></span>
+                    </p>
+                  </div>
+                </div>
+                <blockquote>
+                  <div className="grid justify-items-start">
+                    <img
+                      className="object-cover object-center w-8 h-auto"
+                      src="../../assets/images/mobile/about/ลูกน้ำ1.png"
+                      alt="ลูกน้ำ1"
+                    />
+                  </div>
+                  <p className="text-2xl font-semibold mx-10 my-2 text-center">
+                    วัฒนธรรมที่อินฟินิตี้ ถูกสร้างขึ้นมาจากกลุ่มคนที่มีความทะเยอทะยานและหลงใหล ในสื่อดิจิทัล.
+                  </p>
+                  <div className="grid justify-items-end">
+                    <img
+                      className="object-cover object-center w-8 h-auto"
+                      src="../../assets/images/mobile/about/ลูกน้ำ2.png"
+                      alt="ลูกน้ำ2"
+                    />
+                  </div>
+                </blockquote>
+              </div>
+              <div className="col-span-12 my-5">
+                <blockquote>
+                  <p className="text-base mb-5 text-center">
                     เป้าหมายสูงสุดของเราคือการผสมผสานศิลปะและเทคโนโลยีเข้าด้วยกัน
                     ภารกิจของเราในทุกๆ วันคือการทำให้ทีมเรามีประสิทธิภาพมากขึ้น
                     เพื่อสร้างสรรค์ผลงานที่มีคุณภาพสำหรับลูกค้าของเรา
                   </p>
+                  <div className="grid justify-items-center my-10">
+                    <a href="/services/design">
+                      <button className="in-button">
+                        <img
+                          className="object-cover object-center w-32 h-auto"
+                          src="../../assets/images/mobile/about/ปุ่ม-service.png"
+                          alt="ปุ่มservice"
+                        />
+                      </button>
+                    </a>
+                  </div>
                 </blockquote>
               </div>
             </div>
