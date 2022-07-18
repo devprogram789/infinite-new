@@ -429,7 +429,7 @@ export default function HeroSectionCopy() {
               </div>
             </div>
           </div>
-          <div className="bg-infinite1-100 max-h-screen -mt-48">
+          <div className="bg-infinite1-100 max-h-screen -mt-20">
             <div
               className="max-w-full mx-auto flex items-center justify-center"
               ref={addToRefs}
