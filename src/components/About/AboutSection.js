@@ -1,48 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
-const aboutTeams = [
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-01.jpg",
-    alt: "staff-01",
-  },
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-02.jpg",
-    alt: "staff-02",
-  },
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-03.jpg",
-    alt: "staff-03",
-  },
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-04.jpg",
-    alt: "staff-04",
-  },
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-05.jpg",
-    alt: "staff-05",
-  },
-  {
-    name: "Daniel",
-    position: "Creative Director / Partner",
-    img: "../../assets/images/about/staff-06.jpg",
-    alt: "staff-06",
-  },
-];
 export default function AboutSection() {
   return (
     <>
@@ -109,49 +71,6 @@ export default function AboutSection() {
                         />
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="columns-1 hidden">
-              {" "}
-              {/* ซ่อนรายชื่อก่อน */}
-              <div className="relative">
-                <div>
-                  <div className="max-w-full flex items-center justify-end">
-                    <p className="inline-block h-144 w-screen bg-infinite2-4"></p>
-                  </div>
-                  <div className="max-w-full flex items-center justify-end">
-                    <p className="inline-block h-144 w-screen bg-infinite2-4"></p>
-                  </div>
-                  <div className="max-w-full flex items-center justify-end">
-                    <p className="inline-block h-144 w-screen bg-infinite2-4"></p>
-                  </div>
-                  <div className="max-w-full flex items-center justify-end">
-                    <p className="inline-block h-128 w-screen bg-infinite2-4"></p>
-                  </div>
-                </div>
-                <div className="absolute inset-0">
-                  <div className="grid grid-cols-2 gap-6">
-                    {aboutTeams.map((item) => (
-                      <div>
-                        <div>
-                          <img
-                            className="object-cover object-center w-full h-auto"
-                            src={item.img}
-                            alt="หน้า-about-us"
-                          />
-                        </div>
-                        <blockquote className="mx-10 my-5">
-                          <h1 className="text-4xl font-semibold leading-normal">
-                            {item.name}
-                          </h1>
-                          <p className="text-3xl font-light leading-normal">
-                            {item.position}
-                          </p>
-                        </blockquote>
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>
