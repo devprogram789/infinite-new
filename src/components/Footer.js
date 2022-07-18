@@ -190,23 +190,23 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-rows-1 grid-flow-col justify-between mx-6 mb-2 border-b">
+          <div className="grid grid-rows-1 grid-flow-col justify-between mx-3 mb-2 border-b">
             <h1 className="text-xl uppercase font-bold">contact</h1>
             <a href="https://fb.me/InfiniteDigitalConsultants/">
               <img
-                className="object-cover w-8 h-auto rounded-full"
+                className="object-cover w-7 h-auto rounded-full"
                 src="../assets/images/footer/icon-facebook.png"
                 alt="logo-footer"
               />
             </a>
             <a href="https://line.me/ti/p/%40infinitedigital">
               <img
-                className="object-cover w-8 h-auto rounded-full"
+                className="object-cover w-7 h-auto rounded-full"
                 src="../assets/images/footer/icon-line.png"
                 alt="logo-footer"
               />
             </a>
-            <div className="text-sm font-extralight pb-[0.6rem]">
+            <div className="text-[0.50rem] font-extralight pb-[0.6rem]">
               <p>
                 เลขประจำตัวผู้เสียภาษี :{" "}
                 <span className="font-Prompt">0105559190160</span>
@@ -215,9 +215,9 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="grid grid-rows-1 grid-flow-col justify-between mx-7 pb-28">
+          <div className="grid grid-rows-1 grid-flow-col justify-between mx-3 pb-28">
             <div>
-              <blockquote className="text-xs font-extralight">
+              <blockquote className="text-[0.50rem] font-extralight">
                 <ul className="list-none leading-relaxed text-left">
                   <li>
                     <div className="flex items-center">
@@ -269,7 +269,7 @@ export default function Footer() {
               </blockquote>
             </div>
             <div>
-              <blockquote className="text-xs font-extralight">
+              <blockquote className="text-[0.50rem] font-extralight">
                 <ul className="list-none leading-relaxed text-left">
                   <li>
                     Address : <span className="font-Prompt">33/52</span> วิลล่า
