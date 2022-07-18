@@ -194,19 +194,19 @@ export default function Footer() {
             <h1 className="text-xl uppercase font-bold">contact</h1>
             <a href="https://fb.me/InfiniteDigitalConsultants/">
               <img
-                className="object-cover w-7 h-auto rounded-full"
+                className="object-cover w-8 h-auto rounded-full"
                 src="../assets/images/footer/icon-facebook.png"
                 alt="logo-footer"
               />
             </a>
             <a href="https://line.me/ti/p/%40infinitedigital">
               <img
-                className="object-cover w-7 h-auto rounded-full"
+                className="object-cover w-8 h-auto rounded-full"
                 src="../assets/images/footer/icon-line.png"
                 alt="logo-footer"
               />
             </a>
-            <div className="text-[0.50rem] font-extralight pb-[0.6rem]">
+            <div className="text-[0.70rem] font-extralight pb-[0.6rem]">
               <p>
                 เลขประจำตัวผู้เสียภาษี :{" "}
                 <span className="font-Prompt">0105559190160</span>
