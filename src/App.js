@@ -15,6 +15,7 @@ import SocialMedia from "./pages/SubService/SocialMedia/SocialMedia";
 import Seo from "./pages/SubService/Seo/Seo";
 import ProGramming from "./pages/SubService/ProGramming/ProGramming";
 import WebDesign from "./pages/SubService/WebDesign/WebDesign";
+import CookieBar from "./components/CookieBar/CookieBar";
 
 function App() {
   //const [{user},dispatch] = useStateValue()
@@ -37,6 +38,7 @@ function App() {
           </Route>
         </Route>
       </Routes>
+      <CookieBar />
     </BrowserRouter>
   );
 }
