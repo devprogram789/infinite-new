@@ -421,8 +421,8 @@ export default function HeroSectionCopy() {
           </div>
           <div className="bg-infinite1-100 max-h-screen">
             <div className="columns-1" ref={addToRefs}>
-              <div className="grid grid-cols-6 gap-0 mx-10 items-center justify-center">
-                <div className="col-start-1 col-end-7 mb-2">
+              <div className="grid grid-cols-6 gap-0 my-5 mx-10 items-center justify-center">
+                <div className="col-start-1 col-end-7 mb-5">
                   <img
                     className="object-cover object-bottom w-full h-auto"
                     src="../../assets/images/mobile/home/pic2.png"
