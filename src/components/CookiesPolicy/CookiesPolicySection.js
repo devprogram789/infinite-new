@@ -194,7 +194,7 @@ export default function CookiesPolicySection() {
           </div>
         </div>
         <div className="block md:hidden">
-          <div className=" bg-infinite1-100 max-h-screen mb-[110rem]">
+          <div className="bg-infinite1-100 max-h-screen mb-[85rem]">
             <div className="columns-1">
               <div className="relative">
                 <div>
@@ -210,7 +210,7 @@ export default function CookiesPolicySection() {
                     <h1 className="text-xl font-semibold leading-loose mb-5 text-center">
                       นโยบายข้อมูลส่วนบุคคลการใช้คุกกี้
                     </h1>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       บริษัท อินฟินิท ดิจิทัล คอนซัลแต้นส์ จำกัด (“บริษัท”)
                       แจ้งให้ท่านผู้ใช้บริการเว็บไซต์{" "}
                       <a href="https://theinfinitedigital.com/">
@@ -227,7 +227,7 @@ export default function CookiesPolicySection() {
                       และรับประกันมาตรการรักษาความมั่นคงปลอดภัยที่เหมาะสมอย่างดีที่สุดโดยสอดคล้องกับเงื่อนไขและมาตร
                       ฐานที่กำหนดไว้ในกฎหมายที่เกี่ยวข้อง
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       เมื่อท่านในฐานะผู้ใช้บริการ ไม่ว่าในนามส่วนบุคคลหรือบริษัท
                       เข้าถึงเว็บไซต์ของทางบริษัท บริษัทจะถือว่า
                       ท่านตกลงและรับทราบนโยบายข้อมูลส่วนบุคคลฉบับนี้แล้ว ทั้งนี้
@@ -236,7 +236,7 @@ export default function CookiesPolicySection() {
                       ที่อาจเชื่อมต่อกับเว็บไซต์ของบริษัทซึ่งเป็นของบุคคลภายนอก
                       โดยผู้ใช้บริการต้องศึกษาเกี่ยวกับนโยบายข้อมูลส่วนบุคคลที่บังคับใช้และประกาศโดยบุคคลภายนอกดังกล่าวแยกต่างหาก
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal">
+                    <p className="indent-8 text-sm font-light leading-normal">
                       ทางบริษัทอาจปรับปรุงนโยบายฉบับนี้ตามแต่ละระยะเวลา
                       เพื่อให้สอดคล้องกับแนวปฏิบัติและกฎหมายที่เกี่ยวข้อง
                       และให้สอดคล้องกับการใช้ Cookies แบบต่างๆ ของบริษัท ทั้งนี้
@@ -247,7 +247,7 @@ export default function CookiesPolicySection() {
                     <p className="text-lg font-semibold leading-loose mb-5">
                       Cookies ที่บริษัทใช้ในการให้บริการแก่ท่าน
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       Cookies คือ text files ที่อยู่ใน Browser ของผู้ใช้บริการ
                       เพื่อให้บริษัทจัดเก็บรายละเอียดข้อมูล
                       รวมถึงบันทึกการใช้งานอินเตอร์เน็ตหรือพฤติกรรมการเยี่ยมชมเว็บไซต์ของผู้ใช้บริการ
@@ -287,7 +287,7 @@ export default function CookiesPolicySection() {
                       ทั้งนี้
                       ข้อมูลดังกล่าวอาจดำเนินการโดยผู้ให้บริการภายนอกที่จะทำหน้าที่ให้บริการให้แก่บริษัท
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       สำหรับ Cookies ประเภท Strictly Necessary Cookies นั้น
                       บริษัทขอชี้แจงให้ท่านผู้ใช้บริการทราบว่าทางบริษัทมีความจำเป็นในการใช้
                       Cookies ดังกล่าว
@@ -295,14 +295,14 @@ export default function CookiesPolicySection() {
                       หากบริษัทไม่ใช้ Cookies ประเภทดังกล่าว
                       บริษัทย่อมไม่สามารถให้บริการแก่ท่านผู้ใช้บริการได้
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       ในส่วนของ Cookies ประเภทอื่นนั้น
                       หากได้รับความยินยอมจากท่านให้บริษัทใช้แต่ละประเภทของ
                       Cookies ดังกล่าว บริษัทจะใช้ Cookies
                       ดังกล่าวเพื่อจุดประสงค์เฉพาะที่ได้ระบุไว้สำหรับ Cookies
                       แต่ละประเภท
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal">
+                    <p className="indent-8 text-sm font-light leading-normal">
                       แม้ว่าการใช้ Cookies
                       จะมีประโยชน์ในการเสริมประสิทธิภาพในการให้บริการและการทำงานของเว็บไซต์แก่ท่านผู้ใช้บริการ
                       แต่หากผู้ใช้บริการต้องการ ท่านสามารถลบการตั้งค่า Cookies
@@ -315,7 +315,7 @@ export default function CookiesPolicySection() {
                     <p className="text-lg font-semibold leading-loose mb-5">
                       สิทธิของเจ้าของข้อมูล
                     </p>
-                    <p className="indent-8 text-base font-light leading-normal mb-5">
+                    <p className="indent-8 text-sm font-light leading-normal mb-5">
                       บริษัทรับทราบและเคารพสิทธิในฐานะเจ้าของข้อมูลตามกฎหมายของผู้ใช้บริการในส่วนที่เกี่ยวข้องกับข้อมูลส่วนบุคคลของท่าน
                       โดยเฉพาะ Cookies ที่บริษัทเป็นผู้ใช้
                       ซึ่งท่านสามารถใช้สิทธิตามกฎหมายกำหนดได้นอกเหนือจากการกำหนดการตั้งค่าได้ด้วยตนเองอย่างอิสระโดยเฉพาะสิทธิถอนความยินยอมในการใช้

@@ -310,17 +310,17 @@ export default function HeroSectionCopy() {
                 <div className="absolute top-0 mx-5 z-10">
                   <div className="grid grid-cols-12 items-center text-center">
                     <div className="col-span-12">
-                      <blockquote className="my-16" ref={boxRefMo}>
-                        <p className="text-5xl my-2 font-bold leading-tight">
+                      <blockquote className="my-12" ref={boxRefMo}>
+                        <p className="text-4xl my-2 font-bold leading-tight">
                           We are <br />
                           Infinite Digital <br />
                           Consultants
                         </p>
-                        <p className="text-lg my-2">
+                        <p className="text-sm my-2">
                           อินฟินิท ดิจิทัล คอนซัลแต้นส์
                           คือเอเจนซี่มืออาชีพที่รับทำการตลาดออนไลน์ทุกรูปแบบอย่างครบวงจร
                         </p>
-                        <p className="font-bold text-2xl my-2">
+                        <p className="font-bold text-xl my-2">
                           “จ้างครั้งเดียวจบ ได้ครบทั้งทีม”
                         </p>
                         <div className="grid items-center text-center my-1">
