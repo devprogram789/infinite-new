@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
-import emailjs from "@emailjs/browser";
 import axios from "axios";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -53,62 +52,6 @@ const formContact = [
 ];
 
 export default function ContactSection() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [web, setWeb] = useState("");
-  const [budget, setBudget] = useState("");
-  const [business, setBusiness] = useState("");
-  const [message, setMessage] = useState("");
-  const form = useRef();
-  const serviceID = process.env.REACT_APP_SERVICE_ID;
-  const templateID = process.env.REACT_APP_TEMPLATE_ID;
-  const userID = process.env.REACT_APP_USER_ID;
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(serviceID, templateID, form.current, userID).then(
-      (result) => {
-        alert("Message sent");
-        form.current.reset();
-      },
-      (error) => {
-        alert(error.text);
-      }
-    );
-  };
-
-  let handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      let res = await fetch(
-        "https://script.google.com/macros/s/AKfycbzWMgsUPLDp259VHL90mXZzePxIwg9ER5RAJtcsarpSeRH8kKKGQBifvXhcIOdr8BWZSw/exec",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            mobileNumber: mobileNumber,
-            web: web,
-            budget: budget,
-            business: business,
-          }),
-        }
-      );
-      let resJson = await res.json();
-      if (res.length) {
-        setMessage("Some error occured");
-      } else {
-        setName("");
-        setEmail("");
-        setMessage("User created successfully");
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   return (
     <>
       <div className="hidden md:block">
@@ -233,15 +176,7 @@ export default function ContactSection() {
                     </div>
                   </div>
                 </div>
-                {/*               <form ref={form} onSubmit={sendEmail}>
-                      <div direction="column" spacing={2}>
-                          <input type="text" name="name" label="Name" placeholder='Name' variant='outlined' fullWidth required />
-                          <input type="email" name="email" label="Email" placeholder='Email Address' variant='outlined' fullWidth required />
-                          <input multiline rows={4} name="message" label="Message" placeholder='Type your message here' variant='outlined' fullWidth required />
-                          <button type="submit" variant="contained" color="primary">Send</button>
-                      </div>
-                  </form> */}
-                <form onSubmit={handleSubmit}>
+                <form >
                   <div className="grid grid-cols-12 relative">
                     <div className="col-span-12 mx-20 text-left font-bold font-Prompt">
                       <div className="grid justify-items-start w-full">
@@ -251,9 +186,7 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="text"
-                            value={name}
                             placeholder="กรอก ชื่อ - นามสกุล"
-                            onChange={(e) => setName(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -267,9 +200,7 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="email"
-                            value={email}
                             placeholder="กรอก อีเมล"
-                            onChange={(e) => setEmail(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -283,10 +214,8 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="text"
-                            value={mobileNumber}
                             placeholder="กรอก เบอร์โทรศัพท์"
                             maxLength={10}
-                            onChange={(e) => setMobileNumber(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -300,9 +229,7 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="text"
-                            value={web}
                             placeholder="กรอก เว็บไซต์"
-                            onChange={(e) => setWeb(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -316,9 +243,7 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="text"
-                            value={budget}
                             placeholder="กรอก งบประมาณในการลงทุน"
-                            onChange={(e) => setBudget(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -332,9 +257,7 @@ export default function ContactSection() {
                           </span>
                           <input
                             type="text"
-                            value={business}
                             placeholder="กรอก ธุรกิจอยู่ในประเภทใด"
-                            onChange={(e) => setBusiness(e.target.value)}
                             required
                             className="py-3 px-5 block w-128 border-2 border-infinite2-2 shadow shadow-gray-dark rounded-2xl text-lg mb-2 
                           focus:outline-none focus:border-infinite2-2 focus:ring-1 focus:ring-infinite2-2
@@ -352,7 +275,6 @@ export default function ContactSection() {
                         </button>
                       </div>
                       <div className="message">
-                        {message ? <p>{message}</p> : null}
                       </div>
                     </div>
                   </div>
