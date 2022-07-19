@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "R-FLEX";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/R-FLEX/R-FLEX-BOLD.otf") format("opentype");
+}
+@font-face {
+  font-family: "R-FLEX";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/R-FLEX/R-FLEX-BOLDITALIC.otf") format("opentype");
+}
+@font-face {
+  font-family: "R-FLEX";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/R-FLEX/R-FLEX-REGULAR.otf") format("opentype");
+}
+@font-face {
+  font-family: "R-FLEX";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/R-FLEX/R-FLEX-REGULARITALIC.otf") format("opentype");
+}

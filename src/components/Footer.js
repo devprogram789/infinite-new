@@ -209,7 +209,7 @@ export default function Footer() {
             <div className="text-[0.70rem] font-extralight pb-[0.6rem]">
               <p>
                 เลขประจำตัวผู้เสียภาษี :{" "}
-                <span className="font-Prompt">0105559190160</span>
+                <span className="font-Prompt">0105565077124</span>
                 <br />
                 บริษัท อินฟินิท ดิจิทัล คอนซัลแต้นส์ จำกัด
               </p>

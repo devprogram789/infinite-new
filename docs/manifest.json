@@ -1,0 +1,20 @@
+{
+  "short_name": "Infinite Digital Cunsultants",
+  "name": "Infinite Digital Cunsultants - อินฟินิท ดิจิทัล คอนซัลแต้นส์ คือเอเจนซี่มืออาชีพ",
+  "icons": [
+    {
+      "src": "AW-Logo-Infinite-4.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "AW-Logo-Infinite-4.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#5FC6BA",
+  "background_color": "#DCF2EF"
+}
