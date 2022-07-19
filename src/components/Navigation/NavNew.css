@@ -80,7 +80,7 @@
   .sidebar-block {
     position: fixed;
     height: 100%;
-    width: 50%;
+    width: 40%;
     justify-items: end;
     background-color: rgba(245, 250, 253, 1);
     transition: all 0.35s ease-in;
