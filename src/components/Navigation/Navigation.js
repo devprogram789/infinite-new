@@ -148,7 +148,7 @@ export default function Navigation() {
                 className="col-start-1 col-span-12 z-30 sidebar-block"
                 id="navbarService"
               >
-                <div className="fixed right-5 cursor-pointer">
+                <div className="fixed right-5 2xl:right-[17rem] cursor-pointer">
                   <XIcon
                     className="h-8 w-8 border rounded-md my-12"
                     aria-hidden="true"

@@ -71,7 +71,7 @@
 
   .sidebar-block .sidebar-text span:hover {
     color: rgba(76, 192, 179, 1);
-    font-size: 50px;
+    font-size: 35px;
     transition: all 0.35s ease-out;
   }
 }
@@ -80,7 +80,7 @@
   .sidebar-block {
     position: fixed;
     height: 100%;
-    width: 40%;
+    width: 45%;
     justify-items: end;
     background-color: rgba(245, 250, 253, 1);
     transition: all 0.35s ease-in;
@@ -97,7 +97,7 @@
 
   .sidebar-block .sidebar-text span:hover {
     color: rgba(76, 192, 179, 1);
-    font-size: 50px;
+    font-size: 43px;
     transition: all 0.35s ease-out;
   }
 }
