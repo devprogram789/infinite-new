@@ -27,10 +27,7 @@ export default function SubWebDesign() {
           <div className="relative">
             <div>
               <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-                <p className="inline-block h-screen 3xl:h-[90vh] w-full bg-white"></p>
-              </div>
-              <div className="max-w-full mx-auto -py-4 px-4 lg:flex lg:items-center lg:justify-end -mt-10">
-                <p className="inline-block h-4 w-full bg-white"></p>
+                <p className="inline-block h-screen 3xl:h-[75vh] w-full bg-white"></p>
               </div>
             </div>
             <div className="absolute top-10 right-0 w-full text-right">
@@ -38,46 +35,51 @@ export default function SubWebDesign() {
                 <div className="grid grid-cols-12 relative">
                   <div className="col-span-6 ml-20 mr-5 text-left font-bold">
                     <div className="grid justify-items-start w-full">
-                      <h2 className="2xl:text-8xl 3xl:text-9xl mt-5 text-in-purple-1">
-                        Web Design
-                      </h2>
-                      <h3 className="2xl:text-4xl 3xl:text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
-                        ออกแบบพัฒนาเว็บไซต์ <br />
-                        ครบวงจร
-                      </h3>
+                      <blockquote>
+                        <h2 className="text-7xl 2xl:text-8xl 3xl:text-9xl mt-5 text-in-purple-1">
+                          Web Design
+                        </h2>
+                        <h3 className="text-3xl 2xl:text-4xl 3xl:text-5xl font-normal mt-5 text-infinite2-3 leading-normal">
+                          ออกแบบพัฒนาเว็บไซต์ <br />
+                          ครบวงจร
+                        </h3>
+                      </blockquote>
                     </div>
                     <div className="grid justify-items-start w-full my-10">
-                      <button className="in-button">
-                        <img
-                          className="object-none object-center"
-                          src="../assets/images/home/section6/ปุ่ม6.png"
-                          alt="ปุ่ม6"
-                        />
-                      </button>
+                      <a href="/contact">
+                        <button className="in-button">
+                          <img
+                            className="object-none object-center"
+                            src="../assets/images/home/section6/ปุ่ม6.png"
+                            alt="infinite-ปุ่ม6"
+                          />
+                        </button>
+                      </a>
                     </div>
                   </div>
                   <div className="col-span-6 mx-16 text-left">
-                    <h3 className="2xl:text-2xl 3xl:text-3xl mt-10 font-normal text-in-purple-2 leading-normal whitespace-pre-wrap">
-                      Infinity Digital Agency ให้บริการออกแบบและพัฒนาเว็บไซต์
-                      เว็บแอปพลิเคชันและ
-                    </h3>
-                    <p className="2xl:text-2xl 3xl:text-3xl font-light leading-normal whitespace-pre-wrap">
-                      <span className="font-normal text-in-purple-2">
-                        แอปพลิเคชันมือถือครบวงจร
-                      </span>{" "}
-                      เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ UX UI
-                      การออกแบบเว็บไซต์ การพัฒนาเว็บไซต์ การ deploy ขึ้น server
-                      และบริการดูแลหลังการขาย
-                    </p>
-                    <p className="2xl:text-2xl 3xl:text-3xl font-light mt-12 leading-normal whitespace-pre-wrap">
-                      <span className="font-normal text-in-purple-2">
+                    <blockquote className="my-14">
+                      <p className="text-xl 2xl:text-xl 3xl:text-2xl font-normal text-in-purple-2 whitespace-pre-wrap">
+                        Infinity Digital Agency ให้บริการออกแบบและพัฒนาเว็บไซต์
+                        เว็บแอปพลิเคชันและแอปพลิเคชันมือถือครบวงจร
+                      </p>
+                      <p className="text-xl 2xl:text-xl 3xl:text-2xl font-light whitespace-pre-wrap">
+                        เราเริ่มต้นทุกงานด้วยการวิจัยและการวางแผน การออกแบบ UX
+                        UI การออกแบบเว็บไซต์ การพัฒนาเว็บไซต์ การ deploy ขึ้น
+                        server และบริการดูแลหลังการขาย
+                      </p>
+                    </blockquote>
+                    <blockquote>
+                      <p className="text-xl 2xl:text-xl 3xl:text-2xl font-normal text-in-purple-2 whitespace-pre-wrap">
                         เราออกแบบเว็บไซต์และแอปพลิเคชันมือถือเฉพาะเจาะจงเพื่อธุรกิจของคุณเท่านั่น
-                      </span>{" "}
-                      เราไม่ใช้เทมเพลต
-                      หรือธีมในการออกแบบและพัฒนาเว็บไซต์และแอปพลิเคชันมือถือของคุณ
-                      เราออกแบบและพัฒนาเว็บไซต์และแอปพลิเคชันมือถือของคุณตั้งแต่เริ่มต้น!
-                      ดังนั้นคุณสามารถมั่นใจได้ว่าเว็บไซต์หรือแอปพลิเคชันมือถือของคุณจะไม่เหมือนใครและดีที่สุดสำหรับธุรกิจของคุณเท่านั้น
-                    </p>
+                      </p>
+                      <p className="text-xl 2xl:text-xl 3xl:text-2xl font-light whitespace-pre-wrap">
+                        เราไม่ใช้เทมเพลต
+                        หรือธีมในการออกแบบและพัฒนาเว็บไซต์และแอปพลิเคชันมือถือของคุณ
+                        เราออกแบบและพัฒนาเว็บไซต์และแอปพลิเคชันมือถือของคุณตั้งแต่เริ่มต้น!
+                        ดังนั้นคุณสามารถมั่นใจได้ว่าเว็บไซต์หรือแอปพลิเคชันมือถือของคุณจะไม่เหมือนใครและดีที่สุดสำหรับธุรกิจของคุณเท่านั้น
+                      </p>
+                    </blockquote>
                   </div>
                 </div>
               </div>
@@ -89,29 +91,33 @@ export default function SubWebDesign() {
             <div className="h-full w-full">
               <div className="grid grid-cols-12 relative">
                 <div className="col-span-6 mx-20 text-left">
-                  <h3 className="2xl:text-5xl 3xl:text-6xl mt-10 font-medium text-in-purple-1">
-                    ออกแบบ UX UI
-                  </h3>
-                  <p className="2xl:text-2xl 3xl:text-3xl font-light mt-2 leading-normal text-in-purple-1">
-                    เราคือผู้เชี่ยวชาญด้านการออกแบบ UX & UI
-                    <br />
-                    สำหรับเว็บไซต์และแอปมือถือ
-                  </p>
+                  <blockquote className="my-20">
+                    <h3 className="text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-in-purple-1">
+                      ออกแบบ UX UI
+                    </h3>
+                    <p className="text-xl 2xl:text-2xl 3xl:text-3xl font-light mt-2 text-in-purple-1">
+                      เราคือผู้เชี่ยวชาญด้านการออกแบบ UX & UI
+                      <br />
+                      สำหรับเว็บไซต์และแอปมือถือ
+                    </p>
+                  </blockquote>
                   <div className="grid justify-items-center w-full my-10 border bg-gray-dark">
                     <hr />
                   </div>
-                  <p className="2xl:text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
-                    <ul className="list-inside list-disc">
-                      <li>การออกแบบ UX & UI</li>
-                      <li>การออกแบบกราฟฟิก / ระบบสีและภาพ</li>
-                      <li>การออกแบบ Transitions และ Animations</li>
-                    </ul>
-                  </p>
+                  <blockquote>
+                    <p className="2xl:text-2xl 3xl:text-3xl font-normal mt-12 leading-normal whitespace-pre-wrap">
+                      <ul className="list-inside list-disc">
+                        <li>การออกแบบ UX & UI</li>
+                        <li>การออกแบบกราฟฟิก / ระบบสีและภาพ</li>
+                        <li>การออกแบบ Transitions และ Animations</li>
+                      </ul>
+                    </p>
+                  </blockquote>
                   <div className="grid justify-items-start w-full mt-10">
                     <img
-                      className="w-auto h-24"
+                      className="object-none object-center w-auto h-24"
                       src="../../assets/images/service/WebDesign/pic-icon-01.png"
-                      alt="Infinite"
+                      alt="infinite-pic-icon-01"
                     />
                   </div>
                 </div>
@@ -120,7 +126,7 @@ export default function SubWebDesign() {
                     <img
                       className="object-contain w-screen h-auto"
                       src="../../assets/images/service/WebDesign/pic-illustration-01.png"
-                      alt="Infinite"
+                      alt="infinite-pic-illustration-01"
                     />
                   </div>
                 </div>
@@ -131,7 +137,7 @@ export default function SubWebDesign() {
                     <img
                       className="object-contain w-screen h-auto"
                       src="../../assets/images/service/WebDesign/pic-illustration-02.png"
-                      alt="Infinite"
+                      alt="infinite-pic-illustration-02"
                     />
                   </div>
                 </div>
@@ -154,13 +160,15 @@ export default function SubWebDesign() {
                     ส่งผลให้ภาพลักษณ์ของแบรนด์ดีขึ้นตามด้วยเช่นกัน
                   </p>
                   <div className="grid justify-items-start w-full my-10">
-                    <button className="in-button">
-                      <img
-                        className="object-none object-center"
-                        src="../../assets/images/service/WebDesign/ปุ่ม-ปรึกษาเราตอนนี้.png"
-                        alt="ปุ่ม6"
-                      />
-                    </button>
+                    <a href="/contact">
+                      <button className="in-button">
+                        <img
+                          className="object-none object-center"
+                          src="../../assets/images/service/WebDesign/ปุ่ม-ปรึกษาเราตอนนี้.png"
+                          alt="ปุ่ม6"
+                        />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
