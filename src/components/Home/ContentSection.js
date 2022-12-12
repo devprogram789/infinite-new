@@ -198,10 +198,10 @@ export default function ContentSectionCopy() {
         </div>{" "}
         <div className="container mx-auto mt-0 md:mt-0 z-60" ref={addToRefs}>
           <div className="columns-1">
+          <div class="border-b border-indigo-500 mb-10"></div>
             <div className="grid grid-cols-12 my-10 2xl:my-20 3xl:my-10 justify-items-center">
               <div className="col-span-12">
                 <blockquote className="mx-5 lg:mx-10 text-center">
-                  <div class="border-b border-indigo-500 mb-10"></div>
                   <p className="text-3xl 2xl:text-3xl 3xl:text-4xl font-semibold leading-normal">
                     ลูกค้าของเรา
                   </p>
@@ -209,84 +209,85 @@ export default function ContentSectionCopy() {
                     Our Customers
                   </p>
                   <div className="flex items-stretch mx-3 2xl:mx-4 mt-2">
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           src="../../assets/images/logo-customers/LOGO-kinjai.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-ktthome.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           src="../../assets/images/logo-customers/LOGO-Entry.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-yusei.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           src="../../assets/images/logo-customers/LOGO-hotelink.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-new yellow.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           m-10
                           src="../../assets/images/logo-customers/LOGO-hrr.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-TS.jumnumrod.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           src="../../assets/images/logo-customers/LOGO-n2property.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-เว็บพระ.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
-                    <div className="self-center m-2 lg:m-6 xl:m-2">
-                      <div className="p-0 xl:p-4 2xl:p-5">
+                    <div className="self-center m-1 lg:m-1 xl:m-2 2xl:m-2 3xl:m-2">
+                      <div className="p-0 xl:p-0 2xl:p-0 3xl:p-5">
                         <img
                           src="../../assets/images/logo-customers/LOGO-unisyntech.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                         <img
                           src="../../assets/images/logo-customers/LOGO-amando.png"
-                          className="object-cover w-100 h-24  lg:h-28  xl:h-28  2xl:h-24 mb-5"
+                          className="object-cover w-100 h-12 lg:h-16 xl:h-20 2xl:h-24 3xl:h-24 mb-5"
                         />
                       </div>
                     </div>
                   </div>{" "}
-                  <div class="border-b border-indigo-500 mt-5"></div>
                 </blockquote>{" "}
+                
               </div>{" "}
             </div>{" "}
+            <div class="border-b border-indigo-500 mt-5 mb-12"></div>
           </div>{" "}
         </div>{" "}
         <div className="container mx-auto mt-0 md:mt-0 z-50" ref={addToRefs}>

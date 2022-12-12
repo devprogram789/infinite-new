@@ -420,6 +420,114 @@ export default function HeroSectionCopy() {
             </div>
           </div>
           <div className="bg-infinite1-100 max-h-screen">
+            <div className="columns-1">
+              <div
+                className="max-w-full mx-auto flex items-center justify-center mt-5 z-0"
+                ref={addblockToRefsMoLeft}
+              >
+                <p className="inline-block h-px w-10/12 bg-in-purple-3"></p>
+              </div>
+              <div
+                className="max-w-full mx-auto flex items-center justify-center z-10"
+                ref={addToRefs}
+              >
+                <div className="relative">
+                  <div className="grid grid-cols-6 gap-4 ">
+                    <div className="col-start-1 col-end-7">
+                      <div className="w-screen left-0">
+                        <img
+                          className="object-cover object-left-top w-48 h-auto z-20"
+                          src="../../assets/images/mobile/home/bg-element1.png"
+                          alt="Infinite-bg-element1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute top-0">
+                    <div className="grid grid-cols-12">
+                      <div className="col-span-12">
+                        <blockquote className="m-10">
+                          <h1 className="text-3xl font-bold leading-9 mb-2">
+                            ลูกค้าของเรา
+                          </h1>
+                          <p className="text-base mb-5">Our Customers</p>
+                          <div className="flex items-stretch mx-3 mt-2">
+                            <div className="self-center m-1">
+                              <div className="p-0">
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-kinjai.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-hrr.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-ktthome.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-TS.jumnumrod.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                              </div>
+                            </div>
+                            <div className="self-center m-1">
+                              <div className="p-0">
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-Entry.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-n2property.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-yusei.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-เว็บพระ.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                              </div>
+                            </div>
+                            <div className="self-center m-1">
+                              <div className="p-0">
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-hotelink.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-unisyntech.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-new yellow.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                                <img
+                                  src="../../assets/images/logo-customers/LOGO-amando.png"
+                                  className="object-cover w-100 h-12 mb-2"
+                                />
+                              </div>
+                            </div>
+                          </div>{" "}
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="max-w-full mx-auto flex items-center justify-center mt-20 z-0"
+                ref={addblockToRefsMo}
+              >
+                <p className="inline-block h-px w-10/12 bg-in-purple-3"></p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-infinite1-100 max-h-screen">
             <div className="columns-1" ref={addToRefs}>
               <div className="grid grid-cols-6 gap-0 my-5 mx-10 items-center justify-center">
                 <div className="col-start-1 col-end-7 mb-5">
