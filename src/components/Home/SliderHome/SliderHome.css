@@ -5,12 +5,22 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 640px) {
   .container-sliderhome {
-    width: 640px;
-    height: 237px;
-  }
+    width: 670px;
+    height: 249px;
+    position: relative;
+    overflow: hidden;
 }
+}
+
+@media screen and (min-width: 767px){
+.container-sliderhome {
+    width: 640px;
+    height: 238px;
+    position: relative;
+    overflow: hidden;
+}}
 
 @media screen and (min-width: 1024px) {
   .container-sliderhome {
@@ -35,9 +45,9 @@
 
 @media screen and (min-width: 1920px) {
   .container-sliderhome {
-    width: 1584px;
-    height: 576px;
-  }
+    width: 1600px;
+    height: 589px;
+}
 }
 
 .slidehome {
@@ -100,6 +110,16 @@
   margin: 0 5px;
   background: #f1f1f1;
 }
+
+@media screen and (max-width: 768px){
+  .dothome {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    margin: 0 5px;
+    background: #f1f1f1;
+  }}
 
 .dothome.activehome {
   background: rgb(32, 32, 32);

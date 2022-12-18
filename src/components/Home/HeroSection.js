@@ -299,6 +299,15 @@ export default function HeroSectionCopy() {
           </div>
         </div>
         <div className="block md:hidden mb-20">
+          <div className="container mx-auto mt-0 md:mt-0 z-10">
+            <div className="columns-1">
+              <div className="grid grid-cols-12 my-0 justify-items-center">
+                <div className="col-span-12">
+                  <SliderHome />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="bg-infinite1-100 max-h-screen">
             <div className="columns-1">
               <div className="max-w-full mx-auto flex items-center justify-center z-10">
