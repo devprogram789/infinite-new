@@ -31,6 +31,11 @@ const dataSliderHome = [
     title: "06",
     subTitle: "Lorem"
   },
+  {
+    id: uuidv4(),
+    title: "07",
+    subTitle: "Lorem"
+  },
 ];
 
 export default dataSliderHome;

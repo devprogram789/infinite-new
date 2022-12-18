@@ -47,7 +47,7 @@ export default function SliderHome() {
             <BtnSliderHome moveSlide={prevSlide} direction={"prevhome"}/>
 
             <div className="container-dotshome">
-                {Array.from({length: 6}).map((item, index) => (
+                {Array.from({length: 7}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dothome activehome fadehome" : "dothome fadehome"}
