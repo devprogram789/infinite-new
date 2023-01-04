@@ -20,11 +20,15 @@
     "react-dom": "^18.1.0",
     "react-ga": "^3.3.1",
     "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "react-water-wave": "^2.0.1",
     "react-waves-effect": "^1.5.1",
     "rerousel": "^0.1.9",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
