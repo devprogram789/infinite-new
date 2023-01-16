@@ -62,18 +62,6 @@ export default function SliderHome() {
             </div>
           );
         })}
-      <div>
-        <img
-          alt="sss"
-          src="http://localhost:3000/assets/images/home/sliderhome/1-2.jpg"
-        />
-      </div>
-      <div>
-        <img
-          alt="sss"
-          src="http://localhost:3000/assets/images/home/sliderhome/1-2.jpg"
-        />
-      </div>
       
     </Slider>
 /*     <Slider {...settings}>
