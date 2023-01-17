@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //import { auth } from "./Config/firebase";
 import "./App.css";
@@ -13,9 +13,13 @@ import Seo from "./pages/SubService/Seo/Seo";
 import ProGramming from "./pages/SubService/ProGramming/ProGramming";
 import WebDesign from "./pages/SubService/WebDesign/WebDesign";
 import CookieBar from "./components/CookieBar/CookieBar";
+import TagManager from 'react-gtm-module';
 
 function App() {
   //const [{user},dispatch] = useStateValue()
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-NXJBGB5' });
+    }, []);
 
   return (
     <BrowserRouter>
