@@ -26,11 +26,6 @@ const dataSlider = [
     title: "05",
     subTitle: "Lorem"
   },
-  {
-    id: uuidv4(),
-    title: "06",
-    subTitle: "Lorem"
-  },
 ];
 
 export default dataSlider;
